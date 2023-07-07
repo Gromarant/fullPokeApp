@@ -1,25 +1,25 @@
-import { useEffect, useState } from 'react';
-import axios from 'axios';
+import { Input, Button, Grid } from "@nextui-org/react";
 import PropTypes from 'prop-types';
-import { pokemons } from './SearchData';
+// import { useState } from 'react';
+// import axios from 'axios';
+// import { pokemons } from './SearchData';
 
 
-const Search = ({setPokemons}) => {
-  const [inputValue, setInputValue] = useState('');
+const Search = (/*{setPokemons}*/) => {
+  // const [inputValue, setInputValue] = useState('');
   // const [searchHistory, setSearchHistory] = useState([]);
   // const [searchTerm, setSearchTerm] = useState([]);
   
   // const handleSearch = (inputValue) => {
-  //   console.log(pokemons.filter(pokemon => pokemon.name?.toLowercase().indexOf(inputValue) !== -1 ))
+  //   pokemons.filter(pokemon => pokemon.name?.toLowercase().indexOf(inputValue) !== -1 )
   // };
 
-  const handleChange = (event) => {
-    setInputValue(event.target.value);
-    // handleSearch(inputValue)
-  };
+  // const handleChange = (event) => {
+  //   setInputValue(event.target.value);
+  // };
 
   // const handleClick = () => {
-  //   // setSearchTerm(inputValue)
+  //   setSearchTerm(inputValue)
   // };
 
   // useEffect(() => {
@@ -41,25 +41,41 @@ const Search = ({setPokemons}) => {
   //   }
   // }, [searchTerm])
 
-  const filterPokemons = pokemons.results.filter(pokemon => pokemon.name?.toLowerCase().indexOf(inputValue) !== -1 )
   return (
-    <>
-     <form>
-      <input type='text' list='matchingOptions' value={inputValue} onChange={handleChange} />
-       {/* <datalist id='matchingOptions'>
+  <>
+  <form>  
+    <Grid.Container gap={2}>
+      <Grid>
+        <Input
+          rounded
+          bordered
+          label="Buscar"
+          placeholder="Un pokemón"
+          color="primary"
+        />
+      </Grid>
+      <Grid>
+        <Button color="gradient" auto>
+          Buscar
+        </Button>
+      </Grid>
+    </Grid.Container>
+     
+      {/* <input type='text' list='matchingOptions' value={inputValue} onChange={handleChange} />
+       <datalist id='matchingOptions'>
          {data? data.map(match => <option value={match}/>) : <p>No se encontro pokemón</p>}
-       </datalist> */}
-       {/* <button onClick={handleClick}>Buscar</button> */}
-     </form>
-
+       </datalist> 
+       <button onClick={handleClick}>Buscar</button> */}
+  </form>
+{/* 
     <section>
       {filterPokemons.map(pokemon => <p key={pokemon.name}>{pokemon.name}</p>)}
-    </section>
+    </section> */}
   </>);
 };
 
-Search.propTypes = {
-  setPokemons: PropTypes.func.isRequired
-}
+// Search.propTypes = {
+//   setPokemons: PropTypes.func.isRequired
+// }
 
 export default Search;

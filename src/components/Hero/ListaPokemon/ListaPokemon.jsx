@@ -1,25 +1,19 @@
-// import axios from 'axios';
+import PropTypes from 'prop-types';
+import  Card  from './Card';
 
-const ListaPokemon = () => {
-
-//   const [pokemons, setPokemons] = useState({});
-
-//   useEffect(() => {
-
-//     try {
-//       axios.get('https://pokeapi.co/api/v2/pokemon')
-//           .then(response => {
-//             if (response) {
-//               setPokemons(response.data)
-//             }
-//           })
-//     }
-//     catch(error) {
-//       console.error(error);
-//     }
-//   }, [])
-
-//   return <div>ListaPokemon</div>;
+const ListaPokemon = ({pokemons}) => {
+  
+  return (
+    <>
+      {pokemons && pokemons.map((pokemon) => (
+        <Card url={pokemon.url} name={pokemon.name} key={pokemon.name}/>)
+      )}
+    </>
+  );
 };
+
+ListaPokemon.propTypes = {
+  pokemons: PropTypes.array.isRequired
+}
 
 export default ListaPokemon;

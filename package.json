@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.13",
+    "axios": "^1.4.0",
     "create-react-component-folder": "^0.3.7",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.8.1",
