@@ -1,11 +1,15 @@
 import ListaPokemon from './ListaPokemon';
+import { useState } from 'react';
 import Search from './Search';
 
+
 const Hero = () => {
+  const [data, setData] = useState([]);
+
   return (
     <section>
-      <ListaPokemon />
-      <Search />
+      <Search setPokemons={setData}/>
+      <ListaPokemon pokemons={data}/>
     </section>
   );
 };
