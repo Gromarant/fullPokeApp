@@ -3,9 +3,18 @@ import { Navbar, Link } from "@nextui-org/react";
 const NavBar = () => {  
 
   const collapseItems = [
-    "Home",
-    "Add New",
-    "Search",
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Add New",
+      link: "/new",
+    },
+    {
+      name: "Search",
+      link: "/search",
+    },
   ];
 
   return (
@@ -20,16 +29,16 @@ const NavBar = () => {
           <Navbar.Link href="/search">Search</Navbar.Link>
         </Navbar.Content>
         <Navbar.Collapse>
-        {collapseItems.map((item, link) => (
-          <Navbar.CollapseItem key={item}>
+        {collapseItems.map((item) => (
+          <Navbar.CollapseItem key={item.name}>
             <Link
               color="inherit"
               css={{
                 minWidth: "100%",
               }}
-              href="#"
+              href={item.link}
             >
-              {item}
+              {item.name}
             </Link>
           </Navbar.CollapseItem>
         ))}
