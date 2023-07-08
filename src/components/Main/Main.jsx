@@ -4,7 +4,7 @@ import New from '../New';
 import Details from '../Details';
 import Hero from '../Hero';
 import Error from '../Error';
-// import ListaPokemon from '../Hero/ListaPokemon/ListaPokemon';
+
 
 const Main = () => {
   return (

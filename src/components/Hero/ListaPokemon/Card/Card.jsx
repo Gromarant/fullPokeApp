@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Card as NextUiCard, Grid, Row, Link } from "@nextui-org/react";
 
-const Card = ({url, name}) => {
+const Card = ({id, name}) => {
 
   return (
     <>
@@ -10,7 +10,7 @@ const Card = ({url, name}) => {
           <NextUiCard isPressable>
             <NextUiCard.Body css={{ p: 0 }}>
               <NextUiCard.Image
-                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${url}.png`}
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`}
                 objectFit="cover"
                 width="fit-content"
                 alt={name}
@@ -19,8 +19,7 @@ const Card = ({url, name}) => {
             <NextUiCard.Footer css={{ justifyItems: "flex-start" }}>
               <Row wrap="wrap" justify="space-between" align="center" color=''>
               <Link
-                // target="_blank"
-                // href="https://github.com/nextui-org/nextui"
+                href={`/pokemon/${id}`}
               >{name}</Link>
               </Row>
             </NextUiCard.Footer>
@@ -32,7 +31,7 @@ const Card = ({url, name}) => {
 };
 
 Card.propTypes = {
-  url: PropTypes.string,
+  id: PropTypes.string,
   name: PropTypes.string,
 }
 

@@ -8,7 +8,7 @@ const ListaPokemon = ({pokemonsData}) => {
     <>
       <section className='pokemonList'>
         {pokemonsData && pokemonsData.map((pokemon) => (
-            <Card url={pokemon.url} name={pokemon.name} key={uuidv4()}/>
+            <Card id={pokemon.id} name={pokemon.name} key={uuidv4()}/>
           )
         )}
       </section>
