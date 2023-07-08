@@ -18,8 +18,8 @@ const Search = ({setPokemonsData}) => {
     if (inputValue) {
       setPokemonsData( filterResults(inputValue) )
     }
+    setInputValue('')
   };
-
 
   return (
   <>

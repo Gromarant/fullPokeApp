@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Card as NextUiCard, Grid, Row, Text } from "@nextui-org/react";
+import { Card as NextUiCard, Grid, Row, Link } from "@nextui-org/react";
 
 const Card = ({url, name}) => {
 
@@ -18,7 +18,10 @@ const Card = ({url, name}) => {
             </NextUiCard.Body>
             <NextUiCard.Footer css={{ justifyItems: "flex-start" }}>
               <Row wrap="wrap" justify="space-between" align="center" color=''>
-                <Text b>{name}</Text>
+              <Link
+                // target="_blank"
+                // href="https://github.com/nextui-org/nextui"
+              >{name}</Link>
               </Row>
             </NextUiCard.Footer>
           </NextUiCard>
