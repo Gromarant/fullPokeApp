@@ -4,12 +4,12 @@ import Search from './Search';
 
 
 const Hero = () => {
-  const [data, setData] = useState([]);
+  const [pokemonsData, setPokemonsData] = useState([]);
 
   return (
     <section>
-      <Search setPokemons={setData}/>
-      <ListaPokemon pokemons={data}/>
+      <Search setPokemonsData={setPokemonsData}/>
+      <ListaPokemon pokemonsData={pokemonsData}/>
     </section>
   );
 };

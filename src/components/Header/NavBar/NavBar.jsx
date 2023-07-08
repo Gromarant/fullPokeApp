@@ -25,7 +25,7 @@ const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
           <Navbar.Link href="/">Home</Navbar.Link>
-          <Navbar.Link isActive href="/new">Add New</Navbar.Link>
+          <Navbar.Link /*isActive*/ href="/new">Add New</Navbar.Link>
           <Navbar.Link href="/search">Search</Navbar.Link>
         </Navbar.Content>
         <Navbar.Collapse>

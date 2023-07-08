@@ -1,19 +1,23 @@
 import PropTypes from 'prop-types';
+import { v4 as uuidv4 } from 'uuid';
 import  Card  from './Card';
 
-const ListaPokemon = ({pokemons}) => {
+const ListaPokemon = ({pokemonsData}) => {
   
   return (
     <>
-      {pokemons && pokemons.map((pokemon) => (
-        <Card url={pokemon.url} name={pokemon.name} key={pokemon.name}/>)
-      )}
+      <section className='pokemonList'>
+        {pokemonsData && pokemonsData.map((pokemon) => (
+            <Card url={pokemon.url} name={pokemon.name} key={uuidv4()}/>
+          )
+        )}
+      </section>
     </>
   );
 };
 
 ListaPokemon.propTypes = {
-  pokemons: PropTypes.array.isRequired
+  pokemonsData: PropTypes.array,
 }
 
 export default ListaPokemon;
