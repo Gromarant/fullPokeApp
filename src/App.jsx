@@ -7,19 +7,28 @@ import { BrowserRouter } from 'react-router-dom';
 import { useState } from 'react';
 
 const App = () => {
-  const [pokemonList, setPokemonList] = useState([])
+  const [pokemonList, setPokemonList] = useState([]);
+
+
+  const addToPokemonList = (pokemon) => {
+    console.log("pokemon", pokemon);
+    console.log("pokemonList", pokemonList);
+    
+    setPokemonList([...pokemonList, pokemon]);
+  }
+
 
   return (
     <>
-      <pokemonListContext.Provider value={{pokemonList, setPokemonList}}>
-        <NextUIProvider>
-          <BrowserRouter>
-            <Header />
-            <Main />
-          </BrowserRouter>
-          <Footer />
-        </NextUIProvider>
-      </pokemonListContext.Provider> 
+      <NextUIProvider>
+        <pokemonListContext.Provider value={{pokemonList, setPokemonList, addToPokemonList}}>
+            <BrowserRouter>
+              <Header />
+              <Main />
+            </BrowserRouter>
+            <Footer />
+        </pokemonListContext.Provider> 
+      </NextUIProvider>
     </>
   )
 }

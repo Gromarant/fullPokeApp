@@ -3,7 +3,6 @@ import Home from '../Home/Home';
 import New from '../New';
 import Details from '../Details';
 import Hero from '../Hero';
-import Error from '../Error';
 
 
 const Main = () => {
@@ -14,7 +13,6 @@ const Main = () => {
         <Route path='/New' element={<New />} />
         <Route path='/pokemon/:id' element={<Details />} />
         <Route path='/search' element={<Hero />} />
-        <Route element={<Error />} />
       </Routes>
     </main>
   );

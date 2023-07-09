@@ -1,38 +1,30 @@
-// import pokemons from './HomeData/';
-// import axios from 'axios';
-// import { useEffect, useState } from 'react';
+import {pokemons} from '../Hero/Search/SearchData.js';
+import { v4 as uuidv4 } from 'uuid';
+import CardHome from '../baseComponents/CardHome/CardHome.jsx';
 
 const Home = () => {
-//   const [pokemons, setPokemons] = useState({})
+  let showList = [];
 
-//   useEffect(() => {
+  const pokemonsToShow = () => {
+    let pokeList = [];
+    let list = [];
 
-//     try {
-//       axios.get('https://pokeapi.co/api/v2/pokemon')
-//           .then(response => {
-//             if (response) {
-//               setPokemons(response.data)
-//             }
-//           })
-//     }
-//     catch(error) {
-//       console.error(error);
-//     }
-//   }, [])
+    if (pokemons.results.length) {
+      while (pokeList.length < 10) {
+        pokeList.push(Math.floor(Math.random() * 1282));
+      }
+      showList = pokemons.results.filter((pokemon, index) => pokemon.id === pokeList[index])
+    }
+  };
+  pokemonsToShow();
 
-//   console.log(pokemons.results);
-//   const renderPokemons = () => pokemons.results?.map( pokemon => {
-//     <article>
-//       <img src={`${pokemon.url}`} alt={`${pokemon.name}`}/>
-//       <p>{pokemon.name}</p>
-//     </article>
-//   } )
-  
-//   return (
-//     <>
-//       {renderPokemons()}
-//     </>
-//   );
+  return (
+    <>
+      {
+        pokemons && pokemons.results?.map(pokemon => <CardHome id={pokemon.id} name={pokemon.name} key={uuidv4()}/>)
+      }
+    </>
+  );
 };
 
 export default Home;

@@ -1,12 +1,22 @@
-import { useEffect, useState } from 'react';
-import { Card, Grid, Text, Link, Spacer, Button } from "@nextui-org/react";
-import axios from 'axios';
+import {  useContext,useEffect, useState } from 'react'; //
+import { pokemonListContext } from '../../context/pokemonListContext';
+import { Card, Grid, Text, Spacer, Button } from "@nextui-org/react";
 import { useParams } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
+import axios from 'axios';
+
 
 const Details = () => {
   const [pokemonDetails, setPokemonDetails] = useState({});
-
+  const {addToPokemonList} = useContext(pokemonListContext);
   const { id } = useParams();
+  
+
+  const pokemonListHandler = (data) => {
+    if (data) {
+      addToPokemonList(data);
+    }
+  }
 
   useEffect(() => {
 
@@ -16,7 +26,8 @@ const Details = () => {
         axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
               .then(response => {
                 if (response) {
-                  setPokemonDetails(response.data)
+                  setPokemonDetails(response.data);
+                  pokemonListHandler(response.data);
                 }
               })
       }
@@ -55,7 +66,7 @@ const Details = () => {
           <Card.Divider />
         </Grid.Container>
         <Grid.Container gap={1}>
-        {pokemonDetails.types && pokemonDetails.types?.map(type => (<Grid key={pokemonDetails.id}>
+        {pokemonDetails.types && pokemonDetails.types?.map(type => (<Grid key={uuidv4()}>
             <Button flat color="secondary" auto>{type.type.name}</Button>
           </Grid> 
           ))

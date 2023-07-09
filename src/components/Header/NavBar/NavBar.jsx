@@ -1,4 +1,5 @@
-import { Navbar, Link } from "@nextui-org/react";
+import { Navbar } from "@nextui-org/react";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {  
 
@@ -20,13 +21,13 @@ const NavBar = () => {
   return (
     <>
       <Navbar isBordered variant="sticky">
-        <Navbar.Brand>
+         <Navbar.Brand>
           <Navbar.Toggle aria-label="toggle navigation" />
         </Navbar.Brand>
         <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
-          <Navbar.Link href="/">Home</Navbar.Link>
-          <Navbar.Link href="/new">Add New</Navbar.Link>
-          <Navbar.Link href="/search">Search</Navbar.Link>
+          <Link to="/">Home</Link>
+          <Link to="/search">Search</Link>
+          <Link  to="/new">Add New</Link>
         </Navbar.Content>
         <Navbar.Collapse>
         {collapseItems.map((item) => (
@@ -36,7 +37,7 @@ const NavBar = () => {
               css={{
                 minWidth: "100%",
               }}
-              href={item.link}
+              to={item.link}
             >
               {item.name}
             </Link>

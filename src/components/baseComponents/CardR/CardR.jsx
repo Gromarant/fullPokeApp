@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
-import { Card as NextUiCard, Grid, Row, Link } from "@nextui-org/react";
+import { Card as NextUiCard, Grid, Row } from "@nextui-org/react";
+import { Link } from 'react-router-dom';
 
 const CardR = ({id, name}) => {
 
@@ -19,7 +20,7 @@ const CardR = ({id, name}) => {
             <NextUiCard.Footer css={{ justifyItems: "flex-start" }}>
               <Row wrap="wrap" justify="space-between" align="center" color=''>
               <Link
-                href={`/pokemon/${id}`}
+                to={`/pokemon/${id}`}
               >{name}</Link>
               </Row>
             </NextUiCard.Footer>
