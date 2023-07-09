@@ -21,9 +21,14 @@ const Search = ({setPokemonsData}) => {
     setInputValue('')
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    handleClick();
+  };
+
   return (
   <>
-    <form>  
+    <form onSubmit={handleSubmit}>  
       <Grid.Container gap={2}>
         <Grid>
           <Input
@@ -31,6 +36,7 @@ const Search = ({setPokemonsData}) => {
             bordered
             label="Buscar"
             placeholder="Un pokemón"
+            value={inputValue}
             color="primary"
             onChange={handleInputChange}
           />
