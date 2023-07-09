@@ -5095,39 +5095,7 @@ export const pokemons = {
       name: "gimmighoul-roaming",
       id: "10263",
     },
-    {
-      name: "koraidon-limited-build",
-      id: "10264",
-    },
-    {
-      name: "koraidon-sprinting-build",
-      id: "10265",
-    },
-    {
-      name: "koraidon-swimming-build",
-      id: "10266",
-    },
-    {
-      name: "koraidon-gliding-build",
-      id: "10267",
-    },
-    {
-      name: "miraidon-low-power-mode",
-      id: "10268",
-    },
-    {
-      name: "miraidon-drive-mode",
-      id: "10269",
-    },
-    {
-      name: "miraidon-aquatic-mode",
-      id: "10270",
-    },
-    {
-      name: "miraidon-glide-mode",
-      id: "10271",
-    },
   ],
 };
 
-// export const pokemonsName = pokemons.results?.map((pokemon) => pokemon.name);
+// export const pokemonsName = pokemons.results?.map((pokemon) => pokemon.image = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`);
