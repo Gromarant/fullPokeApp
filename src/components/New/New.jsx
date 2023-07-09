@@ -1,16 +1,22 @@
-import { useState, useContext } from 'react';
-
 import PropTypes from 'prop-types';
+// import { useForm, SubmitHandler } from "react-hook-form";
+import { useState, useContext } from 'react';
+import { pokemonListContext } from '../../context/pokemonListContext';
+import Input from '../baseComponents/Input';
+import ButtonAct from '../baseComponents/ButtonAct';
+
 
 const clearForm = {
-  name: "",
-  email: "",
-  url: "",
-  age: ""
+  id: '',
+  name: '',
+  image: '',
+  typeOne: '',
+  typeTwo: '',
 };
 
-const Form = ({ setData }) => {
+const Form = () => {
   const [inputValue, setInputValue] = useState({...clearForm});
+  const {setPokemonList} = useContext(pokemonListContext);
 
   const handleChange = (e) => {
 
@@ -22,29 +28,24 @@ const Form = ({ setData }) => {
   
   const handleClick = (e) => {
     e.preventDefault();
-    setData(inputValue);
+    setPokemonList(inputValue)
     setInputValue({...clearForm})
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    handleClick();
   };
 
   return (
     <>
-      <form className='form'>
-        <label htmlFor="name" className='placeholder'>Name: 
-          <input className='input_Container' id='name' type="text" name="name" value={inputValue.name} onChange={handleChange} placeholder='enter your name' />
-        </label><br />
-
-        <label htmlFor="email" className='placeholder'>Email: 
-          <input className='input_Container' id='email' type="email" name="email" value={inputValue.email} onChange={handleChange} placeholder='Enter your email' />
-        </label><br />
-
-        <label htmlFor="url" className='placeholder'>Image url: 
-          <input className='input_Container' id='url' type="text" name="url"value={inputValue.url} onChange={handleChange} placeholder='Enter image url' />
-        </label><br />
-
-        <label htmlFor="age" className='placeholder'>Edad: 
-          <input className='input_Container' id='age' type="number" name="age" value={inputValue.age} onChange={handleChange} placeholder='Enter your age' />
-        </label><br />
-        <button className='submit' onClick={handleClick}>Enviar</button>
+      <form className='form' onSubmit={handleSubmit}>
+        <Input onChange={handleChange} label='id' placeholder='pokemon id' value={`pokemon ${inputValue.id}`}/>
+        <Input onChange={handleChange} label='name' placeholder='pokemon name' value={`pokemon ${inputValue.name}`}/>
+        <Input onChange={handleChange} label='image' placeholder='pokemon image' value={`pokemon ${inputValue.image}`}/>
+        <Input onChange={handleChange} label='typeOne' placeholder='pokemon typeOne' value={`pokemon ${inputValue.typeOne}`}/>
+        <Input onChange={handleChange} label='typeTwo' placeholder='pokemon typeTwo' value={`pokemon ${inputValue.typeTwo}`}/>
+        <ButtonAct onClick={handleClick} value='Enviar' />
       </form>
     </>
   );
