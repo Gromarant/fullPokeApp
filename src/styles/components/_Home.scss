@@ -1,19 +1,8 @@
+@import '../utils/mixins.scss';
+@import '../utils/variables.scss';
+
 h1 {
-  font-size: 3.5rem;
-  margin-top: 4rem;
-  --s: 0.1em;   /* the thickness of the line */
-  --c: #FFCC01; /* the color */
-  
-  color: #2359be;
-  padding-bottom: var(--s);
-
-  background: 
-    linear-gradient(90deg,var(--c) 50%,#FFCC01 0) calc(100% - var(--_p,0%))/200% 100%,
-    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
-
-  -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
-  transition: 0.5s;
+  @include animatedTitle;
 }
 h1:hover {--_p: 100%}
 

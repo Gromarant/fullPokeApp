@@ -2,3 +2,19 @@
   width: 100%;
   background-color: aqua;
 }
+
+.newCards_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 6rem;
+
+  .cardNew {
+    text-align: right;
+    padding-right: 2rem;
+    min-width: 15rem;
+    width: 100%;
+    max-width: 4rem;
+  }
+}
