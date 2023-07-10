@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
-import { Button, Grid } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 
 const ButtonAct = ({
   color="gradient",
   value,
 }) => {
   return (
-    <Grid>
-      <Button color={color} auto type='submit'>
-        {value}
-      </Button>
-    </Grid>
+    <Button className='submit_btn' color={color} auto type='submit'>
+      {value}
+    </Button>
   );
 };
 

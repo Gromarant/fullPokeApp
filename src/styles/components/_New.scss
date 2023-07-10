@@ -1,20 +1,24 @@
-.fullInput{
-  width: 100%;
-  background-color: aqua;
-}
+@import '../utils/mixins.scss';
 
-.newCards_section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 6rem;
+.form {
+  @include flexCol;
+  min-width: 17rem;
+  width: 60%;
+  max-width: 27rem;
+  margin: auto;
+  margin-top: 4rem;
+  gap: 1rem;
+  text-align: left;
 
-  .cardNew {
-    text-align: right;
-    padding-right: 2rem;
-    min-width: 15rem;
-    width: 100%;
-    max-width: 4rem;
+  .submit_btn {
+    margin: auto;
+    margin-top: 2rem;
+    width: 60%;
+  }
+
+  p {
+    margin-top: 0;
+    text-align: center;
+    color: red;
   }
 }
