@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+@mixin flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @mixin animatedTitle {
 
   font-size: 3.5rem;
