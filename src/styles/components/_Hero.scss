@@ -1,0 +1,27 @@
+// // @import '../utils/mixins.scss';
+// // @import '../utils/variables.scss';
+
+.hero_section {
+  display: flex;
+  flex-direction: column;
+  padding-left: center;
+  gap: 4rem;
+
+  .search_form {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: #d8d8d8;
+    border-radius: 1rem;
+    min-width: fit-content;
+    width: 80%;
+    max-width: 60rem;
+    margin: auto;
+
+    .input {
+      min-width: 15rem;
+    }
+  }
+}

@@ -4,7 +4,7 @@ import { Input as InputNextUi, Grid } from "@nextui-org/react";
 
 const Input = (props) => {
   const {
-    label,
+    label='',
     placeholder,
     color="secondary",
     value,
@@ -12,18 +12,19 @@ const Input = (props) => {
 
 
   return (
-    <Grid className='gridNextUi'>
-      <InputNextUi 
-        { ...props }
-        className='inputWithFoutingLabel'
-        rounded
-        bordered
-        label={label}
-        placeholder={placeholder}
-        color={color}
-        value={value}
-      />
-    </Grid>
+    <>
+      <Grid>
+        <InputNextUi 
+          { ...props }
+          rounded
+          bordered
+          label={label}
+          placeholder={placeholder}
+          color={color}
+          value={value}
+        />
+      </Grid>
+    </>
   );
 };
 

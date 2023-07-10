@@ -1,24 +1,25 @@
-import { Input, Button, Grid } from "@nextui-org/react";
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { pokemons } from './SearchData';
+import Input from '../../baseComponents/Input';
+import ButtonAct from '../../baseComponents/ButtonAct';
 
 
 const Search = ({setPokemonsData}) => {
-  const [inputValue, setInputValue] = useState('');
+  const [searchInputValue, setSearchInputValue] = useState('');
   
   
-  const filterResults = (inputValue) => inputValue && pokemons.results.filter(pokemon => pokemon.name?.toLowerCase().indexOf(inputValue) !== -1 );
+  const filterResults = (searchInputValue) => searchInputValue && pokemons.results.filter(pokemon => pokemon.name?.toLowerCase().indexOf(searchInputValue) !== -1 );
 
   const handleInputChange = (event) => {
-    setInputValue(event.target.value);
+    setSearchInputValue(event.target.value);
   };
 
   const handleClick = () => {
-    if (inputValue) {
-      setPokemonsData( filterResults(inputValue) )
+    if (searchInputValue) {
+      setPokemonsData( filterResults(searchInputValue) )
     }
-    setInputValue('')
+    setSearchInputValue('')
   };
 
   const handleSubmit = (e) => {
@@ -28,25 +29,9 @@ const Search = ({setPokemonsData}) => {
 
   return (
   <>
-    <form onSubmit={handleSubmit}>  
-      <Grid.Container gap={2}>
-        <Grid>
-          <Input
-            rounded
-            bordered
-            label="Buscar"
-            placeholder="Un pokemón"
-            value={inputValue}
-            color="primary"
-            onChange={handleInputChange}
-          />
-        </Grid>
-        <Grid>
-          <Button color="gradient" auto onPress={handleClick}>
-            Buscar
-          </Button>
-        </Grid>
-      </Grid.Container> 
+    <form className='search_form' onSubmit={handleSubmit}>  
+      <Input className='input' placeholder='nombre de pokémon' onChange={handleInputChange}/>
+      <ButtonAct onPress={handleClick} value='buscar'/>
     </form>
   </>
   );
