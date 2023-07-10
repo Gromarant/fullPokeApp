@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Card = ({id, name, image}) => {
 
+
   return (
     <>
     <Grid.Container gap={2} justify="flex-start">
@@ -11,7 +12,7 @@ const Card = ({id, name, image}) => {
           <NextUiCard isPressable>
             <NextUiCard.Body css={{ p: 0 }}>
               <NextUiCard.Image
-                src={image? image : `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`}
+                src={image}
                 objectFit="cover"
                 width="fit-content"
                 alt={name}
@@ -32,7 +33,7 @@ const Card = ({id, name, image}) => {
 };
 
 Card.propTypes = {
-  id: PropTypes.string,
+  id: PropTypes.number,
   name: PropTypes.string,
   image: PropTypes.string,
 }

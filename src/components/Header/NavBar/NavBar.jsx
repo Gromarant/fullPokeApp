@@ -9,7 +9,7 @@ const NavBar = () => {
       link: "/",
     },
     {
-      name: "Add New",
+      name: "Crear Pokémon",
       link: "/new",
     },
     {
@@ -27,20 +27,12 @@ const NavBar = () => {
         <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
           <Link to="/">Home</Link>
           <Link to="/search">Search</Link>
-          <Link  to="/new">Add New</Link>
+          <Link  to="/new">Crear Pokémon</Link>
         </Navbar.Content>
         <Navbar.Collapse>
         {collapseItems.map((item) => (
           <Navbar.CollapseItem key={item.name}>
-            <Link
-              color="inherit"
-              css={{
-                minWidth: "100%",
-              }}
-              to={item.link}
-            >
-              {item.name}
-            </Link>
+            <Link to={item.link}>{item.name}</Link>
           </Navbar.CollapseItem>
         ))}
       </Navbar.Collapse>

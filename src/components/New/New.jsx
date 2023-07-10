@@ -5,31 +5,22 @@ import Input from '../baseComponents/Input';
 import ButtonAct from '../baseComponents/ButtonAct';
 
 
-// const clearForm = {
-//   id: '',
-//   name: '',
-//   image: '',
-//   typeOne: '',
-//   typeTwo: '',
-// };
+const defaultValues = {
+  id: '',
+  name: '',
+  image: '',
+  typeOne: '',
+  typeTwo: '',
+};
 
 const Form = () => {
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState({...defaultValues});
   const {addToPokemonList} = useContext(pokemonListContext);
   const {
     register,
      handleSubmit,
       formState: { errors },
-  } =useForm({
-    defaultValues: {
-      id: '',
-      name: '',
-      image: '',
-      typeOne: '',
-      typeTwo: '',
-    }});
-
-  console.log(errors);
+  } =useForm({ defaultValues });
 
   
   const handleChange = (e) => {
@@ -39,32 +30,6 @@ const Form = () => {
       [e.target.name]: e.target.value,
     })
   }
-  
-  // const handleClick = (e) => {
-  //   e.preventDefault();
-  //   addToPokemonList(inputValue)
-  //   setInputValue({...clearForm})
-  //   console.log(merwe);
-  // };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   handleClick();
-  // };
-
-  // id => number
-  // name => text
-  // image => text
-  // typeOne => select
-  // typeTwo => select
-
-  // Las condiciones de error y validación serán las siguientes:
-
-  // id => required
-  // name => required minlenght = 3
-  // image => required
-  // typeOne => select required
-  // typeTwo => select
 
 
   return (
@@ -72,11 +37,10 @@ const Form = () => {
       <form className='form' onSubmit={handleSubmit((data)=>{
         data.message && <p>{data.message}</p>
         addToPokemonList({
-          ...data,
-          id: String(data.id),
+          ...data
         })
       })}>
-        <Input className='fullInput' {...register('id', { 
+        <Input className='fullInput' type='number' {...register('id', { 
           required: 'campo obligatorio',
           minLength: {
             value: 1, 
@@ -90,10 +54,10 @@ const Form = () => {
         {errors.id?.type === "required" && (
         <p role="alert">{errors.id?.message}</p>)}
 
-        <Input {...register('name', {
+        <Input type='string' {...register('name', {
           required: 'campo obligatorio',
           minLength: {
-            value: 5, 
+            value: 3, 
             message: "debe tener un al menos 5 caracteres"
           }, 
           maxLength:{
@@ -105,24 +69,20 @@ const Form = () => {
         {errors.name?.type === "required" && (
         <p role="alert">{errors.id?.message}</p>)}
 
-        {/* <Input {...register('image', {
+        <Input type='string' {...register('image', {
           required: 'campo obligatorio',
           minLength: {
-            value: , 
+            value: 3, 
             message: "debe tener un al menos 5 caracteres"
-          }, 
-          maxLength:{
-            value: 20, 
-            message: "debe tener máximo 20 caracteres"
-          },  
+          }
         })} onChange={handleChange} label='image' placeholder='pokemon image' value={inputValue.image}/>
         {errors.id?.type === "required" && (
-        <p role="alert">{errors.id?.message}</p>)} */}
+        <p role="alert">{errors.id?.message}</p>)}
 
-        <Input {...register('typeOne', {
+        <Input type='select' {...register('typeOne', {
           required: 'campo obligatorio',
           minLength: {
-            value: 5, 
+            value: 3, 
             message: "debe tener un al menos un caracter"
           }, 
           maxLength:{
@@ -134,8 +94,7 @@ const Form = () => {
         {errors.typeOne?.type === "required" && (
         <p role="alert">{errors.id?.message}</p>)}
 
-        <Input {...register('typeTwo', {
-          required: 'campo obligatorio',
+        <Input type='select' {...register('typeTwo', {
           minLength: {
             value: 5, 
             message: "debe tener un al menos un caracter"
@@ -149,7 +108,7 @@ const Form = () => {
         {errors.typeTwo?.type === "required" && (
         <p role="alert">{errors.id?.message}</p>)}
 
-        <ButtonAct value='Enviar' />
+        <ButtonAct value='Enviar'/>
       </form>
     </>
   );

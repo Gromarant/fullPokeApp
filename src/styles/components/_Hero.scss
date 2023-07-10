@@ -1,6 +1,3 @@
-// // @import '../utils/mixins.scss';
-// // @import '../utils/variables.scss';
-
 .hero_section {
   display: flex;
   flex-direction: column;
@@ -17,11 +14,24 @@
     border-radius: 1rem;
     min-width: fit-content;
     width: 80%;
-    max-width: 60rem;
+    max-width: 34rem;
     margin: auto;
 
     .input {
       min-width: 15rem;
+    }
+  }
+
+  .search_lists {
+    @include flexCol;
+    align-items: center;
+
+    .list_of_filter_Pokemons {
+
+      .search_lists {
+        max-width: 25rem;
+      }
+
     }
   }
 }

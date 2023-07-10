@@ -4,7 +4,7 @@ import { Input as InputNextUi, Grid } from "@nextui-org/react";
 
 const Input = (props) => {
   const {
-    label='',
+    label,
     placeholder,
     color="secondary",
     value,
