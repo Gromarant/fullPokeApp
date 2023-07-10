@@ -11,9 +11,6 @@ const App = () => {
 
 
   const addToPokemonList = (pokemon) => {
-    console.log("pokemon", pokemon);
-    console.log("pokemonList", pokemonList);
-    
     setPokemonList([...pokemonList, pokemon]);
   }
 
