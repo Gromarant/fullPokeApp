@@ -1,9 +1,25 @@
 @use '../utils';
 
-h1 {
+.animated {
   @include utils.animatedTitle;
 }
-h1:hover {--_p: 100%}
+.animated:hover {--_p: 100%}
+
+.btn {
+  display: flex;
+  place-content: center;
+  max-width: fit-content;
+  margin: 2rem auto 1rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.8rem;
+}
+
+.searchBtn {
+  font-weight: 600;
+  color: whitesmoke;
+  font-size: 18px;
+  background: utils.$color-gradient;
+}
 
 .homeCards_section {
   display: flex;

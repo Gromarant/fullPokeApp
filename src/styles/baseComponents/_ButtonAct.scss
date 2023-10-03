@@ -1,0 +1,7 @@
+@use '../utils';
+.searchBtn {
+  font-size: 18px;
+  margin: 2rem auto 1rem;
+  padding: 1.5rem;
+  background:  utils.$color-gradient;
+}
