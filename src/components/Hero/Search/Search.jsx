@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { pokemons } from './SearchData';
-import Input from '../../baseComponents/Input';
 import ButtonAct from '../../baseComponents/ButtonAct';
 
 
@@ -28,12 +27,13 @@ const Search = ({setPokemonsData}) => {
   };
 
   return (
-  <>
-    <form className='search_form' onSubmit={handleSubmit}>  
-      <Input className='input' placeholder='nombre de pokémon' label='Buscar pokémons' onChange={handleInputChange}/>
-      <ButtonAct onPress={handleClick} value='buscar'/>
-    </form>
-  </>
+    <>
+      <form className='search_form' onSubmit={handleSubmit}>
+        <label className='form_label'>Pokémon name</label>
+        <input className='form_input' onChange={handleInputChange} placeholder='Enter a pókemon name'></input>  
+        <ButtonAct onPress={handleClick} value='Search'/>
+      </form>
+    </>
   );
 };
 

@@ -8,7 +8,7 @@ const Hero = () => {
 
   return (
     <section className='hero_section'>
-      <h1>Busca pokémons</h1>
+      <h1 className='animated'>Search pokémons</h1>
       <Search setPokemonsData={setPokemonsData}/>
       <ListaPokemon pokemonsData={pokemonsData}/>
     </section>

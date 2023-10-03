@@ -1,41 +1,52 @@
 @use '../utils';
 
+.animated {
+  @include utils.animatedTitle;
+}
+.animated:hover {--_p: 100%}
+
 .hero_section {
-  display: flex;
-  flex-direction: column;
-  padding-left: center;
+  @include utils.flexCol;
+  gap: 4rem;
+}
+
+.search_form {
+  @include utils.flexCol;
+  place-content: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #d8d8d8;
+  border-radius: 1rem;
+  min-width: fit-content;
+  width: 80%;
+  max-width: 34rem;
+  margin: auto;
+}
+
+.form_label {
+  font-size: utils.$font-s;
+}
+
+.form_input {
+  border-radius: 0.6rem;
+  border: solid grey 0.1rem;
+  padding-left: 1rem;
+  min-width: 15rem;
+}
+
+.search_lists {
+  @include utils.flexCol;
+  align-items: center;
   gap: 4rem;
 
-  .search_form {
-    display: flex;
-    flex-wrap: wrap;
-    place-content: center;
-    gap: 2rem;
-    padding: 1rem;
-    background-color: #d8d8d8;
-    border-radius: 1rem;
-    min-width: fit-content;
-    width: 80%;
-    max-width: 34rem;
-    margin: auto;
+}
 
-    .input {
-      min-width: 15rem;
-    }
-  }
+.list_of_filter_Pokemons {
+  @include utils.flexCol;
+  gap: 2rem;
+}
 
-  .search_lists {
-    @include utils.flexCol;
-    align-items: center;
-    gap: 4rem;
-
-    .list_of_filter_Pokemons {
-      @include utils.flexCol;
-      gap: 2rem;
-    }
-    .list_of_searched_Pokemons {
-      @include utils.flexCol;
-      gap: 2rem;
-    }
-  }
+.list_of_searched_Pokemons {
+  @include utils.flexCol;
+  gap: 2rem;
 }
