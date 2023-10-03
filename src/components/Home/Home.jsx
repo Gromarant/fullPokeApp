@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import {pokemons} from '../Hero/Search/SearchData.js';
 import CardHome from '../baseComponents/CardHome/CardHome.jsx';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   let showList = [];
@@ -40,8 +41,10 @@ const Home = () => {
   
   return (
     <>
-      <h1>Pokémons</h1>
+      <h1 className='animated'>Pokémons</h1>
       <p className='desc'>App description here!</p>
+      <Link to="/search" className="btn searchBtn">Search pokemon</Link>
+      
       <section className='homeCards_section'>
         {
           showList?.map((pokemon, index) => <CardHome handleClickEvent={() => handleClick(index)} image={pokemon.image} name={pokemon.name} title={index} key={uuidv4()}/>)
