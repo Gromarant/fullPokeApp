@@ -1,7 +1,7 @@
-@import '../utils/mixins.scss';
+@use '../utils';
 
 .form {
-  @include flexCol;
+  @include utils.flexCol;
   min-width: 17rem;
   width: 60%;
   max-width: 27rem;

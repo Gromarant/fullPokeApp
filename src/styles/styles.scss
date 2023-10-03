@@ -1,6 +1,3 @@
-@import './components/New';
-@import './components/Home';
-@import './components/Hero';
-
-@import './views/App';
-
+@forward 'baseComponents';
+@forward 'components';
+@forward 'globals';

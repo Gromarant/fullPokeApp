@@ -1,8 +1,7 @@
-@import '../utils/mixins.scss';
-@import '../utils/variables.scss';
+@use '../utils';
 
 h1 {
-  @include animatedTitle;
+  @include utils.animatedTitle;
 }
 h1:hover {--_p: 100%}
 

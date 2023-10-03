@@ -1,4 +1,4 @@
-@import '../utils/mixins.scss';
+@use '../utils';
 
 .hero_section {
   display: flex;
@@ -25,16 +25,16 @@
   }
 
   .search_lists {
-    @include flexCol;
+    @include utils.flexCol;
     align-items: center;
     gap: 4rem;
 
     .list_of_filter_Pokemons {
-      @include flexCol;
+      @include utils.flexCol;
       gap: 2rem;
     }
     .list_of_searched_Pokemons {
-      @include flexCol;
+      @include utils.flexCol;
       gap: 2rem;
     }
   }
