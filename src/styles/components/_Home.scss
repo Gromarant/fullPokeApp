@@ -22,16 +22,18 @@
 }
 
 .card__list {
-  display: flex;
-  flex-wrap: wrap;
+  @include utils.flexWrap;
   justify-content: center;
   gap: 2rem;
   margin-top: 6rem;
 }
 .card__home {
-  text-align: right;
-  padding-right: 2rem;
-  min-width: 15rem;
-  width: 100%;
-  max-width: 4rem;
+  width: clamp(15rem, 100%, 3.5rem);
+  border-radius: 0.8rem;
+  border: solid utils.$color-secondary 0.01rem;
+}
+
+.card__home_name {
+  color: utils.$color-neutral;
+  font-size: utils.$font-s;
 }

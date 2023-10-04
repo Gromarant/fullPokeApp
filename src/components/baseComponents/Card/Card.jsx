@@ -13,7 +13,7 @@ const Card = ({image, name, handleClickEvent, id, weight, height, types}) => {
         <article onClick={handleClickEvent} className='card__home'>
           <NextUi_Card>
             <NextUi_Card.Header>
-              <Text>{name}</Text>
+              <Text className='card__home_name'>{name}</Text>
             </NextUi_Card.Header>
             <NextUi_Card.Body >
               <NextUi_Card.Image src={image} alt={name}/>
