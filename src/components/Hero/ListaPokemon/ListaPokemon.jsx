@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import  Card  from '../../baseComponents/Card';
 import { pokemonListContext } from '../../../context/pokemonListContext';
+import Card from '../../baseComponents/Card/Card';
 
 
 const ListaPokemon = ({pokemonsData}) => {

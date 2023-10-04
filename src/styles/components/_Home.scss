@@ -21,18 +21,17 @@
   background: utils.$color-gradient;
 }
 
-.homeCards_section {
+.card__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   margin-top: 6rem;
-
-  .cardHome {
-    text-align: right;
-    padding-right: 2rem;
-    min-width: 15rem;
-    width: 100%;
-    max-width: 4rem;
-  }
+}
+.card__home {
+  text-align: right;
+  padding-right: 2rem;
+  min-width: 15rem;
+  width: 100%;
+  max-width: 4rem;
 }

@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import {pokemons} from '../Hero/Search/SearchData.js';
-import CardHome from '../baseComponents/CardHome/CardHome.jsx';
 import { Link } from 'react-router-dom';
+import Card from '../baseComponents/Card/Card.jsx';
 
 const Home = () => {
   let showList = [];
@@ -45,9 +45,9 @@ const Home = () => {
       <p className='desc'>App description here!</p>
       <Link to="/search" className="btn searchBtn">Search pokemon</Link>
       
-      <section className='homeCards_section'>
+      <section className='card__list'>
         {
-          showList?.map((pokemon, index) => <CardHome handleClickEvent={() => handleClick(index)} image={pokemon.image} name={pokemon.name} title={index} key={uuidv4()}/>)
+          showList?.map((pokemon, index) => <Card handleClickEvent={() => handleClick(index)} image={pokemon.image} name={pokemon.name} title={index} key={uuidv4()}/>)
         }
       </section>
     </>
