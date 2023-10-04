@@ -29,8 +29,9 @@ const Search = ({setPokemonsData}) => {
   return (
     <>
       <form className='search_form' onSubmit={handleSubmit}>
-        <label className='form_label'>Pokémon name</label>
-        <input className='form_input' onChange={handleInputChange} placeholder='Enter a pókemon name'></input>  
+        <label className='form_label search_label' htmlFor='search'>Pokémon name
+          <input className='form_input' name='search' id='search' onChange={handleInputChange} placeholder='Enter a pókemon name'/> 
+        </label>
         <ButtonAct onPress={handleClick} value='Search'/>
       </form>
     </>

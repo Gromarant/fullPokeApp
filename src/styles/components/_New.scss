@@ -1,24 +1,37 @@
 @use '../utils';
 
+.create__section {
+  @include utils.flexCol;
+  gap: 4rem;
+}
+
+.form__title {
+  text-align: center;
+  margin: 1rem auto 0;
+  color: utils.$color-primary;
+}
+
 .form {
   @include utils.flexCol;
-  min-width: 17rem;
-  width: 60%;
-  max-width: 27rem;
-  margin: auto;
-  margin-top: 4rem;
+  place-content: center;
   gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #c9c9c959;
+  border-radius: 1rem;
+  min-width: fit-content;
+  width: clamp(16rem, 80%, 34rem);
+  margin: auto;
   text-align: left;
+  background-color: #c9c9c959;
 
   .submit_btn {
-    margin: auto;
-    margin-top: 2rem;
+    margin: 1rem auto;
     width: 60%;
   }
 
   p {
     margin-top: 0;
     text-align: center;
-    color: red;
+    color: utils.$color-danger;
   }
 }

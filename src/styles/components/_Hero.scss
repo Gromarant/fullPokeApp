@@ -1,5 +1,6 @@
 @use '../utils';
 
+
 .animated {
   @include utils.animatedTitle;
 }
@@ -15,23 +16,26 @@
   place-content: center;
   gap: 1rem;
   padding: 1rem 1.5rem;
-  background-color: #d8d8d8;
+  background-color: #c9c9c959;
   border-radius: 1rem;
   min-width: fit-content;
-  width: 80%;
-  max-width: 34rem;
+  width: clamp(16rem, 80%, 34rem);
   margin: auto;
 }
 
 .form_label {
+  @include utils.flexCol;
+  gap: 0.4rem;
+  font-size: utils.$font-xs;
+}
+
+.search_label {
+  gap: 1rem;
   font-size: utils.$font-s;
 }
 
 .form_input {
-  border-radius: 0.6rem;
-  border: solid grey 0.1rem;
-  padding-left: 1rem;
-  min-width: 15rem;
+  @include utils.input_form;
 }
 
 .search_lists {
