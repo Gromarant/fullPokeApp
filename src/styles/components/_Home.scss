@@ -4,23 +4,3 @@
   @include utils.animatedTitle;
 }
 .animated:hover {--_p: 100%}
-
-.btn {
-  display: flex;
-  place-content: center;
-  max-width: fit-content;
-  margin: 2rem auto 1rem;
-  padding: 0.8rem 2rem;
-  border-radius: utils.$border-radius-08;
-}
-
-.searchBtn {
-  font-weight: 600;
-  color: whitesmoke;
-  font-size: 18px;
-  background: utils.$color-gradient;
-}
-
-.card__list {
-  margin-top: 6rem;
-}

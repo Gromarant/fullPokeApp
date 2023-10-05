@@ -3,7 +3,7 @@ import { Button } from "@nextui-org/react";
 
 const ButtonAct = ({value}) => {
   return (
-    <Button className='submit_btn searchBtn' type='submit'>
+    <Button className='btn action__btn' type='submit'>
       {value}
     </Button>
   );
