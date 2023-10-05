@@ -57,12 +57,12 @@ const Card = ({image, name, handleClickEvent, id, weight, height, types}) => {
               </section>
             </Grid>
             <NextUi_Card.Divider />
+            <Grid className='card__button'>
             {types && types?.map(type => (
-                <Grid className='card__button' key={uuidv4()}>
-                  <Text className='card__pokemonType'>{type.type.name}</Text>
-                </Grid> 
+                  <Text className='card__pokemonType' key={uuidv4()}>{type.type.name}</Text>
               ))
             }
+            </Grid> 
           </NextUi_Card>
         </article>
       }
