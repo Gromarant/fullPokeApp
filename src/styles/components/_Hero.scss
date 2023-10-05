@@ -17,7 +17,7 @@
   gap: 1rem;
   padding: 1rem 1.5rem;
   background-color: #c9c9c959;
-  border-radius: 1rem;
+  border-radius: utils.$border-radius-1;
   min-width: fit-content;
   width: clamp(16rem, 80%, 34rem);
   margin: auto;
@@ -38,19 +38,24 @@
   @include utils.input_form;
 }
 
-.search_lists {
+.pokemon__list {
   @include utils.flexCol;
   align-items: center;
-  gap: 4rem;
-
 }
 
-.list_of_filter_Pokemons {
+.searched__list_section {
   @include utils.flexCol;
   gap: 2rem;
+  align-items: center;
 }
 
-.list_of_searched_Pokemons {
-  @include utils.flexCol;
+.list {
+  @include utils.flexWrap;
   gap: 2rem;
+  place-content: center;
+}
+
+.searched__title {
+  color: utils.$color-primary;
+  margin-bottom: 0;
 }

@@ -11,7 +11,7 @@
   max-width: fit-content;
   margin: 2rem auto 1rem;
   padding: 0.8rem 2rem;
-  border-radius: 0.8rem;
+  border-radius: utils.$border-radius-08;
 }
 
 .searchBtn {
@@ -22,18 +22,5 @@
 }
 
 .card__list {
-  @include utils.flexWrap;
-  justify-content: center;
-  gap: 2rem;
   margin-top: 6rem;
-}
-.card__home {
-  width: clamp(15rem, 100%, 3.5rem);
-  border-radius: 0.8rem;
-  border: solid utils.$color-secondary 0.01rem;
-}
-
-.card__home_name {
-  color: utils.$color-neutral;
-  font-size: utils.$font-s;
 }
