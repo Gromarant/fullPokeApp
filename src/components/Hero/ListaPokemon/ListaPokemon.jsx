@@ -11,25 +11,23 @@ const ListaPokemon = ({pokemonsData}) => {
   
   return (
     <>
-      <section className='search_lists'>
-        <section className='list_of_filter_Pokemons'>
+      <section className='pokemon__list'>
+        <section className='list filter__list'>
           {pokemonsData && pokemonsData.map((pokemon) => (
-              <article className='filter_card' key={uuidv4()}>
-                <Card id={pokemon.id} name={pokemon.name} image={pokemon.image}/>
-              </article>
+              <Card id={pokemon.id} name={pokemon.name} image={pokemon.image} key={uuidv4()}/>
             )
           )}
         </section>
 
-        {pokemonList.length>0 && 
-          <section className='list_of_searched_Pokemons'>
-            <h2>Buscados recientemente</h2>
-            {pokemonList.map((pokemon) => (
-                <article className='recentSearch_card' key={uuidv4()}>
+        {pokemonList.length > 0 && 
+          <section className='searched__list_section'>
+            <h2 className='searched__title'>Recently searched</h2>
+            <section className='list searched__list'>
+              {pokemonList.map((pokemon) => (
                   <Card id={pokemon.id} name={pokemon.name} image={pokemon.image} key={uuidv4()}/>
-                </article>
-              )
-            )}
+                )
+              )}
+            </section>
           </section>}
       </section>
     </>

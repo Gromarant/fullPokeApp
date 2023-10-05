@@ -44,8 +44,7 @@ const Home = () => {
       <h1 className='animated'>Pokémons</h1>
       <p className='desc'>App description here!</p>
       <Link to="/search" className="btn searchBtn">Search pokemon</Link>
-      
-      <section className='card__list'>
+      <section className='list card__list'>
         {
           showList?.map((pokemon, index) => <Card handleClickEvent={() => handleClick(index)} image={pokemon.image} name={pokemon.name} title={index} key={uuidv4()}/>)
         }
