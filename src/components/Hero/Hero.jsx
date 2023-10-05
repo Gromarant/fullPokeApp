@@ -7,7 +7,7 @@ const Hero = () => {
   const [pokemonsData, setPokemonsData] = useState([]);
 
   return (
-    <section className='hero_section'>
+    <section className='main__content'>
       <h1 className='animated'>Search pokémons</h1>
       <Search setPokemonsData={setPokemonsData}/>
       <ListaPokemon pokemonsData={pokemonsData}/>

@@ -48,12 +48,17 @@ const Details = () => {
 
 
   return ( 
-    <Card 
-      image={pokemonDetails?.sprites?.other['official-artwork']?.front_default} 
-      name={pokemonDetails.name} 
-      weight={pokemonDetails.weight} 
-      height={pokemonDetails.height} 
-      types={pokemonDetails.types}/>
+    <>
+      <section className='main__content'>
+        <h1 className='animated'>Pokémon details</h1>
+        <Card 
+          image={pokemonDetails?.sprites?.other['official-artwork']?.front_default} 
+          name={pokemonDetails.name} 
+          weight={pokemonDetails.weight} 
+          height={pokemonDetails.height} 
+          types={pokemonDetails.types}/>
+      </section>
+    </>
   );
 };
 

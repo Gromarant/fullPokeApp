@@ -1,13 +1,17 @@
-.gridNextUi {
-  width: fit-content;
+@use '../utils';
+
+main {
+  padding: 3rem 0;
+}
+
+.main__content {
+  @include utils.flexCol;
+  align-items: center;
+  gap: 2rem;
 }
 
 #root {
   text-align: center;
   margin: 0;
   padding: 0;
-}
-
-main {
-  padding: 3rem 0;
 }

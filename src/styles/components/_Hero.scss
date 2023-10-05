@@ -6,11 +6,6 @@
 }
 .animated:hover {--_p: 100%}
 
-.hero_section {
-  @include utils.flexCol;
-  gap: 4rem;
-}
-
 .search_form {
   @include utils.flexCol;
   place-content: center;

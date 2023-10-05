@@ -33,7 +33,7 @@ const Form = () => {
 
   return (
     <> 
-      <section className='create__section'>
+      <section className='main__content'>
         <h1 className='animated'>Create a pokémon</h1>
         <form className='form' onSubmit={handleSubmit((data)=>{
           data.message && <p>{data.message}</p>

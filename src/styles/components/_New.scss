@@ -1,10 +1,5 @@
 @use '../utils';
 
-.create__section {
-  @include utils.flexCol;
-  gap: 4rem;
-}
-
 .form__title {
   text-align: center;
   margin: 1rem auto 0;
@@ -23,15 +18,10 @@
   margin: auto;
   text-align: left;
   background-color: #c9c9c959;
+}
 
-  .submit_btn {
-    margin: 1rem auto;
-    width: 60%;
-  }
-
-  p {
-    margin-top: 0;
-    text-align: center;
-    color: utils.$color-danger;
-  }
+p {
+  margin-top: 0;
+  text-align: center;
+  color: utils.$color-danger;
 }
