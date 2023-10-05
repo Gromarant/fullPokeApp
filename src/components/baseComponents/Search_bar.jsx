@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import { pokemons } from './SearchData';
-import ButtonAct from '../../baseComponents/ButtonAct';
+import { pokemons } from '../../Data_pokemon';
+import ButtonAct from './ButtonAct';
 
 
-const Search = ({setPokemonsData}) => {
+const Search_bar = ({setPokemonsData}) => {
   const [searchInputValue, setSearchInputValue] = useState('');
   
   
@@ -38,8 +38,8 @@ const Search = ({setPokemonsData}) => {
   );
 };
 
-Search.propTypes = {
+Search_bar.propTypes = {
   setPokemonsData: PropTypes.func,
 }
 
-export default Search;
+export default Search_bar;

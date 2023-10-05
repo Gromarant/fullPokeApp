@@ -1,18 +1,18 @@
 import { useState } from 'react';
-import ListaPokemon from './ListaPokemon';
-import Search from './Search';
+import ListaPokemon from '../components/baseComponents/Pokemon_list';
+import Search_bar from '../components/baseComponents/Search_bar';
 
 
-const Hero = () => {
+const Search = () => {
   const [pokemonsData, setPokemonsData] = useState([]);
 
   return (
     <section className='main__content'>
       <h1 className='animated'>Search pokémons</h1>
-      <Search setPokemonsData={setPokemonsData}/>
+      <Search_bar setPokemonsData={setPokemonsData}/>
       <ListaPokemon pokemonsData={pokemonsData}/>
     </section>
   );
 };
 
-export default Hero;
+export default Search;

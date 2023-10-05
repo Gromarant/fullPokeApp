@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { pokemonListContext } from '../../../context/pokemonListContext';
-import Card from '../../baseComponents/Card/Card';
+import { pokemonListContext } from '../../context/pokemonListContext';
+import Card from './Card';
 
 
-const ListaPokemon = ({pokemonsData}) => {
+const Pokemon_list = ({pokemonsData}) => {
   const {pokemonList} = useContext(pokemonListContext);
 
   
@@ -34,8 +34,8 @@ const ListaPokemon = ({pokemonsData}) => {
   );
 };
 
-ListaPokemon.propTypes = {
+Pokemon_list.propTypes = {
   pokemonsData: PropTypes.array,
 }
 
-export default ListaPokemon;
+export default Pokemon_list;

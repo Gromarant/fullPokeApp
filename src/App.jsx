@@ -1,6 +1,6 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Main from './components/Main';
+import Header from './components/commonComponents/Header';
+import Footer from './components/commonComponents/Footer';
+import Main from './components/commonComponents/Main';
 import { pokemonListContext } from './context/pokemonListContext';
 import { NextUIProvider } from '@nextui-org/react';
 import { BrowserRouter } from 'react-router-dom';

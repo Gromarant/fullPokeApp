@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { Card as NextUi_Card, Grid, Text, Spacer, Button } from "@nextui-org/react";
+import { Card as NextUi_Card, Grid, Text} from "@nextui-org/react";
 import { v4 as uuidv4 } from 'uuid';
 
 

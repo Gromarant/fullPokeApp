@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
-import {pokemons} from '../Hero/Search/SearchData.js';
+import {pokemons} from '../Data_pokemon';
 import { Link } from 'react-router-dom';
-import Card from '../baseComponents/Card/Card.jsx';
+import Card from '../components/baseComponents/Card.jsx';
 
 const Home = () => {
   let showList = [];

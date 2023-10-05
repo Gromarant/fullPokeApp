@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useState, useContext } from 'react';
-import { pokemonListContext } from '../../context/pokemonListContext';
-import ButtonAct from '../baseComponents/ButtonAct';
+import { pokemonListContext } from '../context/pokemonListContext';
+import ButtonAct from '../components/baseComponents/ButtonAct';
 
 
 const defaultValues = {
@@ -12,7 +12,7 @@ const defaultValues = {
   typeTwo: '',
 };
 
-const Form = () => {
+const Create = () => {
   const [inputValue, setInputValue] = useState({...defaultValues});
   const {addToPokemonList} = useContext(pokemonListContext);
   const {
@@ -123,4 +123,4 @@ const Form = () => {
 };
 
 
-export default Form;
+export default Create;

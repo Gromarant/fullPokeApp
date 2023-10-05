@@ -1,9 +1,9 @@
 import {  useContext,useEffect, useState } from 'react';
 import { useDebounce  } from 'use-debounce';
-import { pokemonListContext } from '../../context/pokemonListContext';
+import { pokemonListContext } from '../context/pokemonListContext';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import Card from '../baseComponents/Card/Card';
+import Card from '../components/baseComponents/Card';
 
 
 const Details = () => {
