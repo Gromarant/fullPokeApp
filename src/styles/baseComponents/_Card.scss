@@ -1,0 +1,61 @@
+@use '../utils';
+
+.card {
+  border-radius: utils.$border-radius-08;
+  border: solid utils.$color-secondary 0.01rem;
+  width: clamp(fit-content, 100%, 3.5rem);
+}
+
+.card__detailed {
+  margin: auto;
+  width: clamp(19rem, 40%, 20rem);
+}
+
+.card__name {
+  color: utils.$color-neutral;
+  overflow-wrap: break-word;
+}
+
+.card__home_name {
+  font-size: utils.$font-s;
+}
+
+.card__searched_name {
+  font-size: utils.$font-l;
+}
+
+.card__detailed_name {
+  font-size: utils.$font-xl;
+}
+
+.card__title {
+  color: utils.$color-primary;
+  font-weight: 600;
+}
+
+.card__data_section {
+  display: flex;
+  place-content: center;
+  gap: 1rem;
+  padding: 0 0.4rem 0.4rem;
+}
+
+.card__data {
+  display: flex;
+  place-content: center;
+  gap: 0.3rem;
+}
+
+.card__pokemonType {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background-color: utils.$color-light-violet;
+  border-radius: utils.$border-radius-06;
+}
+
+.card__button {
+  display: flex;
+  padding: 0.4rem;
+  justify-content: left;
+}

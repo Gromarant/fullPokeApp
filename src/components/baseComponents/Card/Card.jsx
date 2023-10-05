@@ -10,10 +10,10 @@ const Card = ({image, name, handleClickEvent, id, weight, height, types}) => {
   return (
     <>
       { image && name && handleClickEvent &&
-        <article onClick={handleClickEvent} className='card__home'>
+        <article onClick={handleClickEvent} className='card card__home'>
           <NextUi_Card>
             <NextUi_Card.Header>
-              <Text className='card__home_name'>{name}</Text>
+              <Text className='card__name card__home_name'>{name}</Text>
             </NextUi_Card.Header>
             <NextUi_Card.Body >
               <NextUi_Card.Image src={image} alt={name}/>
@@ -23,45 +23,47 @@ const Card = ({image, name, handleClickEvent, id, weight, height, types}) => {
       }
 
       { image && name && id &&
-        <NextUi_Card>
-          <Link to={`/pokemon/${id}`}>
-            <NextUi_Card.Body >
-              <NextUi_Card.Image src={image} alt={name}/>
-            </NextUi_Card.Body>
-            <NextUi_Card.Footer >
-              <Text>{name}</Text>
-            </NextUi_Card.Footer>
-          </Link>
-        </NextUi_Card>
+        <article className='card card__searched'>
+          <NextUi_Card>
+            <Link to={`/pokemon/${id}`}>
+              <NextUi_Card.Body >
+                <NextUi_Card.Image src={image} alt={name}/>
+              </NextUi_Card.Body>
+              <NextUi_Card.Footer >
+                <Text className='card__name card__searched_name'>{name}</Text>
+              </NextUi_Card.Footer>
+            </Link>
+          </NextUi_Card>
+        </article>
       }
 
       { weight && height && types  && image && name &&
-        <article>
+        <article className='card card__detailed'>
           <NextUi_Card>
             <NextUi_Card.Header>
-              <Text>{name}</Text>
+              <Text className='card__name card__detailed_name'>{name}</Text>
             </NextUi_Card.Header>
             <NextUi_Card.Body >
               <NextUi_Card.Image src={image} alt={name}/>
             </NextUi_Card.Body>
-            <Grid>
-              <Text>Weight:</Text>
-              <Spacer/>
-              <Text>{`${height / 10} mts`}</Text>
-              <Spacer x={2} />
-              <Text>Height:</Text>
-              <Spacer/>
-              <Text>{`${height / 10} mts`}</Text>
+            <Grid className='card__data_section'>
+              <section className='card__data'>
+                <Text className='card__title'>Weight:</Text>
+                <Text>{`${height / 10} mts`}</Text>
+              </section>
+              <section className='card__data'>
+                <Text className='card__title'>Height:</Text>
+                <Text>{`${height / 10} mts`}</Text>
+              </section>
             </Grid>
-            <Spacer/>
             <NextUi_Card.Divider />
-          {types && types?.map(type => (
-              <Grid key={uuidv4()}>
-                <Button flat color="secondary" auto>{type.type.name}</Button>
-              </Grid> 
-            ))
-          }
-        </NextUi_Card>
+            {types && types?.map(type => (
+                <Grid className='card__button' key={uuidv4()}>
+                  <Text className='card__pokemonType'>{type.type.name}</Text>
+                </Grid> 
+              ))
+            }
+          </NextUi_Card>
         </article>
       }
     </>
