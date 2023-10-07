@@ -35,7 +35,7 @@ const Create = () => {
     <> 
       <section className='main__content'>
         <h1 className='animated'>Create a pokémon</h1>
-        <form className='form' onSubmit={handleSubmit((data)=>{
+        <form className='form' onSubmit={handleSubmit((data) => {
           data.message && <p>{data.message}</p>
           addToPokemonList({
             ...data
@@ -53,7 +53,7 @@ const Create = () => {
               value: 20, 
               message: "must have a maximum of 20 characters"
             },  
-          })} onChange={handleChange} label='id' placeholder='pokemon id' value={inputValue.id}/></label> 
+          })} onChange={handleChange} placeholder='pokemon id' value={inputValue.id}/></label> 
           {errors.id?.type === "required" && (
           <p role="alert">{errors.id?.message}</p>)}
 
@@ -69,19 +69,20 @@ const Create = () => {
               message: "must have a maximum of 20 characters"
             },  
           })}
-          onChange={handleChange} label='name' placeholder='pokemon name' value={inputValue.name}/></label>
+          onChange={handleChange} placeholder='pokemon name' value={inputValue.name}/></label>
           {errors.name?.type === "required" && (
           <p role="alert">{errors.id?.message}</p>)}
 
-          <label htmlFor="imageUrl" className='form_label'>Image url
-          <input type='string' name='imageUrl' id='imageUrl' autoComplete='photo' className='form_input' {...register('imageUrl', {
-            required: '*** required field ***',
-            minLength: {
-              value: 3, 
-              message: "must have at least 3 characters"
-            }
-          })} onChange={handleChange} label='image url' placeholder='pokemon image' value={inputValue.image}/></label>
-          {errors.id?.type === "required" && (
+          <label htmlFor="image" className='form_label'>Url image            
+          <input type='url' name='image' id='image' className='form_input' {...register('image', {
+             required: '*** required field ***',
+            maxLength: {
+              value: 200, 
+              message: "must have a maximum of 50 characters"
+            }  
+          })}
+          onChange={handleChange} placeholder='pokemon image' value={inputValue.image}/></label>
+          {errors.name?.type === "required" && (
           <p role="alert">{errors.id?.message}</p>)}
 
           <label htmlFor="typeOne" className='form_label'>TypeOne
@@ -96,7 +97,7 @@ const Create = () => {
               message: "must have a maximum of 20 characters"
             }, 
           })}
-          onChange={handleChange} label='typeOne' placeholder='pokemon typeOne' value={inputValue.typeOne}/></label>
+          onChange={handleChange} placeholder='pokemon typeOne' value={inputValue.typeOne}/></label>
           {errors.typeOne?.type === "required" && (
           <p role="alert">{errors.id?.message}</p>)}
 
@@ -111,7 +112,7 @@ const Create = () => {
               message: "must have a maximum of 20 characters"
             }, 
           })}
-          onChange={handleChange} label='typeTwo' placeholder='pokemon typeTwo' value={inputValue.typeTwo}/></label>
+          onChange={handleChange} placeholder='pokemon typeTwo' value={inputValue.typeTwo}/></label>
           {errors.typeTwo?.type === "required" && (
           <p role="alert">{errors.id?.message}</p>)}
 
