@@ -8,16 +8,14 @@ import Card from '../components/baseComponents/Card';
 
 const Details = () => {
   const [pokemonDetails, setPokemonDetails] = useState({});
-  const {addToPokemonList} = useContext(pokemonListContext);
+  const {addToListOfPokemons} = useContext(pokemonListContext);
   const { id } = useParams();
   const [value] = useDebounce(id, 1500);
 
 
-
-
-  const pokemonListHandler = (data) => {
+  const ListOfPokemonsHandle = (data) => {
     if (data) {
-      addToPokemonList(data);
+      addToListOfPokemons(data);
     }
   }
 
@@ -36,7 +34,7 @@ const Details = () => {
                     name: response.data.name,
                     image: response.data?.sprites?.other['official-artwork']?.front_default,
                   }
-                  pokemonListHandler(formatedData);
+                  ListOfPokemonsHandle(formatedData);
                 }
               })
       }

@@ -14,7 +14,7 @@ const defaultValues = {
 
 const Create = () => {
   const [inputValue, setInputValue] = useState({...defaultValues});
-  const {addToPokemonList} = useContext(pokemonListContext);
+  const {addToListOfPokemons} = useContext(pokemonListContext);
   const {
     register,
      handleSubmit,
@@ -37,7 +37,7 @@ const Create = () => {
         <h1 className='animated'>Create a pokémon</h1>
         <form className='form' onSubmit={handleSubmit((data)=>{
           data.message && <p>{data.message}</p>
-          addToPokemonList({
+          addToListOfPokemons({
             ...data
           })
         })}>
