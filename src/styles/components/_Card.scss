@@ -1,9 +1,21 @@
 @use '../utils';
 
 .card {
+  display: flex;
   border-radius: utils.$border-radius-08;
   border: solid utils.$color-secondary 0.01rem;
-  width: clamp(15rem, 100%, 3.5rem);
+}
+
+.card__home {
+  height: 260px;
+  position: relative;
+  bottom: 0;
+  width: clamp(9rem, 100%, 12rem);
+}
+
+.card__searched {
+  height: 300px;
+  width: clamp(12rem, 100%, 13rem);
 }
 
 .card__detailed {
@@ -13,21 +25,28 @@
 
 .card__name {
   color: utils.$color-neutral;
-  overflow-wrap: break-word;
+  overflow: hidden;
 }
 
 .card__home_name {
   font-size: utils.$font-s;
+  padding-bottom: auto;
 }
 
 .card__searched_name {
   font-size: utils.$font-l;
+  padding-top: auto;
 }
 
 .card__detailed_name {
   font-size: utils.$font-xl;
 }
 
+.card__home_image {
+  max-width: 100%;
+  max-height: 100%;
+}
+  
 .card__title {
   color: utils.$color-primary;
   font-weight: 600;

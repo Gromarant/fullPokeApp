@@ -15,8 +15,8 @@ const Card = ({image, name, handleClickEvent, id, weight, height, types}) => {
             <NextUi_Card.Header>
               <Text className='card__name card__home_name'>{name}</Text>
             </NextUi_Card.Header>
-            <NextUi_Card.Body >
-              <NextUi_Card.Image src={image} alt={name}/>
+            <NextUi_Card.Body>
+              <NextUi_Card.Image className='card__image' src={image} alt={name}/>
             </NextUi_Card.Body>
           </NextUi_Card>
         </article>
@@ -26,8 +26,8 @@ const Card = ({image, name, handleClickEvent, id, weight, height, types}) => {
         <article className='card card__searched'>
           <NextUi_Card>
             <Link to={`/pokemon/${id}`}>
-              <NextUi_Card.Body >
-                <NextUi_Card.Image src={image} alt={name}/>
+              <NextUi_Card.Body>
+                <NextUi_Card.Image className='card__image' src={image} alt={name}/>
               </NextUi_Card.Body>
               <NextUi_Card.Footer >
                 <Text className='card__name card__searched_name'>{name}</Text>
@@ -44,7 +44,7 @@ const Card = ({image, name, handleClickEvent, id, weight, height, types}) => {
               <Text className='card__name card__detailed_name'>{name}</Text>
             </NextUi_Card.Header>
             <NextUi_Card.Body >
-              <NextUi_Card.Image src={image} alt={name}/>
+              <NextUi_Card.Image className='card__image' src={image} alt={name}/>
             </NextUi_Card.Body>
             <Grid className='card__data_section'>
               <section className='card__data'>
