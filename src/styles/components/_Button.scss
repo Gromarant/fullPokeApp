@@ -15,3 +15,7 @@
   background:  utils.$color-gradient;
   align-self: center;
 }
+
+.goUp__btn {
+  width: clamp(64px, 20%, 80px);
+}
