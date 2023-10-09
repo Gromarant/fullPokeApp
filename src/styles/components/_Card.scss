@@ -1,9 +1,13 @@
 @use '../utils';
 
+.nextui-c-BDLTQ {
+  background: #fffffff2;
+}
+
 .card {
   display: flex;
-  border-radius: utils.$border-radius-08;
   border: solid utils.$color-secondary 0.01rem;
+  border-radius: utils.$border-radius-15-px;
 }
 
 .card__home {
@@ -78,4 +82,15 @@
   padding: 0.5rem 1rem;
   background-color: utils.$color-light-violet;
   border-radius: utils.$border-radius-06;
+}
+
+/*state styles*/
+.card__home:hover {
+  scale: 1.1;
+  border: solid #FFCC01 4px;
+  border-radius: utils.$border-radius-19-px ;
+}
+
+.card__home > .nextui-c-BDLTQ:focus {
+  background: #fffbead4;
 }
