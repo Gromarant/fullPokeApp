@@ -11,13 +11,14 @@
   place-content: center;
   gap: 1rem;
   padding: 1rem 1.5rem;
-  background-color: #c9c9c959;
+  font-weight: 600;
+  color: #686868;
+  background-color: #c9c9c9cf;
   border-radius: utils.$border-radius-1;
   min-width: fit-content;
   width: clamp(16rem, 80%, 34rem);
   margin: auto;
   text-align: left;
-  background-color: #c9c9c959;
 }
 
 p {
