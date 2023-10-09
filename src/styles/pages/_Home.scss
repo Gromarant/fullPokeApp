@@ -3,4 +3,13 @@
 .animated {
   @include utils.animatedTitle;
 }
+
+.list {
+  margin: 3rem 5rem 0;
+}
+
+.desc {
+  color: white;
+}
+
 .animated:hover {--_p: 100%}
