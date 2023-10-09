@@ -43,7 +43,7 @@ const Create = () => {
         })}>
           <h3 className='form__title'>New Pokémon data</h3>
           <label htmlFor="id" className='form_label'>Id
-          <input type='number' name='id' id='id' autoComplete='off' className='form_input' {...register('id', { 
+          <input type='string' name='id' id='id' autoComplete='off' className='form_input' {...register('id', { 
             required: '*** required field ***',
             minLength: {
               value: 1, 
