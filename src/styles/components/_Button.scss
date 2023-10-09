@@ -19,3 +19,13 @@
 .goUp__btn {
   width: clamp(64px, 20%, 80px);
 }
+
+.action__btn:hover {
+  scale: 1.1;
+  box-shadow: 6px 5px 3px 0px #E5FFCB;
+}
+
+.action__btn:active {
+  background: utils.$color-gradient-active;
+  border: 4px solid rgba(0, 0, 0, 0.25);
+}
