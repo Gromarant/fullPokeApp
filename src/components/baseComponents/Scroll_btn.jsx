@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 function Scroll_btn({action}) {
 
   const scroll = () =>{ 
+
     if (action === 'scroll-up') {
       window.scrollTo({ 
         top: 77,  
@@ -19,13 +20,12 @@ function Scroll_btn({action}) {
 
 
   return (
-    <img className='goUp__btn' role='button' src='../../../public/images__GoUp_btn/Pokeball_btn.png' action={action} onClick={scroll}/>
+    <img className='scroll__btn' role='button' src='../../../public/images__Scroll_btn/scroll-up-default.png' action={action} onClick={scroll}/>
   )
 }
 
 
 Scroll_btn.propTypes = {
-  // alt: PropTypes.string,
   action: PropTypes.string,
 }
 

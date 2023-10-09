@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <Scroll_btn alt='button to scroll up or down' action={'scroll-up'}/>
+        <Scroll_btn alt='button to scroll up' action={'scroll-up'}/>
       </footer>
     </>
   );

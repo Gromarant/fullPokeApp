@@ -16,8 +16,12 @@
   align-self: center;
 }
 
-.goUp__btn {
-  width: clamp(64px, 20%, 80px);
+.scroll__btn {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: clamp(64px, 10%, 80px);
+  cursor: pointer;
 }
 
 .action__btn:hover {
