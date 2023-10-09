@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from '../../views/Home';
-import Create from '../../views/Create';
-import Detail from '../../views/Detail';
-import Search from '../../views/Search';
+import Home from '../../pages/Home';
+import Create from '../../pages/Create';
+import Detail from '../../pages/Detail';
+import Search from '../../pages/Search';
 
 
 const Main = () => {
