@@ -5,12 +5,12 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 
-const Card = ({image, name, handleClickEvent, id, weight, height, types}) => {
+const Card = ({image, name, id, weight, height, types}) => {
 
   return (
     <>
-      { image && name && handleClickEvent &&
-        <article onClick={handleClickEvent} className='card card__home'>
+      { image && name &&
+        <article className='card card__home'>
           <NextUi_Card className='card__home_body'>
             <NextUi_Card.Header>
               <Text className='card__name card__home_name'>{name}</Text>

@@ -25,20 +25,6 @@ const Home = () => {
   };
   pokemonsToShow();
 
-  
-  const handleClick  = (i) => {
-    console.log(`clicked pokemon at index ${i}`);
-    while (newPokemon === null || newPokemon === undefined) {
-      newPokemon = randomPokemon();
-
-      if (newPokemon) {
-        console.log(newPokemon);
-        showList.map((pokemon, index) => index === i ? pokemon[i] = newPokemon : pokemon);
-      }
-    }
-    newPokemon = null;
-  };
-  
   return (
     <>
       <section className='main__content'>
@@ -47,7 +33,7 @@ const Home = () => {
         <Link to="/search" className="btn action__btn">Search pokemon</Link>
         <section className='list card__list'>
           {
-            showList?.map((pokemon, index) => <Card handleClickEvent={() => handleClick(index)} image={pokemon.image} name={pokemon.name} title={index} key={uuidv4()}/>)
+            showList?.map((pokemon, index) => <Card image={pokemon.image} name={pokemon.name} title={index} key={uuidv4()}/>)
           }
         </section>
       </section>
