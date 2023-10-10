@@ -7,7 +7,6 @@ main {
 
 .main__content {
   @include utils.flexCol;
-  align-items: center;
   gap: 2rem;
 }
 

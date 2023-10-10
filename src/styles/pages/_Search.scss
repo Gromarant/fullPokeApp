@@ -45,12 +45,6 @@
   align-items: center;
 }
 
-.list {
-  @include utils.flexWrap;
-  gap: 2rem;
-  place-content: center;
-}
-
 .searched__title {
   color: utils.$color-secondary;
   margin-bottom: 0;
