@@ -17,11 +17,14 @@
 }
 
 .scroll__btn {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  display: flex;
+  border-radius: 50%;
   width: clamp(64px, 10%, 80px);
+  padding: 2px;
   cursor: pointer;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
 }
 
 .action__btn:hover {
@@ -32,4 +35,10 @@
 .action__btn:active {
   background: utils.$color-gradient-active;
   border: 4px solid rgba(0, 0, 0, 0.25);
+}
+
+.scroll__btn:hover {
+  scale: 1.1;
+  padding: 2px;
+  background: utils.$color-secondary;
 }

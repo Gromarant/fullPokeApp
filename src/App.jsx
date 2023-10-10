@@ -1,7 +1,5 @@
 import { useState } from 'react';
-// import { object } from 'prop-types';
 import Header from './components/commonComponents/Header';
-import Footer from './components/commonComponents/Footer';
 import Main from './components/commonComponents/Main';
 import { pokemonListContext } from './context/pokemonListContext';
 import { NextUIProvider } from '@nextui-org/react';
@@ -28,7 +26,6 @@ const App = () => {
               <Header />
               <Main />
             </BrowserRouter>
-            <Footer />
         </pokemonListContext.Provider> 
       </NextUIProvider>
     </>

@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import {pokemons} from '../Data_pokemon';
 import { Link } from 'react-router-dom';
 import Card from '../components/baseComponents/Card.jsx';
+import Scroll_btn from '../components/baseComponents/Scroll_btn';
 
 const Home = () => {
   let showList = [];
@@ -37,6 +38,7 @@ const Home = () => {
           }
         </section>
       </section>
+      <Scroll_btn alt='button to scroll up' visibility={true} action={'scroll-up'}/>
     </>
   );
 };

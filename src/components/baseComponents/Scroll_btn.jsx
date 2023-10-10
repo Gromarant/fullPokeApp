@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Scroll_btn({action}) {
+function Scroll_btn({action, visibility=false}) {
 
   const scroll = () =>{ 
 
@@ -20,13 +20,16 @@ function Scroll_btn({action}) {
 
 
   return (
-    <img className='scroll__btn' role='button' src='../../../public/images__Scroll_btn/scroll-up-default.png' action={action} onClick={scroll}/>
+    <div role='button' className='scroll__btn' action={action} onClick={scroll}>
+      <img className={visibility === false ? 'hidden' : ''} src='../../../images__Scroll_btn/scroll-up-default.png' alt='Button to go-up'/>
+    </div>
   )
 }
 
 
 Scroll_btn.propTypes = {
   action: PropTypes.string,
+  visibility: PropTypes.bool,
 }
 
 export default Scroll_btn
