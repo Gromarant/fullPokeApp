@@ -33,7 +33,7 @@ const Home = () => {
         <Link to="/search" className="btn action__btn">Search pokemon</Link>
         <section className='list card__list'>
           {
-            showList?.map((pokemon, index) => <Card image={pokemon.image} name={pokemon.name} title={index} key={uuidv4()}/>)
+            showList?.map((pokemon, index) => <Card image={pokemon.image} name={pokemon.name} handleClickEvent={() => console.log(`You clicked ${pokemon.name} pokemon that is in the index ${index}`)} key={uuidv4()}/>)
           }
         </section>
       </section>
