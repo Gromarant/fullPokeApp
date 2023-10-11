@@ -4,6 +4,10 @@
   background: #fffffff2;
 }
 
+.nextui-c-eFfoBo {
+  @include utils.flexCol;
+}
+
 .card {
   display: flex;
   border: solid utils.$color-secondary 0.01rem;
@@ -24,7 +28,7 @@
 
 .card__detailed {
   margin: auto;
-  width: clamp(19rem, 40%, 20rem);
+  width: clamp(14rem, 30%, 17rem);
 }
 
 .card__name {
@@ -33,6 +37,7 @@
 }
 
 .card__home_name {
+  color: utils.$color-font-dark;
   font-size: utils.$font-s;
   padding-bottom: auto;
 }
@@ -85,8 +90,9 @@
 }
 
 /*state styles*/
-.card__home:hover {
-  scale: 1.1;
+.card__home:hover,
+.card__searched:hover {
+  scale: 1;
   border: solid #FFCC01 4px;
   border-radius: utils.$border-radius-19-px ;
 }

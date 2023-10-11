@@ -41,17 +41,16 @@
 
 .searched__list_section {
   @include utils.flexCol;
-  gap: 2rem;
-  align-items: center;
+  width: 100%;
 }
 
-.list {
-  @include utils.flexWrap;
-  gap: 2rem;
-  place-content: center;
+.searched__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3rem;
 }
 
 .searched__title {
   color: utils.$color-secondary;
-  margin-bottom: 0;
+  margin: 2rem 0 0;
 }

@@ -11,14 +11,16 @@ const Pokemon_list = ({pokemonsData}) => {
   return (
     <>
       <section className='pokemon__list'>
-        <section className='list filter__list'>
-          {pokemonsData && pokemonsData.map((pokemon) => (
-              <Card id={pokemon.id} name={pokemon.name} image={pokemon.image} key={uuidv4()}/>
-            )
-          )}
-        </section>
+        { pokemonsData.length > 0 && 
+          <section className='list filter__list'>
+            {pokemonsData && pokemonsData.map((pokemon) => (
+                <Card id={pokemon.id} name={pokemon.name} image={pokemon.image} key={uuidv4()}/>
+              )
+            )}
+          </section>
+        }
 
-        {listOfPokemons.length > 0 && 
+        {listOfPokemons.length > 0 && pokemonsData.length === 0 &&
           <section className='searched__list_section'>
             <h2 className='searched__title'>Recently searched</h2>
             <section className='list searched__list'>

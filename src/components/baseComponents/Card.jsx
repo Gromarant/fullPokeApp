@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 
-const Card = ({image, name, handleClickEvent, id, weight, height, types}) => {
+const Card = ({image, name, id, handleClickEvent, weight, height, types}) => {
 
   return (
     <>
