@@ -1,11 +1,11 @@
 import { useForm } from "react-hook-form";
 import { useState, useContext } from 'react';
-import { pokemonListContext } from '../context/pokemonListContext';
+import { pokemonCreatedListContext } from '../context/pokemonCreatedListContext';
 import ButtonAct from '../components/baseComponents/ButtonAct';
 
 
 const defaultValues = {
-  id: '',
+  id: 0,
   name: '',
   image: '',
   typeOne: '',
@@ -14,14 +14,14 @@ const defaultValues = {
 
 const Create = () => {
   const [inputValue, setInputValue] = useState({...defaultValues});
-  const {addToListOfPokemons} = useContext(pokemonListContext);
+  const {addToListOfCreatedPokemons} = useContext(pokemonCreatedListContext);
   const {
     register,
      handleSubmit,
       formState: { errors },
   } =useForm({ defaultValues });
 
-  
+
   const handleChange = (e) => {
 
     setInputValue({
@@ -30,56 +30,54 @@ const Create = () => {
     })
   }
 
-
   return (
-    <> 
+    <>
       <section className='main__content'>
         <h1 className='animated'>Create a pokémon</h1>
         <form className='form' onSubmit={handleSubmit((data) => {
           data.message && <p>{data.message}</p>
-          addToListOfPokemons({
-            ...data
-          })
+          addToListOfCreatedPokemons({...data})
+          setInputValue(defaultValues)
         })}>
           <h3 className='form__title'>New Pokémon data</h3>
           <label htmlFor="id" className='form_label'>Id
-          <input type='string' name='id' id='id' autoComplete='off' className='form_input' {...register('id', { 
+          <input type='number' name='id' id='id' autoComplete='off' className='form_input' {...register('id', {
             required: '*** required field ***',
             minLength: {
-              value: 1, 
+              value: 1,
               message: "must have at least 1 character"
-            }, 
+            },
             maxLength:{
-              value: 20, 
+              value: 20,
               message: "must have a maximum of 20 characters"
-            },  
-          })} onChange={handleChange} placeholder='pokemon id' value={inputValue.id}/></label> 
+            },
+          })} onChange={handleChange} placeholder='pokemon id' value={inputValue.id}/></label>
           {errors.id?.type === "required" && (
           <p role="alert">{errors.id?.message}</p>)}
 
-          <label htmlFor="name" className='form_label'>Name            
+          <label htmlFor="name" className='form_label'>Name
           <input type='string' name='name' id='name' autoComplete='off' className='form_input' {...register('name', {
             required: '*** required field ***',
             minLength: {
-              value: 3, 
+              value: 3,
               message: "must have at least 3 characters"
-            }, 
+            },
             maxLength:{
-              value: 20, 
+              value: 20,
               message: "must have a maximum of 20 characters"
-            },  
+            },
           })}
           onChange={handleChange} placeholder='pokemon name' value={inputValue.name}/></label>
           {errors.name?.type === "required" && (
           <p role="alert">{errors.id?.message}</p>)}
 
-          <label htmlFor="image" className='form_label'>Url image            
+          <label htmlFor="image" className='form_label'>Url image
           <input type='url' name='image' id='image' className='form_input' {...register('image', {
              required: '*** required field ***',
             maxLength: {
-              value: 200, 
+              value: 200,
               message: "must have a maximum of 50 characters"
-            }  
+            }
           })}
           onChange={handleChange} placeholder='pokemon image' value={inputValue.image}/></label>
           {errors.name?.type === "required" && (
@@ -89,13 +87,13 @@ const Create = () => {
           <input type='select' name='typeOne' id='typeOne' autoComplete='off' className='form_input' {...register('typeOne', {
             required: '*** required field ***',
             minLength: {
-              value: 3, 
+              value: 3,
               message: "must have at least 3 characters"
-            }, 
+            },
             maxLength:{
-              value: 20, 
+              value: 20,
               message: "must have a maximum of 20 characters"
-            }, 
+            },
           })}
           onChange={handleChange} placeholder='pokemon typeOne' value={inputValue.typeOne}/></label>
           {errors.typeOne?.type === "required" && (
@@ -104,13 +102,13 @@ const Create = () => {
           <label htmlFor="typeTwo" className='form_label'>TypeTwo
           <input type='select' name='typeTwo' id='typeTwo' autoComplete='off' className='form_input' {...register('typeTwo', {
             minLength: {
-              value: 5, 
+              value: 5,
               message: "must have at least 5 characters"
-            }, 
+            },
             maxLength:{
-              value: 20, 
+              value: 20,
               message: "must have a maximum of 20 characters"
-            }, 
+            },
           })}
           onChange={handleChange} placeholder='pokemon typeTwo' value={inputValue.typeTwo}/></label>
           {errors.typeTwo?.type === "required" && (
