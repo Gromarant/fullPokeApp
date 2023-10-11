@@ -47,9 +47,10 @@
 .searched__list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 3rem;
 }
 
 .searched__title {
   color: utils.$color-secondary;
-  margin-bottom: 0;
+  margin: 2rem 0 0;
 }
