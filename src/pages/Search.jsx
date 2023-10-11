@@ -5,10 +5,10 @@ import Scroll_btn from '../components/baseComponents/Scroll_btn';
 
 
 const Search = () => {
-  const [pokemonsData, setPokemonsData] = useState([]);
   const [isVisibile, setIsVisibile] = useState(false);
+  const [pokemonsData, setPokemonsData] = useState([]);
 
-  const handleVisibility = () => window.scrollY >= 50 ? setIsVisibile(true) : setIsVisibile(false);
+  const handleVisibility = () => window.scrollY >= 150 ? setIsVisibile(true) : setIsVisibile(false);
   window.addEventListener('scroll', handleVisibility);
 
 
