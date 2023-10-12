@@ -8,6 +8,7 @@ main {
 .main__content {
   @include utils.flexCol;
   gap: 2rem;
+  min-height: 100svh;
 }
 
 #root {
