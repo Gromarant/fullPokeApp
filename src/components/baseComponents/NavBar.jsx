@@ -20,16 +20,22 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar isBordered variant="sticky">
+      <Navbar>
          <Navbar.Brand>
-          <Navbar.Toggle aria-label="toggle navigation" />
+          <Navbar.Toggle/>
         </Navbar.Brand>
-        <Navbar.Content enableCursorHighlight hideIn="xs" variant="underline">
-          <Link to="/">Home</Link>
-          <Link to="/search">Search</Link>
-          <Link  to="/create">Create Pokémon</Link>
+        <Navbar.Content>
+          <li className='navBar__item'>
+            <Link className='navBar__link' to="/">Home</Link>
+          </li>
+          <li className='navBar__item'>
+            <Link className='navBar__link' to="/search">Search</Link>
+          </li>
+          <li className='navBar__item'>
+            <Link className='navBar__link'  to="/create">Create Pokémon</Link>
+          </li>
         </Navbar.Content>
-        <Navbar.Collapse>
+        <Navbar.Collapse className='collapse__menu'>
         {collapseItems.map((item) => (
           <Navbar.CollapseItem key={item.name}>
             <Link to={item.link}>{item.name}</Link>

@@ -1,0 +1,72 @@
+@use '../utils';
+
+.nextui-navbar-container { 
+  display: flex;
+  justify-content: flex-end;
+  background: utils.$color-primary;
+}
+
+.nextui-navbar-content {
+  display: none;
+}
+
+.nextui-c-gpbAMl .line { /*Hamburger menu lines*/
+  height: 2px;
+  background-color: white;
+}
+
+.nextui-c-hhqfap-gqZKcP-disableBlur-false .nextui-c-egxOLa {
+  background: utils.$color-primary;
+}
+
+.nextui-navbar-collapse-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+a {
+  color: utils.$color-primary;
+}
+
+.collapse__menu {
+  background: #1f1f1f;
+}
+
+.navBar__item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navBar__link {
+  color: white;
+}
+
+.nextui-c-kOXsPe-iPJLV-css {
+  border-bottom: solid 4px utils.$color-secondary;
+}
+
+.nextui-c-ektsXM {
+  justify-content: flex-end;
+}
+
+.nextui-c-iTPCAT-dusCa-isOpen-true {
+  height: fit-content;
+  padding: 0;
+}
+
+.navBar__item:active {
+  border-bottom: solid 4px utils.$color-secondary;
+}
+
+@media (min-width: 768px) {
+  .nextui-navbar-toggle,
+  .nextui-navbar-collapse-wrapper {
+    display: none;
+  }
+  .nextui-navbar-content {
+    display: flex;
+  }
+}
