@@ -89,29 +89,27 @@ const Card = ({image, name, id, handleClickEvent, showDetails, weight, height, t
         </article>
       }
 
-      { owner_id && typeOne || typeTwo && name && image && 
+      { owner_id && typeOne && name && image && 
         <article className='card card__detailed'>
-          <Link to={`/created/${owner_id}`}>
-            <NextUi_Card>
-              <NextUi_Card.Header>
-                <Text className='card__name card__detailed_name'>{name}</Text>
-              <Grid className='card__data_section'>
-                <section className='card__data'>
-                  <Text className='card__title'>id number:</Text>
-                  <Text>{owner_id}</Text>
-                </section>
-              </Grid>
-              </NextUi_Card.Header>
-              <NextUi_Card.Body >
-                <NextUi_Card.Image className='card__image' src={image} alt={name}/>
-              </NextUi_Card.Body>
-              <NextUi_Card.Divider />
-              <Grid className='card__button'>
-                <Text className='card__pokemonType' key={uuidv4()}>{typeOne}</Text>
-                { typeTwo && <Text className='card__pokemonType' key={uuidv4()}>{typeTwo}</Text>}
-              </Grid> 
-            </NextUi_Card>
-          </Link>
+          <NextUi_Card>
+            <NextUi_Card.Header>
+              <Text className='card__name card__detailed_name'>{name}</Text>
+            <Grid className='card__data_section'>
+              <section className='card__data'>
+                <Text className='card__title'>id number:</Text>
+                <Text>{owner_id}</Text>
+              </section>
+            </Grid>
+            </NextUi_Card.Header>
+            <NextUi_Card.Body >
+              <NextUi_Card.Image className='card__image' src={image} alt={name}/>
+            </NextUi_Card.Body>
+            <NextUi_Card.Divider />
+            <Grid className='card__button'>
+              <Text className='card__pokemonType' key={uuidv4()}>{typeOne}</Text>
+              { typeTwo && <Text className='card__pokemonType' key={uuidv4()}>{typeTwo}</Text>}
+            </Grid> 
+          </NextUi_Card>
         </article>
       }
     </>

@@ -3,6 +3,7 @@ import Home from '../../pages/Home';
 import Create from '../../pages/Create';
 import Detail from '../../pages/Detail';
 import Search from '../../pages/Search';
+import CreatedDetails from '../../pages/CreatedDetails';
 
 
 const Main = () => {
@@ -10,8 +11,9 @@ const Main = () => {
     <main>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/Create' element={<Create />} />
+        <Route path='/create' element={<Create />} />
         <Route path='/pokemon/:id' element={<Detail />} />
+        <Route path='/created/:id' element={<CreatedDetails />} />
         <Route path='/search' element={<Search />} />
       </Routes>
     </main>
