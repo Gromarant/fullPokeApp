@@ -41,6 +41,9 @@ const Card = ({image, name, id, handleClickEvent, showDetails, weight, height, t
         <article className='card card__created' onClick={showDetails}>
           <Link to={`/created/${owner_id}`}>
             <NextUi_Card>
+              <NextUi_Card.Header>
+                <Text className='card__owner_id card__home_owner_id'>{owner_id}</Text>
+              </NextUi_Card.Header>
               <NextUi_Card.Body>
                 <NextUi_Card.Image className='card__image' src={image} alt={name}/>
                 <Grid className='card__button'>
