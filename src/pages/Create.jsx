@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useState, useContext } from 'react';
+import {useNavigate} from 'react-router-dom';
 import { pokemonCreatedListContext } from '../context/pokemonCreatedListContext';
 import { createdPokemonContext } from '../context/createdPokemonContext';
 import ButtonAct from '../components/baseComponents/ButtonAct';
@@ -22,6 +23,7 @@ const Create = () => {
      handleSubmit,
       formState: { errors },
   } =useForm({ defaultValues });
+  const navigate = useNavigate();
 
 
   const handleChange = (e) => {
@@ -41,6 +43,7 @@ const Create = () => {
           console.log('data/Create : ', data)
           addToListOfCreatedPokemons({...data})
           setCreatedPokemon({...data})
+          navigate(`/created/${data.owner_id}`);
           setInputValue(defaultValues)
         })}>
           <h3 className='form__title'>New Pokémon data</h3>
