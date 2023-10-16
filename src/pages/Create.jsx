@@ -1,11 +1,12 @@
 import { useForm } from "react-hook-form";
 import { useState, useContext } from 'react';
 import { pokemonCreatedListContext } from '../context/pokemonCreatedListContext';
+import { createdPokemonContext } from '../context/createdPokemonContext';
 import ButtonAct from '../components/baseComponents/ButtonAct';
 
 
 const defaultValues = {
-  id: 0,
+  owner_id: '',
   name: '',
   image: '',
   typeOne: '',
@@ -15,6 +16,7 @@ const defaultValues = {
 const Create = () => {
   const [inputValue, setInputValue] = useState({...defaultValues});
   const {addToListOfCreatedPokemons} = useContext(pokemonCreatedListContext);
+  const {setCreatedPokemon} = useContext(createdPokemonContext);
   const {
     register,
      handleSubmit,
@@ -36,12 +38,14 @@ const Create = () => {
         <h1 className='animated'>Create a pokémon</h1>
         <form className='form' onSubmit={handleSubmit((data) => {
           data.message && <p>{data.message}</p>
+          console.log('data/Create : ', data)
           addToListOfCreatedPokemons({...data})
+          setCreatedPokemon({...data})
           setInputValue(defaultValues)
         })}>
           <h3 className='form__title'>New Pokémon data</h3>
-          <label htmlFor="id" className='form_label'>Id
-          <input type='number' name='id' id='id' autoComplete='off' className='form_input' {...register('id', {
+          <label htmlFor="owner_id" className='form_label'>Id
+          <input type='string' name='owner_id' id='owner_id' autoComplete='off' className='form_input' {...register('owner_id', {
             required: '*** required field ***',
             minLength: {
               value: 1,
@@ -51,7 +55,7 @@ const Create = () => {
               value: 20,
               message: "must have a maximum of 20 characters"
             },
-          })} onChange={handleChange} placeholder='pokemon id' value={inputValue.id}/></label>
+          })} onChange={handleChange} placeholder='pokemon id' value={inputValue.owner_id}/></label>
           {errors.id?.type === "required" && (
           <p role="alert">{errors.id?.message}</p>)}
 
