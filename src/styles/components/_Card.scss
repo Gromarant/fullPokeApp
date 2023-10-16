@@ -21,8 +21,9 @@
   width: clamp(9rem, 100%, 12rem);
 }
 
-.card__searched {
-  height: 300px;
+.card__searched,
+.card__created {
+  min-height: 300px;
   width: clamp(12rem, 100%, 13rem);
 }
 
@@ -91,7 +92,8 @@
 
 /*state styles*/
 .card__home:hover,
-.card__searched:hover {
+.card__searched:hover 
+.card__created:hover {
   scale: 1;
   border: solid #FFCC01 4px;
   border-radius: utils.$border-radius-19-px ;

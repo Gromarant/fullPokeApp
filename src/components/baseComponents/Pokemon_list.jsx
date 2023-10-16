@@ -28,19 +28,19 @@ const Pokemon_list = ({pokemonsData}) => {
             <h2 className='searched__title'>Recently searched</h2>
             <section className='list searched__list'>
               { listOfPokemons.map((pokemon) => (
-                  <Card id={pokemon.id} name={pokemon.name} image={pokemon.image} key={uuidv4()}/>
+                  <Card id={`${pokemon.id}`} name={pokemon.name} image={pokemon.image} key={uuidv4()}/>
                 )
               )}
             </section>
           </section>
         }
 
-        {listOfPokemonsCreated.length > 0 &&
-          <section className='searched__list_section'>
-            <h2 className='searched__title'>Pokémons created</h2>
-            <section className='list searched__list'>
+        {listOfPokemonsCreated.length > 0 && pokemonsData.length === 0 &&
+          <section className='created__list_section'>
+            <h2 className='created__title'>Pokémons created</h2>
+            <section className='list created__list'>
               { listOfPokemonsCreated.map((pokemon) => (
-                  <Card id={pokemon.id} name={pokemon.name} image={pokemon.image} key={uuidv4()}/>
+                  <Card showDetails={() => console.log('pokemon : ', pokemon)} owner_id={pokemon.owner_id} name={pokemon.name} image={pokemon.image} typeOne={pokemon.typeOne} typeTwo={pokemon.typeTwo} key={uuidv4()}/>
                 )
               )}
             </section>

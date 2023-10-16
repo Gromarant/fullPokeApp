@@ -26,3 +26,19 @@ p {
   text-align: center;
   color: utils.$color-danger;
 }
+
+.created__list_section {
+  @include utils.flexCol;
+  width: 100%;
+}
+
+.created__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+
+.created__title {
+  color: utils.$color-secondary;
+  margin: 2rem 0 0;
+}
