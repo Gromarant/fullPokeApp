@@ -34,6 +34,7 @@ const Create = () => {
     })
   }
 
+
   return (
     <>
       <section className='main__content'>
@@ -48,7 +49,7 @@ const Create = () => {
           <h3 className='form__title'>New Pokémon data</h3>
           <label htmlFor="owner_id" className='form_label'>Id
           <input type='string' name='owner_id' id='owner_id' autoComplete='off' className='form_input' {...register('owner_id', {
-            required: '*** required field ***',
+            required: 'ID field is required',
             minLength: {
               value: 1,
               message: "must have at least 1 character"
@@ -58,12 +59,12 @@ const Create = () => {
               message: "must have a maximum of 20 characters"
             },
           })} onChange={handleChange} placeholder='pokemon id' value={inputValue.owner_id}/></label>
-          {errors.id?.type === "required" && (
-          <p role="alert">{errors.id?.message}</p>)}
+          {errors.owner_id?.type === "required" && (
+          <p role="alert">{errors.owner_id?.message}</p>)}
 
           <label htmlFor="name" className='form_label'>Name
           <input type='string' name='name' id='name' autoComplete='off' className='form_input' {...register('name', {
-            required: '*** required field ***',
+            required: 'Name field is required',
             minLength: {
               value: 3,
               message: "must have at least 3 characters"
@@ -75,23 +76,23 @@ const Create = () => {
           })}
           onChange={handleChange} placeholder='pokemon name' value={inputValue.name}/></label>
           {errors.name?.type === "required" && (
-          <p role="alert">{errors.id?.message}</p>)}
+          <p role="alert">{errors.name?.message}</p>)}
 
           <label htmlFor="image" className='form_label'>Url image
           <input type='url' name='image' id='image' className='form_input' {...register('image', {
-             required: '*** required field ***',
+             required: 'Url image field is required',
             maxLength: {
               value: 200,
               message: "must have a maximum of 50 characters"
             }
           })}
           onChange={handleChange} placeholder='pokemon image' value={inputValue.image}/></label>
-          {errors.name?.type === "required" && (
-          <p role="alert">{errors.id?.message}</p>)}
+          {errors.image?.type === "required" && (
+          <p role="alert">{errors.image?.message}</p>)}
 
           <label htmlFor="typeOne" className='form_label'>TypeOne
-          <input type='select' name='typeOne' id='typeOne' autoComplete='off' className='form_input' {...register('typeOne', {
-            required: '*** required field ***',
+          <input type='string' name='typeOne' id='typeOne' autoComplete='off' className='form_input' {...register('typeOne', {
+            required: 'TypeOne field is required',
             minLength: {
               value: 3,
               message: "must have at least 3 characters"
@@ -103,10 +104,10 @@ const Create = () => {
           })}
           onChange={handleChange} placeholder='pokemon typeOne' value={inputValue.typeOne}/></label>
           {errors.typeOne?.type === "required" && (
-          <p role="alert">{errors.id?.message}</p>)}
+          <p role="alert">{errors.typeOne?.message}</p>)}
 
           <label htmlFor="typeTwo" className='form_label'>TypeTwo
-          <input type='select' name='typeTwo' id='typeTwo' autoComplete='off' className='form_input' {...register('typeTwo', {
+          <input type='string' name='typeTwo' id='typeTwo' autoComplete='off' className='form_input' {...register('typeTwo', {
             minLength: {
               value: 5,
               message: "must have at least 5 characters"
@@ -118,7 +119,7 @@ const Create = () => {
           })}
           onChange={handleChange} placeholder='pokemon typeTwo' value={inputValue.typeTwo}/></label>
           {errors.typeTwo?.type === "required" && (
-          <p role="alert">{errors.id?.message}</p>)}
+          <p role="alert">{errors.typeTwo?.message}</p>)}
 
           <ButtonAct value='Create'/>
         </form>
