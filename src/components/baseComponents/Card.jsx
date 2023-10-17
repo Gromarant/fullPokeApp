@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 
 
-const Card = ({image, name, id, handleClickEvent, showDetails, weight, height, types, typeOne, typeTwo, owner_id}) => {
+const Card = ({image, name, id, handleClickEvent, showDetails, weight, height, types, typeOne, typeTwo, owner_id, detail_id}) => {
 
   return (
     <>
@@ -42,7 +42,7 @@ const Card = ({image, name, id, handleClickEvent, showDetails, weight, height, t
           <Link to={`/created/${owner_id}`}>
             <NextUi_Card>
               <NextUi_Card.Header>
-                <Text className='card__owner_id card__home_owner_id'>{owner_id}</Text>
+                <Text className='card__detail_id card__home_detail_id'>{owner_id}</Text>
               </NextUi_Card.Header>
               <NextUi_Card.Body>
                 <NextUi_Card.Image className='card__image' src={image} alt={name}/>
@@ -89,7 +89,7 @@ const Card = ({image, name, id, handleClickEvent, showDetails, weight, height, t
         </article>
       }
 
-      { owner_id && typeOne && name && image && 
+      { detail_id && typeOne && name && image && 
         <article className='card card__detailed'>
           <NextUi_Card>
             <NextUi_Card.Header>
@@ -97,7 +97,7 @@ const Card = ({image, name, id, handleClickEvent, showDetails, weight, height, t
             <Grid className='card__data_section'>
               <section className='card__data'>
                 <Text className='card__title'>id number:</Text>
-                <Text>{owner_id}</Text>
+                <Text>{detail_id}</Text>
               </section>
             </Grid>
             </NextUi_Card.Header>
@@ -123,6 +123,7 @@ Card.propTypes = {
   showDetails: PropTypes.func,
   id: PropTypes.string,
   owner_id: PropTypes.string,
+  detail_id: PropTypes.string,
   weight: PropTypes.number,
   height: PropTypes.number,
   types: PropTypes.array,

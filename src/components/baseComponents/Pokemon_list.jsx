@@ -3,11 +3,14 @@ import { useContext } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { pokemonListContext } from '../../context/pokemonListContext';
 import { pokemonCreatedListContext } from '../../context/pokemonCreatedListContext';
+import { createdPokemonContext } from '../../context/createdPokemonContext';
 import Card from './Card';
 
 
 const Pokemon_list = ({pokemonsData}) => {
   const {listOfPokemons} = useContext(pokemonListContext);
+  const {setCreatedPokemon} = useContext(createdPokemonContext);
+  
   const {listOfPokemonsCreated} = useContext(pokemonCreatedListContext);
 
 
@@ -40,7 +43,7 @@ const Pokemon_list = ({pokemonsData}) => {
             <h2 className='created__title'>Pokémons created</h2>
             <section className='list created__list'>
               { listOfPokemonsCreated.map((pokemon) => (
-                  <Card showDetails={() => console.log('pokemon : ', pokemon)} owner_id={pokemon.owner_id} name={pokemon.name} image={pokemon.image} typeOne={pokemon.typeOne} typeTwo={pokemon.typeTwo} key={uuidv4()}/>
+                  <Card showDetails={() => setCreatedPokemon(pokemon)} owner_id={pokemon.owner_id} name={pokemon.name} image={pokemon.image} typeOne={pokemon.typeOne} typeTwo={pokemon.typeTwo} key={uuidv4()}/>
                 )
               )}
             </section>
