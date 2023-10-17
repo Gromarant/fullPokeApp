@@ -14,17 +14,26 @@ const App = () => {
   const [searchedPokemon, setSearchedPokemon] = useState([]);
   const [createdPokemon, setCreatedPokemon] = useState({});
 
-  const itContainsThisPokemon = (pokemon) => {
-    const currentListNames = listOfPokemons.map(item => Object.entries(item)[1][1]);
-    return currentListNames.includes(pokemon['name']);
+
+
+  const itContainsThisPokemon = (pokemon, list) => {
+    let currentListNames;
+    if (listOfPokemons) {
+      currentListNames = list.map(item => Object.entries(item)[0][1]);
+      return currentListNames.includes(pokemon['id']); 
+    }
+    else if (listOfPokemonsCreated) {
+      currentListNames = list.map(item => Object.entries(item)[2][1]);
+      return currentListNames.includes(pokemon['owner_id']); 
+    }
   }
 
   const addToListOfPokemons = (pokemon) => {
-    itContainsThisPokemon(pokemon) ? null : setListOfPokemons(([...listOfPokemons, pokemon]));
+    itContainsThisPokemon(pokemon, listOfPokemons) ? null : setListOfPokemons(([...listOfPokemons, pokemon]));
   };
 
   const addToListOfCreatedPokemons = (pokemon) => {
-    setListOfPokemonsCreated([...listOfPokemonsCreated, pokemon]);
+    itContainsThisPokemon(pokemon, listOfPokemonsCreated) ? null : setListOfPokemonsCreated([...listOfPokemonsCreated, pokemon]);
   };
 
 
