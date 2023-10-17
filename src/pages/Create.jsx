@@ -40,7 +40,6 @@ const Create = () => {
         <h1 className='animated'>Create a pokémon</h1>
         <form className='form' onSubmit={handleSubmit((data) => {
           data.message && <p>{data.message}</p>
-          console.log('data/Create : ', data)
           addToListOfCreatedPokemons({...data})
           setCreatedPokemon({...data})
           navigate(`/created/${data.owner_id}`);

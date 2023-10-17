@@ -1,5 +1,4 @@
 import {  useContext,useEffect, useState } from 'react';
-import { useDebounce  } from 'use-debounce';
 import { pokemonListContext } from '../context/pokemonListContext';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -10,7 +9,6 @@ const Details = () => {
   const [pokemonDetails, setPokemonDetails] = useState({});
   const {addToListOfPokemons} = useContext(pokemonListContext);
   const { id } = useParams();
-  const [value] = useDebounce(id, 1500);
 
 
   const ListOfPokemonsHandle = (data) => {
@@ -23,14 +21,14 @@ const Details = () => {
 
     try {
     
-      if (value) {
-        axios.get(`https://pokeapi.co/api/v2/pokemon/${value}`)
+      if (id) {
+        axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
               .then(response => {
                 if (response) {
                   setPokemonDetails(response.data);
 
                   const formatedData = {
-                    id: response.data.id,
+                    id: `${response.data.id}`,
                     name: response.data.name,
                     image: response.data?.sprites?.other['official-artwork']?.front_default,
                   }
@@ -42,7 +40,7 @@ const Details = () => {
     catch(error) {
       console.error(error);
     }
-  }, [value])
+  }, [id])
 
 
   return ( 

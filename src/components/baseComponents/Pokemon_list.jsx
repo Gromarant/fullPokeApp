@@ -10,7 +10,6 @@ import Card from './Card';
 const Pokemon_list = ({pokemonsData}) => {
   const {listOfPokemons} = useContext(pokemonListContext);
   const {setCreatedPokemon} = useContext(createdPokemonContext);
-  
   const {listOfPokemonsCreated} = useContext(pokemonCreatedListContext);
 
 
