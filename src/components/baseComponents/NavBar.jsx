@@ -5,7 +5,7 @@ const NavBar = () => {
 
   const collapseItems = [
     {
-      name: "Home",
+      name: "Memory Game",
       link: "/",
     },
     {
@@ -26,13 +26,13 @@ const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Content>
           <li className='navBar__item'>
-            <Link className='navBar__link' to="/">Home</Link>
+            <Link className='navBar__link' to="/">Memory Game</Link>
           </li>
           <li className='navBar__item'>
             <Link className='navBar__link' to="/search">Search</Link>
           </li>
           <li className='navBar__item'>
-            <Link className='navBar__link'  to="/create">Create Pokémon</Link>
+            <Link className='navBar__link'  to="/create">Create Pokemon</Link>
           </li>
         </Navbar.Content>
         <Navbar.Collapse className='collapse__menu'>
