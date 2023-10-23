@@ -85,7 +85,6 @@ function MemoryGame() {
 
   return (
     <section className="main__content">
-      <h1 className="header">Memory Game</h1>
 
       { won !== 6 ? (
         <article className="comments">Moves : {moves}</article>
@@ -95,7 +94,6 @@ function MemoryGame() {
         </article>
       )}
 
-      <button className="button" onClick={NewGame}>New Game</button>
 
       <section className="board">
         { cardsArray.length > 0 &&
@@ -112,10 +110,11 @@ function MemoryGame() {
               stopflip={stopFlip}
               image={pokemon.image}
               name={pokemon.name}
-            />
-          ))
-        }
+              />
+              ))
+            }
       </section>
+      <button className="button" onClick={NewGame}>New Game</button>
     </section>
   );
 }

@@ -5,7 +5,7 @@ const Memory = () => {
   return (
     <>
       <section className='main__content'>
-        <h1 className='animated'>Pokémons</h1>
+        <h1 className='animated'>Memory Game</h1>
         <MemoryGame/>
       </section>
     </>
