@@ -1,0 +1,82 @@
+@use '../utils';
+
+.animated {
+  @include utils.animatedTitle;
+}
+
+.list {
+  @include utils.listGrid;
+}
+
+.desc {
+  color: white;
+}
+
+.animated:hover {--_p: 100%}
+
+.button { 
+  padding: 0.5rem 0.8rem; 
+  width: 200px; 
+  font-size: 1.2rem; 
+  font-weight: bolder; 
+  border-radius: 0.7rem; 
+  border-style: none; 
+  background-color: red; 
+  color: white; 
+  margin-top: 2rem;
+} 
+
+.button:hover { 
+  border: 2px solid black; 
+  cursor: pointer; 
+} 
+
+.board { 
+  @include utils.listGrid;
+  gap: 1rem;
+  max-width: 1135px;
+} 
+
+.comments { 
+  padding: 0.25rem 1rem; 
+  background-color: white; 
+  margin: 0 auto; 
+  text-align: center; 
+  border-radius: 2rem; 
+} 
+
+/* CSS for Card component */
+.face { 
+  height: 6rem; 
+} 
+
+.back { 
+  height: 6rem; 
+  width: 6rem; 
+  background-color: rgb(253, 218, 175); 
+  color: rgb(61, 21, 21); 
+  border: 1px solid black; 
+  border-radius: 50%; 
+} 
+
+.item .face { 
+  position: absolute; 
+  transform: rotateY(90deg); 
+  transition: all ease-in 0.25s; 
+
+} 
+
+.toggled .face { 
+  transform: rotateY(0deg); 
+  transition-delay: 0.25s; 
+} 
+
+.item .back { 
+  transition: all ease-in 0.25s; 
+  transition-delay: 0.25s; 
+} 
+
+.toggled .back { 
+  transform: rotateY(90deg); 
+  transition-delay: 0s; 
+}

@@ -8,17 +8,60 @@
   @include utils.flexCol;
 }
 
+.memory__card {
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
 .card {
   display: flex;
   border: solid utils.$color-secondary 0.01rem;
   border-radius: utils.$border-radius-15-px;
 }
 
-.card__home {
-  height: 260px;
-  position: relative;
-  bottom: 0;
+.card__home,
+.card__back {
+  min-height: 220px;
+  max-width: 146px;
   width: clamp(9rem, 100%, 12rem);
+  background: utils.$color-dark-blue;
+  backface-visibility: hidden;
+  // transform: scale(1);
+  // transform-style: preserve-3d;
+  // transition: transform 0.5s;
+  cursor: pointer;
+} 
+
+.memory__card .card__home {
+  transform: rotateY(90deg); 
+  transition: all ease-in 0.25s;
+}
+
+.toggled .card__home { 
+  transform: rotateY(0deg); 
+  transition-delay: 0.25s; 
+} 
+
+.memory__card > .card__back {
+  transition: all ease-in 0.25s; 
+  transition-delay: 0.25s; 
+}
+
+.toggled .card__back { 
+  transform: rotateY(90deg); 
+  transition-delay: 0s; 
+} 
+
+.card__back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  border-radius: utils.$border-radius-15-px;
 }
 
 .card__searched,
@@ -34,6 +77,7 @@
 
 .card__name {
   color: utils.$color-neutral;
+  max-height: 31.5px;
   overflow: hidden;
 }
 
@@ -52,9 +96,9 @@
   font-size: utils.$font-xl;
 }
 
-.card__home_image {
-  max-width: 100%;
-  max-height: 100%;
+.card__image {
+  max-width: 120px;
+  max-height: 120px;
 }
   
 .card__title {

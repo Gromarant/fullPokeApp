@@ -17,7 +17,7 @@ const Pokemon_list = ({pokemonsData}) => {
     <>
       <section className='pokemon__list'>
         { pokemonsData.length > 0 && 
-          <section className='list filter__list'>
+          <section className='list'>
             {pokemonsData && pokemonsData.map((pokemon) => (
                 <Card id={pokemon.id} name={pokemon.name} image={pokemon.image} key={uuidv4()}/>
               )
