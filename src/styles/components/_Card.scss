@@ -6,6 +6,11 @@
 
 .nextui-c-eFfoBo {
   @include utils.flexCol;
+  padding-bottom: 0;
+}
+
+.nextui-c-cakKrd {
+  padding: 0 0.5rem;
 }
 
 .memory__card {
@@ -29,9 +34,6 @@
   width: clamp(9rem, 100%, 12rem);
   background: utils.$color-dark-blue;
   backface-visibility: hidden;
-  // transform: scale(1);
-  // transform-style: preserve-3d;
-  // transition: transform 0.5s;
   cursor: pointer;
 } 
 
@@ -66,18 +68,20 @@
 
 .card__searched,
 .card__created {
-  min-height: 300px;
+  min-height: 220px;
+  max-width: 146px;
   width: clamp(12rem, 100%, 13rem);
 }
 
-.card__detailed {
-  margin: auto;
-  width: clamp(14rem, 30%, 17rem);
+.card__detailed,
+.card__created_detailed {
+  height: max(360px, 40svh);
+  width: clamp(14rem, 30%, 16rem);
 }
 
 .card__name {
   color: utils.$color-neutral;
-  max-height: 31.5px;
+  max-height: 53px;
   overflow: hidden;
 }
 
@@ -96,9 +100,20 @@
   font-size: utils.$font-xl;
 }
 
+.card__created_name {
+  font-size: utils.$font-m;
+  font-weight: 600;
+  color: utils.$color-primary;
+}
+
 .card__image {
   max-width: 120px;
   max-height: 120px;
+}
+
+.card__detailed_image {
+  max-width: auto;
+  max-height: auto;
 }
   
 .card__title {
@@ -115,7 +130,7 @@
 
 .card__data {
   display: flex;
-  place-content: center;
+  place-content: start;
   gap: 0.3rem;
 }
 

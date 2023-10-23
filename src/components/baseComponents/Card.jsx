@@ -44,18 +44,18 @@ const Card = ({image, name, id, position, handleClick, toggled, stopflip, showDe
         <article className='card card__created' onClick={showDetails}>
           <Link to={`/created/${owner_id}`}>
             <NextUi_Card>
-              <NextUi_Card.Header>
-                <Text className='card__detail_id card__home_detail_id'>{owner_id}</Text>
-              </NextUi_Card.Header>
               <NextUi_Card.Body>
+                <Grid>
+                  <Text className='card__created_name'>{name}</Text>
+                  <Text><span className='card__title'>Id: </span>{owner_id}</Text>
+                </Grid>
                 <NextUi_Card.Image className='card__image' src={image} alt={name}/>
+              </NextUi_Card.Body>
+              <NextUi_Card.Footer >
                 <Grid className='card__button'>
                   <Text className='card__pokemonType' key={uuidv4()}>{typeOne}</Text>
                   { typeTwo && <Text className='card__pokemonType' key={uuidv4()}>{typeTwo}</Text>}   
                 </Grid>
-              </NextUi_Card.Body>
-              <NextUi_Card.Footer >
-                <Text className='card__name card__searched_name'>{name}</Text>
               </NextUi_Card.Footer>
             </NextUi_Card>
           </Link>
@@ -66,10 +66,10 @@ const Card = ({image, name, id, position, handleClick, toggled, stopflip, showDe
         <article className='card card__detailed'>
           <NextUi_Card>
             <NextUi_Card.Header>
-              <Text className='card__name card__detailed_name'>{name}</Text>
+              <Text className='card__detailed_name'>{name}</Text>
             </NextUi_Card.Header>
             <NextUi_Card.Body >
-              <NextUi_Card.Image className='card__image' src={image} alt={name}/>
+              <NextUi_Card.Image className='card__detailed_image' src={image} alt={name}/>
             </NextUi_Card.Body>
             <Grid className='card__data_section'>
               <section className='card__data'>
@@ -93,19 +93,17 @@ const Card = ({image, name, id, position, handleClick, toggled, stopflip, showDe
       }
 
       { detail_id && typeOne && name && image && 
-        <article className='card card__detailed'>
+        <article className='card card__created_detailed'>
           <NextUi_Card>
             <NextUi_Card.Header>
-              <Text className='card__name card__detailed_name'>{name}</Text>
-            <Grid className='card__data_section'>
+              <Text className='card__detailed_name'>{name}</Text>
               <section className='card__data'>
                 <Text className='card__title'>id number:</Text>
                 <Text>{detail_id}</Text>
               </section>
-            </Grid>
             </NextUi_Card.Header>
             <NextUi_Card.Body >
-              <NextUi_Card.Image className='card__image' src={image} alt={name}/>
+              <NextUi_Card.Image className='card__detailed_image' src={image} alt={name}/>
             </NextUi_Card.Body>
             <NextUi_Card.Divider />
             <Grid className='card__button'>
