@@ -37,6 +37,7 @@
 .pokemon__list {
   @include utils.flexCol;
   align-items: center;
+  width: 100%;
 }
 
 .searched__list_section {

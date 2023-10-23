@@ -7,8 +7,10 @@ main {
 
 .main__content {
   @include utils.flexCol;
+  align-items: center;
   gap: 2rem;
   min-height: 100svh;
+  width: 100%;
 }
 
 #root {
