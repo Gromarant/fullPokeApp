@@ -2,15 +2,21 @@
 
 .nextui-c-BDLTQ {
   background: #fffffff2;
+  height: 100%;
 }
 
 .nextui-c-eFfoBo {
   @include utils.flexCol;
   padding-bottom: 0;
+  justify-content: space-between;
 }
 
 .nextui-c-cakKrd {
   padding: 0 0.5rem;
+}
+
+.nextui-c-jxECYO {
+  flex-direction: column;
 }
 
 .memory__card {

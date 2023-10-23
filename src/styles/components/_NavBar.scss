@@ -1,5 +1,10 @@
 @use '../utils';
 
+.nextui-navbar {
+  justify-content: right;
+  background: #2359be;
+  width: 100vw;
+}
 .nextui-navbar-container { 
   display: flex;
   justify-content: flex-end;

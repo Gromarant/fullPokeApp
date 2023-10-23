@@ -8,11 +8,25 @@
   flex-wrap: wrap;
 }
 
+@mixin form {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  color: #686868;
+  background-color: #c9c9c9cf;
+  border-radius: 1rem;
+  width: clamp(13rem, 80%, 30rem);
+  margin: 2rem auto;
+  text-align: left;
+}
+
 @mixin input_form {
   border-radius: 0.6rem;
   border: solid #ffcc01 0.1rem;
   padding: 0.3rem 0.5rem;
-  min-width: 15rem;
 }
 
 @mixin animatedTitle {
@@ -28,7 +42,6 @@
     linear-gradient(90deg,var(--c) 50%,#FFCC01 0) calc(100% - var(--_p,0%))/200% 100%,
     linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
   -webkit-background-clip: text,padding-box;
-          background-clip: text,padding-box;
   transition: 0.8s;
 }
 
@@ -38,5 +51,6 @@
   width: 100%;
   gap: 2rem;
   padding: min(100px, 10%);
+  padding-top: 3rem;
   justify-items: center;
 }
