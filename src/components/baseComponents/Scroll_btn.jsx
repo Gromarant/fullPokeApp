@@ -21,7 +21,7 @@ function Scroll_btn({action, visibility=false}) {
 
   return (
     <div role='button' className='scroll__btn' action={action} onClick={scroll}>
-      <img className={visibility === false ? 'hidden' : ''} src='../../../images__Scroll_btn/scroll-up-default.png' alt='Button to go-up'/>
+      <img className={visibility === false ? 'hidden' : ''} src='..\..\src\assets\images__Scroll_btn\scroll-up-default.png' alt='Button to go-up'/>
     </div>
   )
 }
