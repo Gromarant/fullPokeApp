@@ -80,3 +80,15 @@
   transform: rotateY(90deg); 
   transition-delay: 0s; 
 }
+
+.swal2-styled.swal2-confirm {
+  background-color: utils.$color-primary;
+}
+
+.swal2-styled.swal2-deny {
+  background-color: utils.$color-neutral;
+}
+
+.swal2-styled.swal2-cancel {
+  background-color: utils.$color-danger;
+}
