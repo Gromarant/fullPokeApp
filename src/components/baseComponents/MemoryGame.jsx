@@ -4,44 +4,55 @@ import Card from "./Card";
 import {pokemons} from '../../Data_pokemon';
 
 function MemoryGame() {
-  const [cardsArray, setCardsArray] = useState([]);
   const [moves, setMoves] = useState(0);
+  const [won, setWon] = useState(0);
+  const [stopFlip, setStopFlip] = useState(false);
   const [firstCard, setFirstCard] = useState(null);
   const [secondCard, setSecondCard] = useState(null);
-  const [stopFlip, setStopFlip] = useState(false);
-  const [won, setWon] = useState(0);
+  const [cardsArray, setCardsArray] = useState([]);
+  const [resetPokemonArray, setResetPokemonArray] = useState([]);
   
-
   const pokemonsData = pokemons.results;
-  let pokeArray = [];
-  const sortRandomly = (arr) => arr.sort(() => 0.5 - Math.random());
+  let pokemonArray = [];
+  let currentPokemonList;
   let newPokemon = null;
   
+  
+  const sortRandomly = (arr) => arr.sort(() => 0.5 - Math.random());
   const getRandomPokemon = () => pokemonsData[Math.floor(Math.random() * 10264)];
-  const pokemonlist = () => {
-    
-    while (pokeArray.length < 12) {
+  
+  function pokemonlist() {
+    while (pokemonArray.length < 12) {
       newPokemon = getRandomPokemon();
       if (newPokemon) {
-        if (!pokeArray.includes(newPokemon))
-        pokeArray = [...pokeArray, newPokemon, {...newPokemon}];
-    }
-    newPokemon = null;
+        if (!pokemonArray.includes(newPokemon))
+        pokemonArray = [...pokemonArray, newPokemon, {...newPokemon}];
+      }
+      newPokemon = null;
     }
   };
-    pokemonlist();
+  pokemonlist();  
 
-  function NewGame() {
-      setTimeout(() => {
-        setCardsArray([...sortRandomly(pokeArray)]);
-        setMoves(0);
-        setFirstCard(null);
-        setSecondCard(null);
-        setWon(0);
-      }, 500);
+  function newGame() {
+    setCardsArray(sortRandomly([...pokemonArray]));
+    currentPokemonList = [...pokemonArray];
+    setResetPokemonArray(sortRandomly([...currentPokemonList]));
+    setMoves(0);
+    setFirstCard(null);
+    setSecondCard(null);
+    setWon(0);
   }
 
-  //this function helps in storing the firstCard and secondCard value
+  function resetGame() {
+    setTimeout(() => {
+      setCardsArray(sortRandomly(resetPokemonArray));
+      setMoves(0);
+      setFirstCard(null);
+      setSecondCard(null);
+      setWon(0);
+    }, 500);
+  }
+
   function handleClick(position) {
     if (firstCard !== null && firstCard.position !== position) {
       setSecondCard(cardsArray[position]);
@@ -86,8 +97,10 @@ function MemoryGame() {
       title: `You Won in ${moves} moves`,
       imageUrl: 'https://pyxis.nymag.com/v1/imgs/49a/3d9/8f4f4657c10087b7238aab5fc39eeb2c88-pokemon.1x.rsquare.w1400.jpg',
       imageAlt: 'success image',
+      showDenyButton: true,
       showCancelButton: true,
       confirmButtonText: 'New Game',
+      denyButtonText: `Reset Game`,
       customClass: {
         actions: 'my-actions',
         cancelButton: 'order-1 right-gap',
@@ -97,14 +110,17 @@ function MemoryGame() {
       }
     }).then((result) => {
       if (result.isConfirmed) {
-        NewGame();
+        newGame();
         Swal.fire('New Game displayed!', '', 'success')
+      } else if (result.isDenied) {
+        resetGame();
+        Swal.fire('Game reseted!', '', 'success')
       }
     })
   }
 
   useEffect(() => {
-      NewGame();
+    newGame();
   }, []);
 
   return (
@@ -131,7 +147,8 @@ function MemoryGame() {
               ))
             }
       </section>
-      <button className="button" onClick={NewGame}>New Game</button>
+      <button className="button" onClick={newGame}>New Game</button>
+      <button className="button" onClick={resetGame}>Reset Game</button>
     </section>
   );
 }

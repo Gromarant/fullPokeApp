@@ -81,6 +81,17 @@
   transition-delay: 0s; 
 }
 
+.swal2-popup {
+  border-radius: utils.$border-radius-1;
+  max-width: 26rem;
+  background: #FFCC01;
+}
+
+.swal2-image {
+  max-width: 90%;
+  border-radius: 50%;
+}
+
 .swal2-styled.swal2-confirm {
   background-color: utils.$color-primary;
 }
