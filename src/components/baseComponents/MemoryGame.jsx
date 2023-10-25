@@ -105,7 +105,6 @@ function MemoryGame() {
         actions: 'my-actions',
         cancelButton: 'order-1 right-gap',
         confirmButton: 'order-2',
-        confirmButtonColor: '#2359be',
         denyButton: 'order-3',
       }
     }).then((result) => {
@@ -147,8 +146,10 @@ function MemoryGame() {
               ))
             }
       </section>
-      <button className="button" onClick={newGame}>New Game</button>
-      <button className="button" onClick={resetGame}>Reset Game</button>
+      <section className="memory__btns">
+        <button className="btn action__btn" onClick={newGame}>New Game</button>
+        <button className="btn resetGame__btn" onClick={resetGame}>Reset Game</button>
+      </section>
     </section>
   );
 }

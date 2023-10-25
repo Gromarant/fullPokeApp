@@ -3,15 +3,15 @@
 .btn {
   display: flex;
   place-content: center;
+  font-size: utils.$font-s;
+  font-weight: 600;
+  color: whitesmoke;
   width: min(15rem, 80%);
   padding: 0.8rem 2rem;
   border-radius: utils.$border-radius-15-px;
 }
 
 .action__btn {
-  font-size: utils.$font-s;
-  font-weight: 600;
-  color: whitesmoke;
   background:  utils.$color-gradient;
   align-self: center;
 }
@@ -27,18 +27,50 @@
   right: 1rem;
 }
 
-.action__btn:hover {
-  scale: 1.1;
-  box-shadow: 6px 5px 3px 0px #E5FFCB;
+.memory__btns {
+  @include utils.flexWrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 min(100px, 10%);
+  width: 100%;
 }
 
-.action__btn:active {
-  background: utils.$color-gradient-active;
-  border: 4px solid rgba(0, 0, 0, 0.25);
+.swal2-styled {
+  font-weight: 600;
+  width: clamp(fit-content, 40%, 121px);
+  padding: 0.8rem 2rem;
+  border-radius: utils.$border-radius-15-px;
+}
+
+.swal2-styled.swal2-deny,
+.resetGame__btn {
+  background-color: utils.$color-neutral;
+}
+
+.swal2-styled.swal2-cancel {
+  background-color: utils.$color-danger;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: utils.$color-primary;
+}
+
+.action__btn:hover {
+  background: linear-gradient(to right, #06899b, #342e71);
+}
+
+.resetGame__btn:hover {
+  background-color: #45474a;
 }
 
 .scroll__btn:hover {
-  scale: 1.1;
   padding: 2px;
   background: utils.$color-secondary;
+}
+
+.action__btn:active,
+.resetGame__btn:active,
+.swal2-actions:not(.swal2-loading) .swal2-styled:active {
+  background: utils.$color-gradient-active;
+  border: 4px solid rgba(0, 0, 0, 0.25);
 }

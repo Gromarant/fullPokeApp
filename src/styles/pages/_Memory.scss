@@ -14,23 +14,6 @@
 
 .animated:hover {--_p: 100%}
 
-.button { 
-  padding: 0.5rem 0.8rem; 
-  width: 200px; 
-  font-size: 1.2rem; 
-  font-weight: bolder; 
-  border-radius: 0.7rem; 
-  border-style: none; 
-  background-color: red; 
-  color: white; 
-  margin-top: 2rem;
-} 
-
-.button:hover { 
-  border: 2px solid black; 
-  cursor: pointer; 
-} 
-
 .board { 
   @include utils.listGrid;
   gap: 1rem;
@@ -83,23 +66,11 @@
 
 .swal2-popup {
   border-radius: utils.$border-radius-1;
-  max-width: 26rem;
-  background: #FFCC01;
-}
+  width: min(fit-content, 26rem);
+  background: #fbfff8;
+};
 
 .swal2-image {
   max-width: 90%;
   border-radius: 50%;
-}
-
-.swal2-styled.swal2-confirm {
-  background-color: utils.$color-primary;
-}
-
-.swal2-styled.swal2-deny {
-  background-color: utils.$color-neutral;
-}
-
-.swal2-styled.swal2-cancel {
-  background-color: utils.$color-danger;
 }
