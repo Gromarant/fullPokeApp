@@ -1,10 +1,15 @@
 @use '../utils';
 
+a {
+  color: white;
+}
+
 .nextui-navbar {
   justify-content: right;
   background: #2359be;
   width: 100vw;
 }
+
 .nextui-navbar-container { 
   display: flex;
   justify-content: flex-end;
@@ -15,25 +20,14 @@
   display: none;
 }
 
-.nextui-c-gpbAMl .line { /*Hamburger menu lines*/
-  height: 2px;
-  background-color: white;
-}
-
-.nextui-c-hhqfap-gqZKcP-disableBlur-false .nextui-c-egxOLa {
-  background: utils.$color-primary;
-}
-
 .nextui-navbar-collapse-wrapper {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   align-items: flex-end;
+  gap: 1rem;
 }
 
-a {
-  color: utils.$color-primary;
-}
 
 .collapse__menu {
   background: #dbdbdb;
@@ -49,10 +43,6 @@ a {
   color: white;
 }
 
-.nextui-c-kOXsPe-iPJLV-css {
-  border-bottom: solid 4px utils.$color-secondary;
-}
-
 .nextui-c-ektsXM {
   justify-content: flex-end;
 }
@@ -62,12 +52,27 @@ a {
   padding: 0;
 }
 
-.navBar__item:active,
-.nextui-navbar-collapse-item:active {
-  border-bottom: solid 4px utils.$color-secondary;
+.nextui-c-jklhtj li {
+  padding: 0;
+  color: #ffffff;
 }
 
-.navBar__item:checked {
+.nextui-c-gpbAMl .line { /*Hamburger menu lines*/
+  height: 2px;
+  background-color: white;
+}
+
+.nextui-c-hhqfap-gqZKcP-disableBlur-false .nextui-c-egxOLa {
+  background: utils.$color-primary;
+}
+
+.nextui-c-iTPCAT-VujqA-disableBlur-false .nextui-c-jklhtj:where(.nextui-c-ewlcFW) {
+  background: #686d77;
+}
+
+.nextui-c-kOXsPe-iPJLV-css,
+li.navBar__item:hover,
+.nextui-navbar-collapse-item:hover {
   border-bottom: solid 4px utils.$color-secondary;
 }
 

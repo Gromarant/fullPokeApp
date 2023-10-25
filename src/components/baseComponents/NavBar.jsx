@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Navbar } from "@nextui-org/react";
 import { Link } from 'react-router-dom';
 
@@ -9,12 +10,12 @@ const NavBar = () => {
       link: "/",
     },
     {
-      name: "Create Pokémon",
-      link: "/create",
-    },
-    {
       name: "Search",
       link: "/search",
+    },
+    {
+      name: "Create Pokémon",
+      link: "/create",
     },
   ];
 
@@ -22,8 +23,8 @@ const NavBar = () => {
     <>
       <Navbar>
          <Navbar.Brand>
-          <Navbar.Toggle/>
-        </Navbar.Brand>
+            <Navbar.Toggle/>
+          </Navbar.Brand>
         <Navbar.Content>
           <li className='navBar__item'>
             <Link className='navBar__link' to="/">Memory Game</Link>
@@ -35,7 +36,7 @@ const NavBar = () => {
             <Link className='navBar__link'  to="/create">Create Pokemon</Link>
           </li>
         </Navbar.Content>
-        <Navbar.Collapse className='collapse__menu'>
+        <Navbar.Collapse className="collapse__menu">
         {collapseItems.map((item) => (
           <Navbar.CollapseItem key={item.name}>
             <Link to={item.link}>{item.name}</Link>
