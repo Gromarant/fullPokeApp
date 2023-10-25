@@ -5,6 +5,23 @@ main {
   background-image: url('https://e1.pxfuel.com/desktop-wallpaper/75/774/desktop-wallpaper-pokemon-anniversary-dark-pokemon.jpg')
 }
 
+h1 {
+  font-size: utils.$font-extra-large;
+}
+
+h2 {
+  font-size: utils.$font-large;
+}
+
+label {
+  font-size: utils.$font-small;
+}
+
+article > p {
+  color: black;
+  font-size: utils.$font-small;
+}
+
 .main__content {
   @include utils.flexCol;
   align-items: center;
@@ -13,12 +30,32 @@ main {
   width: 100%;
 }
 
-#root {
+.hidden {
+  display: none;
+}
+
+:root {
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-.hidden {
-  display: none;
+@media (min-width: 650px) {
+  h1 {
+    font-size: 48px;
+    
+    label {
+      font-size: utils.$font-regular;
+    }
+  }
+
+  article > p {
+    font-size: utils.$font-regular;
+  }
+}
+
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 56px;
+  }
 }

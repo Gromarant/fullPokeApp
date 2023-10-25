@@ -124,7 +124,7 @@ function MemoryGame() {
 
   return (
     <section className="main__content">
-      <article className="comments">Moves : {moves}</article>
+      <article className="comments"><p>Moves : {moves}</p></article>
       { won === 6 && showAlert()}
 
       <section className="board">

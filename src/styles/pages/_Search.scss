@@ -13,12 +13,10 @@
 .form_label {
   @include utils.flexCol;
   gap: 0.4rem;
-  font-size: utils.$font-xs;
 }
 
 .search_label {
   gap: 1rem;
-  font-size: utils.$font-s;
 }
 
 .form_input {
@@ -38,6 +36,7 @@
 }
 
 .searched__title {
+  font-size: utils.$font-large;
   color: utils.$color-secondary;
   margin: 2rem 0 0;
 }

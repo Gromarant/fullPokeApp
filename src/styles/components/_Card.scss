@@ -35,7 +35,6 @@
 .card__home,
 .card__back {
   min-height: 220px;
-  max-width: 146px;
   width: clamp(9rem, 100%, 12rem);
   background: utils.$color-dark-blue;
   backface-visibility: hidden;
@@ -92,21 +91,21 @@
 
 .card__home_name {
   color: utils.$color-font-dark;
-  font-size: utils.$font-s;
+  font-size: utils.$font-regular;
   padding-bottom: auto;
 }
 
 .card__searched_name {
-  font-size: utils.$font-l;
+  font-size: utils.$font-medium;
   padding-top: auto;
 }
 
 .card__detailed_name {
-  font-size: utils.$font-xl;
+  font-size: utils.$font-large;
 }
 
 .card__created_name {
-  font-size: utils.$font-m;
+  font-size: utils.$font-medium;
   font-weight: 600;
   color: utils.$color-primary;
 }
