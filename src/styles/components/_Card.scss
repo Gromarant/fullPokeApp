@@ -155,10 +155,13 @@
 }
 
 /*state styles*/
-.card__home:hover,
-.card__searched:hover 
+.card__back:hover {
+  background: utils.$color-primary;
+} 
+
+.card__searched:hover, 
 .card__created:hover {
-  scale: 1;
+  scale: 1.1;
   border: solid #FFCC01 4px;
   border-radius: utils.$border-radius-19-px ;
 }
