@@ -71,10 +71,13 @@ a {
   background: #686d77;
 }
 
-.nextui-c-kOXsPe-iPJLV-css,
-li.navBar__item:hover,
+.active,
 .nextui-navbar-collapse-item:hover {
   border-bottom: solid 4px utils.$color-secondary;
+}
+
+li.navBar__item:hover {
+  border-bottom: solid 4px utils.$color-dark-blue;
 }
 
 @media (min-width: 768px) {

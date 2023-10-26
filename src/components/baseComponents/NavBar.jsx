@@ -9,12 +9,13 @@ const NavBar = () => {
 		window.location.href.split(`${window.location.origin}`)[1],
 	)
 
+
   const handleSideMenu = (link) => {
     setActiveMenu(link);
     isSideMenuOpen && navbarToggleRef.current.click();
   }
 
-  const collapseItems = [
+  const menuItems = [
     {
       name: "Memory Game",
       link: "/",
@@ -37,18 +38,14 @@ const NavBar = () => {
             onChange={(isSelected) => setIsSideMenuOpen(isSelected)}
           />
         <Navbar.Content>
-          <li className='navBar__item'>
-            <Link className='navBar__link' to="/">Memory Game</Link>
-          </li>
-          <li className='navBar__item'>
-            <Link className='navBar__link' to="/search">Search</Link>
-          </li>
-          <li className='navBar__item'>
-            <Link className='navBar__link'  to="/create">Create Pokemon</Link>
-          </li>
+          {menuItems.map((item) => (
+            <li className={`navBar__item ${activeMenu === item.link ? 'active' : ''}`} key={item.name} onClick={() => setActiveMenu(item.link)}>
+              <Link className='navBar__link' to={item.link}>{item.name}</Link>
+            </li>
+					))}
         </Navbar.Content>
         <Navbar.Collapse className='collapse__menu'>
-        {collapseItems.map((item) => (
+        {menuItems.map((item) => (
           <Navbar.CollapseItem 
             key={item.name}
             isActive={item.link === activeMenu}
