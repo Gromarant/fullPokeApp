@@ -1,16 +1,12 @@
-import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { pokemonListContext } from '../../context/pokemonListContext';
-import { pokemonCreatedListContext } from '../../context/pokemonCreatedListContext';
-import { createdPokemonContext } from '../../context/createdPokemonContext';
+import PropTypes from 'prop-types';
 import Card from './Card';
+import { pokemonContext } from '../../context/pokemonContext';
 
 
 const Pokemon_list = ({pokemonsData}) => {
-  const {listOfPokemons} = useContext(pokemonListContext);
-  const {setCreatedPokemon} = useContext(createdPokemonContext);
-  const {listOfPokemonsCreated} = useContext(pokemonCreatedListContext);
+  const {listOfPokemons, setCreatedPokemon, listOfPokemonsCreated} = useContext(pokemonContext);
 
 
   return (

@@ -1,13 +1,13 @@
 import {  useContext,useEffect, useState } from 'react';
-import { pokemonListContext } from '../context/pokemonListContext';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Card from '../components/baseComponents/Card';
+import { pokemonContext } from '../context/pokemonContext';
 
 
 const Details = () => {
   const [pokemonDetails, setPokemonDetails] = useState({});
-  const {addToListOfPokemons} = useContext(pokemonListContext);
+  const {addToListOfPokemons} = useContext(pokemonContext);
   const { id } = useParams();
 
 

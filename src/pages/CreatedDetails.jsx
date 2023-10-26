@@ -1,10 +1,10 @@
 import { useContext } from 'react';
-import { createdPokemonContext } from '../context/createdPokemonContext';
 import Card from '../components/baseComponents/Card';
+import { pokemonContext } from '../context/pokemonContext';
 
 
 function CreatedDetails() {
-  const {createdPokemon} = useContext(createdPokemonContext);
+  const {createdPokemon} = useContext(pokemonContext);
 
 
   return (

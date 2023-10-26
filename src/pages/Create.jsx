@@ -2,9 +2,8 @@ import { useState, useContext } from 'react';
 import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
 import {useNavigate} from 'react-router-dom';
-import { pokemonCreatedListContext } from '../context/pokemonCreatedListContext';
-import { createdPokemonContext } from '../context/createdPokemonContext';
 import ButtonAct from '../components/baseComponents/ButtonAct';
+import { pokemonContext } from '../context/pokemonContext';
 
 
 const defaultValues = {
@@ -17,8 +16,7 @@ const defaultValues = {
 
 const Create = () => {
   const [inputValue, setInputValue] = useState({...defaultValues});
-  const {addToListOfCreatedPokemons} = useContext(pokemonCreatedListContext);
-  const {setCreatedPokemon} = useContext(createdPokemonContext);
+  const {setCreatedPokemon, addToListOfCreatedPokemons} = useContext(pokemonContext);
   const {
     register,
      handleSubmit,

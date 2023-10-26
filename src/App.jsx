@@ -1,12 +1,9 @@
 import { useState } from 'react';
-import Header from './components/commonComponents/Header';
-import Main from './components/commonComponents/Main';
-import { pokemonListContext } from './context/pokemonListContext';
-import { pokemonCreatedListContext } from './context/pokemonCreatedListContext';
-import { searchedPokemonContext } from './context/searchedPokemonContext';
-import { createdPokemonContext } from './context/createdPokemonContext';
 import { NextUIProvider } from '@nextui-org/react';
 import { BrowserRouter } from 'react-router-dom';
+import Header from './components/commonComponents/Header';
+import Main from './components/commonComponents/Main';
+import { pokemonContext } from './context/pokemonContext';
 
 const App = () => {
   const [listOfPokemons, setListOfPokemons] = useState([]);
@@ -40,18 +37,18 @@ const App = () => {
   return (
     <>
       <NextUIProvider>
-        <pokemonListContext.Provider value={{listOfPokemons, setListOfPokemons, addToListOfPokemons}}>
-            <BrowserRouter>
-              <Header />
-            <pokemonCreatedListContext.Provider value={{listOfPokemonsCreated, setListOfPokemonsCreated, addToListOfCreatedPokemons}}>
-            <createdPokemonContext.Provider value={{createdPokemon, setCreatedPokemon}}>
-            <searchedPokemonContext.Provider value={{searchedPokemon, setSearchedPokemon}}>
-              <Main />
-            </searchedPokemonContext.Provider>
-            </createdPokemonContext.Provider>
-            </pokemonCreatedListContext.Provider>
-            </BrowserRouter>
-        </pokemonListContext.Provider> 
+        <pokemonContext.Provider value={{
+          listOfPokemons, setListOfPokemons, 
+          listOfPokemonsCreated, setListOfPokemonsCreated, 
+          createdPokemon, setCreatedPokemon, 
+          searchedPokemon, setSearchedPokemon, 
+          addToListOfPokemons, addToListOfCreatedPokemons
+        }}>
+          <BrowserRouter>
+            <Header />
+            <Main />
+          </BrowserRouter>
+        </pokemonContext.Provider>
       </NextUIProvider>
     </>
   )
