@@ -2,6 +2,7 @@
 
 .nextui-c-BDLTQ {
   background: #fffffff2;
+  height: 100%;
 }
 
 .nextui-c-eFfoBo {
@@ -73,8 +74,12 @@
 .card__searched,
 .card__created {
   min-height: 220px;
-  max-width: 146px;
+  max-width: 170px;
   width: clamp(12rem, 100%, 13rem);
+}
+
+.card__searched {
+  max-width: 146px;
 }
 
 .card__detailed,
@@ -111,8 +116,8 @@
 }
 
 .card__image {
-  max-width: 120px;
-  max-height: 120px;
+  width: 120px;
+  height: 120px;
 }
 
 .card__detailed_image {
@@ -153,16 +158,28 @@
   border-radius: utils.$border-radius-06;
 }
 
+.card__created a {
+  width: 100%;
+}
+
 /*state styles*/
 .card__back:hover {
   background: utils.$color-primary;
 } 
 
-.card__searched:hover, 
-.card__created:hover {
-  scale: 1.1;
-  border: solid #FFCC01 4px;
-  border-radius: utils.$border-radius-19-px ;
+.card__created:hover,
+.nextui-c-BDLTQ:hover {
+  background: #ffffe6;
+}
+
+.card__detailed_body:hover,
+.card__createdDetailed_body:hover {
+  background: #fffffff2;
+}
+
+.card__searched_body:hover,
+.card__created_body:hover {
+  border: solid #FFCC01 1px;
 }
 
 .card__home > .nextui-c-BDLTQ:focus {

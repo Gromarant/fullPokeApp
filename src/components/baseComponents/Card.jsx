@@ -27,7 +27,7 @@ const Card = ({image, name, id, position, handleClick, toggled, stopflip, showDe
 
       { image && name && id &&
         <article className='card card__searched'>
-          <NextUi_Card>
+          <NextUi_Card className='card__searched_body'>
             <Link to={`/pokemon/${id}`}>
               <NextUi_Card.Body>
                 <NextUi_Card.Image className='card__image' src={image} alt={name}/>
@@ -43,7 +43,7 @@ const Card = ({image, name, id, position, handleClick, toggled, stopflip, showDe
       { image && name && owner_id && showDetails && typeOne &&
         <article className='card card__created' onClick={showDetails}>
           <Link to={`/created/${owner_id}`}>
-            <NextUi_Card>
+            <NextUi_Card className='card__created_body'>
               <NextUi_Card.Body>
                 <Grid>
                   <Text className='card__created_name'>{name}</Text>
@@ -64,7 +64,7 @@ const Card = ({image, name, id, position, handleClick, toggled, stopflip, showDe
 
       { weight && height && types && image && name &&
         <article className='card card__detailed'>
-          <NextUi_Card>
+          <NextUi_Card className='card__detailed_body'>
             <NextUi_Card.Header>
               <Text className='card__detailed_name'>{name}</Text>
             </NextUi_Card.Header>
@@ -94,7 +94,7 @@ const Card = ({image, name, id, position, handleClick, toggled, stopflip, showDe
 
       { detail_id && typeOne && name && image && 
         <article className='card card__created_detailed'>
-          <NextUi_Card>
+          <NextUi_Card className='card__createdDetailed_body'>
             <NextUi_Card.Header>
               <Text className='card__detailed_name'>{name}</Text>
               <section className='card__data'>
