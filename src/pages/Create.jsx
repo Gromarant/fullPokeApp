@@ -19,21 +19,51 @@ const Create = () => {
   const {setCreatedPokemon, addToListOfCreatedPokemons} = useContext(pokemonContext);
   const {
     register,
-     handleSubmit,
-      formState: { errors },
+    handleSubmit,
+    formState: { errors },
+    clearErrors,
   } =useForm({ defaultValues });
   const navigate = useNavigate();
 
-  console.log('errors', errors);
-
-  const handleErrors = (error, title, message) => {
-    if (error) {
-      Swal.fire({
-        icon: 'error',
-        titleText: title,
-        html: message,
-      })
+  
+  const handleErrors = (error) => {
+    let title;
+    let message;
+    if (Object.hasOwn(error, 'owner_id')) {
+      title = 'invalid Id:';
+      message = 'Must begin with:' +
+      '<b> 1 Capital letter</b> + (-) + <b>3-6 numbers.</b>' +
+      ' EXAMPLE:  <b>X-157961</b>' +
+      ' Length:  <b>5-8 characters</b>';
+    } else if (Object.hasOwn(error, 'name')) {
+      title = 'invalid Name:';
+      message = 'Must start with:' +
+      '<b> Letters</b> + optional : (-) + <b>4 numbers.</b>' +
+      ' EXAMPLE:  <b>Pokeboy</b> or <b>Pokeboy-0025</b>' +
+      ' Length:  <b>3-20 characters</b>';
+    } else if (Object.hasOwn(error, 'image')) {
+      title = 'invalid Image url:';
+      message = 'Must start with:' +
+      '<b> https</b>' +
+      ' EXAMPLE:  <b>https://images...</b>' +
+      ' Length:  <b> max 200 characters</b>';
+    } else if (Object.hasOwn(error, 'typeOne')) {
+      title = 'invalid TypeOne:'
+      message = 'Must have only letters' +
+      ' EXAMPLE:  <b>fire</b> | <b>water</b> | <b>onomatopoeia</b>' +
+      ' Length:  <b>3-20 characters</b>';
+    } else {
+      title = 'invalid TypeTwo:'
+      message = 'Must have only letters' +
+      ' EXAMPLE:  <b>fairy"</b> | <b>poison</b> | <b>fighting</b>' +
+      ' Length:  <b>3-20 characters</b>';
     }
+    Swal.fire({
+      icon: 'error',
+      titleText: title,
+      html: message,
+    })
+    clearErrors();
   };
 
   const handleChange = (e) => {
@@ -64,16 +94,7 @@ const Create = () => {
             minLength: 5,
             maxLength: 8,
           })} onChange={handleChange} placeholder='X-123... or X-123456' value={inputValue.owner_id}/></label>
-          {errors.owner_id &&  
-            handleErrors(
-              errors.owner_id,
-              'invalid Id:',
-              'Must begin with:' +
-              '<b> 1 Capital letter</b> + (-) + <b>3-6 numbers.</b>' +
-              ' EXAMPLE:  <b>X-157961</b>' +
-              ' Length:  <b>5-8 characters</b>',
-            )
-          }
+          {errors.owner_id && handleErrors(errors)}
 
           <label htmlFor='name' className='form_label'>Name *
           <input type='string' name='name' id='name' autoComplete='off' className='form_input' {...register('name', {
@@ -83,16 +104,7 @@ const Create = () => {
             maxLength:20,
           })}
           onChange={handleChange} placeholder='Pokechi or pokechi-0001' value={inputValue.name}/></label>
-          {errors.name &&  
-            handleErrors(
-              errors.name,
-              'invalid Name:',
-              'Must start with:' +
-              '<b> Letters</b> + optional : (-) + <b>4 numbers.</b>' +
-              ' EXAMPLE:  <b>Pokeboy</b> or <b>Pokeboy-0025</b>' +
-              ' Length:  <b>3-20 characters</b>',
-            )
-          }
+          {errors.name && handleErrors(errors)}
 
           <label htmlFor='image' className='form_label'>Url image *
           <input type='url' name='image' id='image' className='form_input' {...register('image', {
@@ -101,16 +113,7 @@ const Create = () => {
             maxLength: 200,
           })}
           onChange={handleChange} placeholder='pokemon image' value={inputValue.image}/></label>
-          {errors.image &&  
-            handleErrors(
-              errors.image,
-              'invalid Image url:',
-              'Must start with:' +
-              '<b> https</b>' +
-              ' EXAMPLE:  <b>https://images...</b>' +
-              ' Length:  <b> max 200 characters</b>',
-            )
-          }
+          {errors.image && handleErrors(errors)}
 
           <label htmlFor='typeOne' className='form_label'>TypeOne *
           <input type='string' name='typeOne' id='typeOne' autoComplete='off' className='form_input' {...register('typeOne', {
@@ -120,15 +123,7 @@ const Create = () => {
             maxLength: 20,
           })}
           onChange={handleChange} placeholder='fire or water or ...' value={inputValue.typeOne}/></label>
-          {errors.typeOne &&  
-            handleErrors(
-              errors.typeOne,
-              'invalid TypeOne:',
-              'Must have only letters' +
-              ' EXAMPLE:  <b>fire</b> | <b>water</b> | <b>onomatopoeia</b>' +
-              ' Length:  <b>3-20 characters</b>',
-            )
-          }
+          {errors.typeOne && handleErrors(errors)}
 
           <label htmlFor='typeTwo' className='form_label'>TypeTwo
           <input type='string' name='typeTwo' id='typeTwo' autoComplete='off' className='form_input' {...register('typeTwo', {
@@ -137,15 +132,7 @@ const Create = () => {
             maxLength:20,
           })}
           onChange={handleChange} placeholder='pokemon typeTwo' value={inputValue.typeTwo}/></label>
-          {errors.typeTwo &&  
-            handleErrors(
-              errors.typeTwo,
-              'invalid TypeTwo:',
-              'Must have only letters' +
-              ' EXAMPLE:  <b>fairy"</b> | <b>poison</b> | <b>fighting</b>' +
-              ' Length:  <b>3-20 characters</b>',
-            )
-          }
+          {errors.typeTwo && handleErrors(errors)}
 
           <ButtonAct value='Create'/>
         </form>
