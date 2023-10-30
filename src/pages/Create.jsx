@@ -1,10 +1,10 @@
 import { useState, useContext } from 'react';
-import Swal from 'sweetalert2';
 import { useForm } from 'react-hook-form';
 import {useNavigate} from 'react-router-dom';
+import Swal from 'sweetalert2';
+import { GoXCircleFill } from "react-icons/go";
 import ButtonAct from '../components/baseComponents/ButtonAct';
 import { pokemonContext } from '../context/pokemonContext';
-
 
 const defaultValues = {
   owner_id: '',
@@ -19,10 +19,19 @@ const Create = () => {
   const {setCreatedPokemon, addToListOfCreatedPokemons} = useContext(pokemonContext);
   const {
     register,
+    resetField,
     handleSubmit,
+    control,
     formState: { errors },
     clearErrors,
-  } =useForm({ defaultValues });
+  } =useForm({
+      defaultValues : {
+      owner_id: '',
+      name: '',
+      image: '',
+      typeOne: '',
+      typeTwo: '',
+    }});
   const navigate = useNavigate();
 
   
@@ -67,74 +76,107 @@ const Create = () => {
   };
 
   const handleChange = (e) => {
-
     setInputValue({
       ...inputValue,
       [e.target.name]: e.target.value,
     })
+  };
+
+  const onSubmit = (data) => {
+    addToListOfCreatedPokemons({...data})
+    setCreatedPokemon({...data})
+    navigate(`/created/${data.owner_id}`);
   }
 
+  const clearInput = (name) => {
+    resetField(name);
+    inputValue[name] = '';
+  }
 
   return (
     <>
       <section className='main__content'>
         <h1 className='animated'>Create a pokémon</h1>
-        <form className='form' onSubmit={handleSubmit((data) => {
-          data.message && <p>{data.message}</p>
-          addToListOfCreatedPokemons({...data})
-          setCreatedPokemon({...data})
-          navigate(`/created/${data.owner_id}`);
-          setInputValue(defaultValues)
-        })}>
+        <form className='form' onSubmit={handleSubmit(onSubmit, handleErrors)}>
           <h3 className='form__title'>New Pokémon data</h3>
-          <label htmlFor='owner_id' className='form_label'>Id *
-          <input type='string' name='owner_id' id='owner_id' autoComplete='off' className='form_input' {...register('owner_id', {
-            required: 'ID field is required',
-            pattern: /([A-Z](?<=[A-Z])-\d{3,6})/,
-            minLength: 5,
-            maxLength: 8,
-          })} onChange={handleChange} placeholder='X-123... or X-123456' value={inputValue.owner_id}/></label>
-          {errors.owner_id && handleErrors(errors)}
+          <label htmlFor='owner_id' className='form_label'>Id *</label>
+          <article className='input__wrapper'>
+            <input type='string' name='owner_id' id='owner_id' autoComplete='off' className='form_input' {...register('owner_id', {
+              required: true,
+              pattern: /([A-Z](?<=[A-Z])-\d{3,6})/,
+              minLength: 5,
+              maxLength: 8,
+            })} onChange={handleChange} placeholder='X-123... or X-123456' value={inputValue.owner_id}/>
+            { inputValue.owner_id &&
+              <button className='clear__btn' type='button' onClick={() => clearInput('owner_id')}>
+                <GoXCircleFill/>
+              </button>
+            }
+          </article>
 
-          <label htmlFor='name' className='form_label'>Name *
-          <input type='string' name='name' id='name' autoComplete='off' className='form_input' {...register('name', {
-            required: 'Name field is required',
-            pattern: /^[A-Za-z]{1,20}?$|([A-Za-z]{1,20}(?<=[A-Za-z])-\d{4})/ig,
-            minLength: 3,
-            maxLength:20,
-          })}
-          onChange={handleChange} placeholder='Pokechi or pokechi-0001' value={inputValue.name}/></label>
-          {errors.name && handleErrors(errors)}
+          <label htmlFor='name' className='form_label'>Name *</label>
+          <article className='input__wrapper'>
+            <input type='string' name='name' id='name' autoComplete='off' className='form_input' {...register('name', {
+              required: true,
+              pattern: /^[A-Za-z]{1,20}?$|([A-Za-z]{1,20}(?<=[A-Za-z])-\d{4})/ig,
+              minLength: 3,
+              maxLength:20,
+            })}
+            onChange={handleChange} placeholder='Pokechi or pokechi-0001' value={inputValue.name}/>
+            { inputValue.name &&
+              <button className='clear__btn' type='button' onClick={() => resetField('name')}>
+                <GoXCircleFill/>
+              </button>
+            }
+          </article>
 
-          <label htmlFor='image' className='form_label'>Url image *
-          <input type='url' name='image' id='image' className='form_input' {...register('image', {
-            required: 'Url image field is required',
-            pattern: /(https?:\/\/.*\.*)/i,
-            maxLength: 200,
-          })}
-          onChange={handleChange} placeholder='pokemon image' value={inputValue.image}/></label>
-          {errors.image && handleErrors(errors)}
+          <label htmlFor='image' className='form_label'>Url image *</label>
+          <article className='input__wrapper'>
+            <input type='url' name='image' id='image' className='form_input' {...register('image', {
+              required: true,
+              pattern: /(https?:\/\/.*\.*)/i,
+              maxLength: 200,
+            })}
+            onChange={handleChange} placeholder='pokemon image' value={inputValue.image}/>
+            { inputValue.image &&
+            <button className='clear__btn' type='button' onClick={() => resetField('image')}>
+              <GoXCircleFill/>
+            </button>
+          }
+          </article>
 
-          <label htmlFor='typeOne' className='form_label'>TypeOne *
-          <input type='string' name='typeOne' id='typeOne' autoComplete='off' className='form_input' {...register('typeOne', {
-            required: 'TypeOne field is required',
-            pattern: /^[A-Za-z]{3,15}$/,
-            minLength: 3,
-            maxLength: 20,
-          })}
-          onChange={handleChange} placeholder='fire or water or ...' value={inputValue.typeOne}/></label>
-          {errors.typeOne && handleErrors(errors)}
+          <label htmlFor='typeOne' className='form_label'>TypeOne *</label>
+          <article className='input__wrapper'>
+            <input type='string' name='typeOne' id='typeOne' autoComplete='off' className='form_input' {...register('typeOne', {
+              required: true,
+              pattern: /^[A-Za-z]{3,15}$/,
+              minLength: 3,
+              maxLength: 20,
+            })}
+            onChange={handleChange} placeholder='fire or water or ...' value={inputValue.typeOne}/>
+            { inputValue.typeOne &&
+              <button className='clear__btn' type='button' onClick={() => resetField('typeOne')}>
+                <GoXCircleFill/>
+              </button>
+            }
+          </article>
 
-          <label htmlFor='typeTwo' className='form_label'>TypeTwo
-          <input type='string' name='typeTwo' id='typeTwo' autoComplete='off' className='form_input' {...register('typeTwo', {
-            pattern: /^[A-Za-z]{3,15}$/,
-            minLength: 5,
-            maxLength:20,
-          })}
-          onChange={handleChange} placeholder='pokemon typeTwo' value={inputValue.typeTwo}/></label>
-          {errors.typeTwo && handleErrors(errors)}
+          <label htmlFor='typeTwo' className='form_label'>TypeTwo</label>
+          <article className='input__wrapper'>
+            <input type='string' name='typeTwo' id='typeTwo' autoComplete='off' className='form_input' {...register('typeTwo', {
+              pattern: /^[A-Za-z]{3,15}$/,
+              minLength: 5,
+              maxLength:20,
+            })}
+            onChange={handleChange} placeholder='pokemon typeTwo' value={inputValue.typeTwo}/>
+            { inputValue.typeTwo &&
+              <button className='clear__btn' type='button' onClick={() => resetField('typeTwo')}>
+                <GoXCircleFill/>
+              </button>
+            }
+          </article>
 
-          <ButtonAct value='Create'/>
+          <ButtonAct value='Create' onClick={handleSubmit}/>
         </form>
       </section>
     </>
