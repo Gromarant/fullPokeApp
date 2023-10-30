@@ -1,6 +1,35 @@
-.inputWithFoutingLabel{
-  label {
-    text-align: start;
-    padding-left: 2.5rem;;
-  }
+@use '../utils';
+
+.input__wrapper {
+  max-width: 100%;
+  position: relative;
+}
+
+.input__wrapper input {
+  width: 100%;
+  height: 2.2rem;
+  border-radius: 0.6rem;
+  border: solid #ffcc01 0.1rem;
+  padding: 0;
+  padding-left: 0.5rem;
+}
+
+.input__wrapper .clear__btn {
+  font-size: utils.$font-regular;
+  height: 100%;
+  border: none;
+  border-top: solid #ffcc01 0.1rem;
+  border-bottom: solid #ffcc01 0.1rem;
+  position: absolute;
+  right: 0;
+  margin: 0 0.4rem;
+  padding: 0;
+  aspect-ratio: 1;
+  color: utils.$color-danger;
+  background-color: white;
+  cursor: pointer;
+}
+
+.clear__btn svg {
+  margin-top: 0.3rem;
 }

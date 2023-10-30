@@ -1,48 +1,13 @@
 @use '../utils';
 
-
 .animated {
   @include utils.animatedTitle;
 }
+
 .animated:hover {--_p: 100%}
 
 .search_form {
   @include utils.form;
-}
-
-.form_label {
-  @include utils.flexCol;
-  gap: 0.4rem;
-}
-
-.search_label {
-  gap: 1rem;
-}
-
-.nextui-c-hzQjrs {
-  text-align: center;
-  margin: 1rem auto 0;
-  color: utils.$color-primary;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.nextui-c-iwmZdB {
-  gap: 1rem;
-}
-
-.form_input {
-  @include utils.input_form;
-}
-
-.input_search {
-  border-radius: 0.6rem;
-  border: solid #ffcc01 0.1rem;
-  padding: 0;
-}
-
-.nextui-c-eXOOPO-lkBNdM-isTextarea-false {
-  border-radius: 0.6rem;
 }
 
 .pokemon__list {
@@ -65,4 +30,16 @@
 
 .close__icon {
   font-size: utils.$font-regular;
+}
+
+.nextui-c-eXOOPO-lkBNdM-isTextarea-false {
+  border-radius: 0.6rem;
+}
+
+label[for="search"] {
+  text-align: center;
+  margin: 0 0 0.5rem 0;
+  color: utils.$color-primary;
+  font-size: 24px;
+  font-weight: 600;
 }

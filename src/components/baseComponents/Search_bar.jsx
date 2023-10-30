@@ -28,19 +28,22 @@ const Search_bar = ({setPokemonsData}) => {
     handleClick();
   };
 
+  const clearInput = () => setSearchInputValue('');
+
   return (
     <>
       <form className='search_form' onSubmit={handleSubmit}>
-        <Input className='input_search' id='search'
-          clearable
-          initialValue=""
-          label="Pokemon name"
-          type="test"
-          placeholder="Enter a pókemon name"
-          helperText=""
+        <Input className='input_search'
+          type='text'
+          name='search'
+          id='search'
+          label='Pokemon name'
+          placeholder='Enter a pókemon name'
           onChange={handleInputChange}
+          value={searchInputValue}
+          clear={clearInput}
         />
-        <ButtonAct onPress={handleClick} value='Search'/>
+        <ButtonAct onSubmit={handleClick} value='Search'/>
       </form>
     </>
   );
