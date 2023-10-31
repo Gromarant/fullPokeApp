@@ -7,19 +7,19 @@
 
 <br>
 
-Change to:&nbsp; &nbsp; [![es](https://img.shields.io/badge/idioma-Spanish-blue.svg)](README.es.md)
+Cambiar a:&nbsp; &nbsp; [![en](https://img.shields.io/badge/idioma-inglés-green.svg)](README.md)
 
 ---
 <!-- title and description -->
 # FullPokeApp
-Challenge your memory and cognitive skills with a memory game featuring Pokémon. 
+Desafía tu memoria y tus habilidades cognitivas con un juego de memoria protagonizado por Pokémones. 
 <br>
 
-## Key features:
+## Características clave:
 
 <details>
-<summary>&nbsp; &nbsp; <img src="assets/summary_icon_cybersecurity.png" title="Memory game logo" alt="Memory game logo" style="width:32px;"/> &nbsp; &nbsp;
-  Memory game:
+<summary>&nbsp; &nbsp; <img src="assets/summary_icon_cybersecurity.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
+  Juegos de memoria:
   <div style="display:flex; justify-content:center; align-items:center;">  
     <a href="https://www.gromarant.com/" style="color:white;">
       <img src="assets/mentor_scrumMaster.png" alt="Play button" title="Play button" style="width:120px; height:120px"/>
@@ -29,7 +29,7 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 
 <br>
 
-Challenge your memory and cognitive skills with a memory game featuring Pokémon.
+Desafía tu memoria y tus habilidades cognitivas con un juego de memoria protagonizado por Pokémones.
 
 <br>
 
@@ -44,14 +44,14 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 
   <div>
 
-  The game begins with all cards face down and the player turns over two cards for each move. If the two cards have the same image, they remain face up; otherwise, they are face down again.
+  El juego comienza con todas las cartas boca abajo y el jugador voltea dos cartas por cada movimiento. Si las dos cartas tienen la misma imagen, se quedan boca arriba; de lo contrario, vuelven a estar boca abajo. 
 
 ### Componentes
-  - 12 pokémon cards.
-  - Reset button, to play again with the same cards in a different order.
-  - New game button, to change cards.
-  - Movement counter.
-  - Pop-up with data about the game won and buttons to play a new game, reset the game or close the pop-up.
+  - 12 cartas pokémon.
+  - Botón de reset, para jugar de nuevo con las mismas cartas en diferente orden.
+  - Botón de new Game, para cambiar de cartas.
+  - Contador de movimientos.
+  - Pop-up con datos de la partida ganada y botones para jugar nueva partida, resetear la partida o cerrar el pop-up.
 
   </div>
 </div>
