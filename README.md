@@ -1,9 +1,8 @@
-<!-- PokeApp banner -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/content.en/banner_sol7_dark_en.png">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/content.en/banner_sol7_ligth_en.png">
-  <img alt="banner sol7" src="./assets/content.en/banner_sol7_default_en.png">
-</picture>
+<div style="display:flex; justify-content:center; align-items:center; padding:1rem; background-color: #2359be">
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; padding:1rem; background-image: url('src/assets/images/wallpaper-pokemondark-pokemon.jpg'); width:100%;">
+  <img src="src/assets/images/FullPOkeApp-title.png" style="min-width:200px; width:40%;" alt="Gromarant logo" title="Gromarant"/>
+  </div>
+</div>
 
 <br>
 
@@ -20,11 +19,9 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 <details>
 <summary>&nbsp; &nbsp; <img src="src/assets/images/memory-game.png" title="Memory game" alt="Memory game" style="width:32px;"/> &nbsp; &nbsp;
   Memory game:
-  <!-- <div style="display:flex; justify-content:center; align-items:center;">   -->
-    <a href="https://www.gromarant.com/">
-      <img src="src/assets/images/play.png" alt="Play button" title="Play button" style="width:48px; height:48px; align-self:center"/>
-    </a>   
-  <!-- </div> -->
+  <a href="https://www.gromarant.com/">
+    <img src="src/assets/images/play.png" alt="Play button" title="Play button" style="width:48px; height:48px; margin-left:20%;"/>
+  </a>   
 </summary>
 
 <br>
@@ -33,7 +30,7 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 
 <br>
 
-<img src="assets/icon_dataScience_plus.png" title="Data Science" alt="Data Science Logo" style="height: 107px; width: 102px;"/>
+<img src="src/assets/images/memoryPage.png" title="memory game" alt="memory game"/>
 
 <br>
 <br>
@@ -62,18 +59,16 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 <details>
 <summary>&nbsp; &nbsp; <img src="src/assets/images/pokemon-go.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
   pokemon search:
-  <div style="display:flex; justify-content:center; align-items:center;">  
-    <a href="https://www.gromarant.com/" style="color:white;">
-      <img src="assets/mentor_scrumMaster.png" alt="Search button" title="Search button" style="width:120px; height:120px"/>
-    </a>   
-  </div>
+  <a href="https://www.gromarant.com/">
+    <img src="src/assets/images/play.png" alt="Search button" title="Search button" style="width:48px; height:48px; margin-left:19%;"/>
+  </a> 
 </summary>
 
 <br>
 
 Search for your favorite Pokemon and select to see their details.
 
-<img src="assets/icon_dataScience_plus.png" title="Data Science" alt="Data Science Logo" style="height: 107px; width: 102px;"/>
+<img src="src/assets/images/searchPage.png" title="Search Page" alt="Search Page"/>
 
 <br>
 <br>
@@ -104,19 +99,20 @@ Search for your favorite Pokemon and select to see their details.
 
 <details>
   <summary>&nbsp; &nbsp; <img src="src/assets/images/snorlax.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
-  Pokemon details view:
-  <div style="display:flex; justify-content:center; align-items:center; margin:1rem;">  
-    <a href="https://www.gromarant.com/" style="color:white;">
-      <img src="assets/mentor_scrumMaster.png" alt="See button" title="See button" style="width:120px;"/>
-    </a>   
-  </div>
+  Pokemon details view:  
+  <a href="https://www.gromarant.com/">
+    <img src="src/assets/images/play.png" alt="See button" title="See button" style="width:48px; height:48px; margin-left:16%;"/>
+  </a>   
   </summary>
 
 <br>
 
 Here you see the card with the details of the Pokemon selected in the search list.
 
-<img src="assets/icon_dataScience_plus.png" title="Data Science" alt="Data Science Logo" style="height: 107px; width: 102px;"/>
+<div>
+  <img src="src/assets/images/searchedDetailsPage.png" title="Details of pokemon searched" alt="Details card of pokemon searched" style="width:200px;"/>
+  <img src="src/assets/images/createdDetailsPage.png" title="Details of pokemon searched" alt="Details card of pokemon created" style="width:200px;"/>
+</div>
 
 <br>
 <br>
@@ -145,19 +141,17 @@ Here you see the card with the details of the Pokemon selected in the search lis
 
 <details>
   <summary>&nbsp; &nbsp; <img src="src/assets/images/egg.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
-  Pokemon creation:
-  <div style="display:flex; justify-content:center; align-items:center; margin:1rem;">  
-    <a href="https://www.gromarant.com/" style="color:white;">
-      <img src="assets/mentor_scrumMaster.png" alt="create button" title="create button" style="width:120px;"/>
-    </a>   
-  </div>
+  Pokemon creation: 
+  <a href="https://www.gromarant.com/">
+    <img src="src/assets/images/play.png" alt="create button" title="create button" style="width:48px; height:48px; margin-left:18%;"/>
+  </a> 
   </summary>
 
 <br>
 
 Create your own pokemons, customize their appearance, attributes.
 
-<img src="assets/icon_dataScience_plus.png" title="Data Science" alt="Data Science Logo" style="height: 107px; width: 102px;"/>
+<img src="src/assets/images/createFormPage.png" title="Creation page" alt="Creation page"/>
 
 <br>
 <br>
@@ -283,13 +277,11 @@ xxxxxxxxxx
 ## Tools:
 
 <br>
-
+ <!-- style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; padding:1rem;" -->
 <div>
-  <img src="assets/card_tool_python.png" title="Python" alt="Python Logo" style="width:64px;"/>&nbsp; &nbsp;
-  <img src="assets/card_tool_LangChain.png" title="LangChain" alt="LangChain Logo" style="width:64px;"/>&nbsp; &nbsp;
-  <img src="assets/card_tool_flask.png" title="Flask" alt="Flask Logo" style="width:64px;"/>&nbsp; &nbsp;
-  <img src="assets/card_tool_OpenAI.png" title="Open AI" alt="Open AI Logo" style="width:64px;"/>&nbsp; &nbsp;
-  <img src="assets/card_tool_ScikitLearn.png" title="ScikitLearn" alt="ScikitLearn Logo" style="width:64px;"/>&nbsp; &nbsp;
+  <img src="src/assets/images/react_yellowLogo.png" title="React.js" alt="React.js Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
+  <img src="src/assets/images/sass_yellowLogo.png" title="Sass | css" alt="Sass | css Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
+  <img src="src/assets/images/nextui_yellowLogo.png" title="Nextui" alt="Nextui Logo" style="width:102px; border-radius:8px;"/>
 </div>
 
 <br>
@@ -345,12 +337,26 @@ xxxxxxxxxx
 
 ---
 
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; justify-content:space-between; padding: 1rem 2rem; background-color:black">
-
-[&copy; Mariangelica Rodriguez](https://www.linkedin.com/in/mariangelica-rodr%C3%ADguez-p%C3%A9rez/)
-
 <br>
 <br>
 
-[<img width="208" height="64" src="src/assets/images/logo-Gromarant-2023.jpg">](https://www.gromarant.com/)
+<div style="display:flex; justify-content:center; align-items:center; padding:1rem; background-color: #2359be">
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; padding:1rem; background-image: url('src/assets/images/wallpaper-pokemondark-pokemon.jpg'); width:100%;">
+
+  <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; padding:1rem;">
+  <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/" style="text-align:center;">
+  <img src="src/assets/images/logoGromarant-2023.png" style="width:250px;" alt="Gromarant logo" title="Gromarant"/>
+  <p style="color: #D9D9D9">© Mariangelica Rodriguez</p>
+  </a>
+  </div>
+
+  <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; gap:1rem; padding:1rem;">
+  <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/"  style="color: #D9D9D9">
+    <img src="src/assets/images/linkedIn.png" style="width:34px; height:34px" alt="Gromarant logo" title="Gromarant"/>
+  </a>
+  <a href="https://github.com/Gromarant"  style="color: #D9D9D9">
+    <img src="src/assets/images/githubLogo.png" style="width:34px; height:34px; border-radius:50%" alt="Gromarant logo" title="Gromarant"/>
+  </a>
+  </div>
+  </div>
 </div>
