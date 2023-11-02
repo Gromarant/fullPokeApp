@@ -18,13 +18,13 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 ## Key features:
 
 <details>
-<summary>&nbsp; &nbsp; <img src="assets/summary_icon_cybersecurity.png" title="Memory game logo" alt="Memory game logo" style="width:32px;"/> &nbsp; &nbsp;
+<summary>&nbsp; &nbsp; <img src="src/assets/images/memory-game.png" title="Memory game" alt="Memory game" style="width:32px;"/> &nbsp; &nbsp;
   Memory game:
-  <div style="display:flex; justify-content:center; align-items:center;">  
-    <a href="https://www.gromarant.com/" style="color:white;">
-      <img src="assets/mentor_scrumMaster.png" alt="Play button" title="Play button" style="width:120px; height:120px"/>
+  <!-- <div style="display:flex; justify-content:center; align-items:center;">   -->
+    <a href="https://www.gromarant.com/">
+      <img src="src/assets/images/play.png" alt="Play button" title="Play button" style="width:48px; height:48px; align-self:center"/>
     </a>   
-  </div>
+  <!-- </div> -->
 </summary>
 
 <br>
@@ -38,7 +38,7 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 <br>
 <br>
 
-### Detalles:
+### Details:
 
 <div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; padding:1rem; background-color:black">
 
@@ -46,7 +46,7 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 
   The game begins with all cards face down and the player turns over two cards for each move. If the two cards have the same image, they remain face up; otherwise, they are face down again.
 
-### Componentes
+### Components
   - 12 pokémon cards.
   - Reset button, to play again with the same cards in a different order.
   - New game button, to change cards.
@@ -60,8 +60,8 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 ---
 
 <details>
-<summary>&nbsp; &nbsp; <img src="assets/summary_icon_cybersecurity.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
-  Buscador de pokemones:
+<summary>&nbsp; &nbsp; <img src="src/assets/images/pokemon-go.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
+  pokemon search:
   <div style="display:flex; justify-content:center; align-items:center;">  
     <a href="https://www.gromarant.com/" style="color:white;">
       <img src="assets/mentor_scrumMaster.png" alt="Search button" title="Search button" style="width:120px; height:120px"/>
@@ -71,31 +71,31 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 
 <br>
 
-Busca tus Pokémons favoritos y selecciona para ver sus detalles.
+Search for your favorite Pokemon and select to see their details.
 
 <img src="assets/icon_dataScience_plus.png" title="Data Science" alt="Data Science Logo" style="height: 107px; width: 102px;"/>
 
 <br>
 <br>
 
-### Detalles:
+### Details:
 
 <div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; padding:1rem; background-color:black">
 
   <div>
 
-  Busca por coincidencia con el nombre de los pokemons, una vez ingresado el nombre o carácter de búsqueda y presionar search se desplegarán debajo los pokemones que coinciden con la búsqueda.
+  Search by matching the name of the Pokemon. Once you enter the search name or character and press search, the pokemon that matches the search will be displayed below.
 
-### Componentes
+### Components
 
- - Barra de búsqueda.
- - Lista de pokemones buscados recientemente (vista detalles del pokémon).
- - Lista de pokemones creados.
- - botón para volver al inicio de la página de búsqueda.
+ - Search bar.
+ - Recent Pokemon search list (Pokemon details view).
+ - List of created pokemons.
+ - Button to return to the top of the search page.
 
 <br>
 
-  En esta pantalla podrás ver las listas de los pokemones cuando no haya una búsqueda actual.
+  On this page you can see the pokemon lists when there is not a search in course.
   </div>
 </div>
 </details>
@@ -103,8 +103,8 @@ Busca tus Pokémons favoritos y selecciona para ver sus detalles.
 ---
 
 <details>
-  <summary>&nbsp; &nbsp; <img src="assets/summary_icon_cybersecurity.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
-  Vista a detalle de Pokémon:
+  <summary>&nbsp; &nbsp; <img src="src/assets/images/snorlax.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
+  Pokemon details view:
   <div style="display:flex; justify-content:center; align-items:center; margin:1rem;">  
     <a href="https://www.gromarant.com/" style="color:white;">
       <img src="assets/mentor_scrumMaster.png" alt="See button" title="See button" style="width:120px;"/>
@@ -114,14 +114,14 @@ Busca tus Pokémons favoritos y selecciona para ver sus detalles.
 
 <br>
 
-Carta con los detalles del pokémon seleccionado en la lista de búsqueda.
+Here you see the card with the details of the Pokemon selected in the search list.
 
 <img src="assets/icon_dataScience_plus.png" title="Data Science" alt="Data Science Logo" style="height: 107px; width: 102px;"/>
 
 <br>
 <br>
 
-### Detalles:
+### Details:
 
 <br>
 
@@ -129,16 +129,14 @@ Carta con los detalles del pokémon seleccionado en la lista de búsqueda.
 
   <div>
 
-  Contiene una carta con los detalles del pokémon: nombre, imagen, peso, altura, type-One y/o type-Two.
+  It contains a card with the Pokémon's details: name, image, weight, height, type-One and/or type-Two.
 
-### Componentes
+### Components
 
- - Carta de detalles del pokémon.
- - Botón para volver al buscador.
+ - Pokemon Details Card.
+ - Button to return to the search engine.
 
 <br>
-
-  En esta pantalla podrás ver las listas de los pokemones cuando no haya una búsqueda actual.
   </div>
 </div>
 </details>
@@ -146,8 +144,8 @@ Carta con los detalles del pokémon seleccionado en la lista de búsqueda.
 ---
 
 <details>
-  <summary>&nbsp; &nbsp; <img src="assets/summary_icon_cybersecurity.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
-  Creación de Pokémon
+  <summary>&nbsp; &nbsp; <img src="src/assets/images/egg.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
+  Pokemon creation:
   <div style="display:flex; justify-content:center; align-items:center; margin:1rem;">  
     <a href="https://www.gromarant.com/" style="color:white;">
       <img src="assets/mentor_scrumMaster.png" alt="create button" title="create button" style="width:120px;"/>
@@ -157,14 +155,14 @@ Carta con los detalles del pokémon seleccionado en la lista de búsqueda.
 
 <br>
 
-Crea tus propios pokemones, personaliza su apariencia, atributos.
+Create your own pokemons, customize their appearance, attributes.
 
 <img src="assets/icon_dataScience_plus.png" title="Data Science" alt="Data Science Logo" style="height: 107px; width: 102px;"/>
 
 <br>
 <br>
 
-### Detalles:
+### Details:
 
 <br>
 
@@ -172,31 +170,29 @@ Crea tus propios pokemones, personaliza su apariencia, atributos.
 
   <div>
 
-### Componentes
+### Components
 
- - Formulario de creación.
- - Pop-up de error, con detalles y ejemplos para el rellenado de los input.
+ - Creation form.
+ - Error pop-up, with Details and examples for filling out the input.
 
 <br>
-
-  En esta pantalla podrás ver las listas de los pokemones cuando no haya una búsqueda actual.
   </div>
 </div>
 </details>
 
 ---
 
-## Objetivos: 
+## Objectives: 
 
- - Desarrollo de aplicación web con React.js (Vite) y Sass.
- - Trabajar con consumo de Api, react form, hooks e integración de componentes de librerías externas.
+ - Web application development with React.js (Vite) and Sass.
+ - Work with Api consumption, react form, hooks and integration of Components from external libraries.
 
 <br>
 
-## Diseño: 
+## Design: 
 
 <details>
-  <summary>&nbsp; &nbsp; <img src="assets/summary_icon_cybersecurity.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp; Wireframes:</summary>
+  <summary>&nbsp; &nbsp; <img src="src/assets/images/wireframe.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp; Wireframes:</summary>
 
 <br>
 
@@ -207,7 +203,7 @@ xxxxxxxxxx
 <br>
 <br>
 
-### Detalles:
+### Details:
 
 <br>
 
@@ -215,7 +211,7 @@ xxxxxxxxxx
 
   <div>
 
-### Componentes
+### Components
 
  - xxxxxxxxxxxx
   </div>
@@ -225,7 +221,7 @@ xxxxxxxxxx
 ---
 
 <details>
-  <summary>&nbsp; &nbsp; <img src="assets/summary_icon_cybersecurity.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp; Sistema de diseño:</summary>
+  <summary>&nbsp; &nbsp; <img src="src/assets/images/web-design.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp; Design system:</summary>
 
 <br>
 
@@ -236,7 +232,7 @@ xxxxxxxxxx
 <br>
 <br>
 
-### Detalles:
+### Details:
 
 <br>
 
@@ -244,7 +240,7 @@ xxxxxxxxxx
 
   <div>
 
-### Componentes
+### Components
 
  - xxxxxxxxxxxx
   </div>
@@ -254,7 +250,7 @@ xxxxxxxxxx
 ---
 
 <details>
-  <summary>&nbsp; &nbsp; <img src="assets/summary_icon_cybersecurity.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp; Prototipos</summary>
+  <summary>&nbsp; &nbsp; <img src="src/assets/images/prototype.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp; Prototypes:</summary>
 
 <br>
 
@@ -265,7 +261,7 @@ xxxxxxxxxx
 <br>
 <br>
 
-### Detalles:
+### Details:
 
 <br>
 
@@ -273,7 +269,7 @@ xxxxxxxxxx
 
   <div>
 
-### Componentes
+### Components
 
  - xxxxxxxxxxxx
   </div>
@@ -284,7 +280,7 @@ xxxxxxxxxx
 
 <br>
 
-## Herramientas:
+## Tools:
 
 <br>
 
@@ -298,10 +294,10 @@ xxxxxxxxxx
 
 <br>
 
-## Descarga e implementación:
+## Download and implementation:
 
 <details>
-  <summary>&nbsp; &nbsp; <img src="assets/summary_icon_cybersecurity.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp; Instrucciones:</summary>
+  <summary>&nbsp; &nbsp; <img src="src/assets/images/management.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp; Instructions:</summary>
 
 <br>
 
@@ -312,7 +308,7 @@ xxxxxxxxxx
 <br>
 <br>
 
-### Detalles:
+### Details:
 
 <br>
 
@@ -320,7 +316,7 @@ xxxxxxxxxx
 
   <div>
 
-### Componentes
+### Components
 
  - xxxxxxxxxxxx
   </div>
@@ -331,11 +327,11 @@ xxxxxxxxxx
 
 <br>
 
-## Futuras implementaciones:
+## Next implementations:
 
- - **Vista detalle de Pokémon:** Añadir más detalles (ataques, daño, etc).
- - **Juego de memoria/con pokemones creados:** juego de memoria con pokemones creados.
- - **Enciclopedia PokéDex:** Descubre información detallada sobre cada especie de Pokémon, sus habilidades y evoluciones.
+ - **Pokémon detail view:** Add more details (attacks, damage, etc.).
+ - **Memory game:** with created Pokémons.
+ - **PokéDex Encyclopedia:** Discover detailed information about each species of Pokémon, their abilities and evolutions.
 
 <br>
 
