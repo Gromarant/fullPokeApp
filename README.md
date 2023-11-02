@@ -9,7 +9,6 @@
 Change to:&nbsp; &nbsp; [![es](https://img.shields.io/badge/idioma-Spanish-blue.svg)](README.es.md)
 
 ---
-<!-- title and description -->
 # FullPokeApp
 Challenge your memory and cognitive skills with a memory game featuring Pokémon. 
 <br>
@@ -17,11 +16,16 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 ## Key features:
 
 <details>
-<summary>&nbsp; &nbsp; <img src="src/assets/images/memory-game.png" title="Memory game" alt="Memory game" style="width:32px;"/> &nbsp; &nbsp;
+<summary>
+<div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem;">
+<img src="src/assets/images/memory-game.png" title="Memory game" alt="Memory game" style="width:32px;"/> &nbsp; &nbsp;
   Memory game:
+  <div style="display: flex; justify-content: center; align-items:center; width:60%; margin-left:2.5rem;">
   <a href="https://www.gromarant.com/">
-    <img src="src/assets/images/play.png" alt="Play button" title="Play button" style="width:48px; height:48px; margin-left:20%;"/>
-  </a>   
+    <img src="src/assets/images/play.png" alt="Play icon" title="Play now" style="width:48px; height:48px;"/>
+  </a> 
+  </div>
+</div>  
 </summary>
 
 <br>
@@ -37,7 +41,7 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 
 ### Details:
 
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; padding:1rem; background-color:black">
+<div style="display:flex; flex-direction: column; gap:1rem; padding:1rem; background-color:black">
 
   <div>
 
@@ -51,19 +55,30 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
   - Pop-up with data about the game won and buttons to play a new game, reset the game or close the pop-up.
 
   </div>
+  <a href="https://www.gromarant.com/">
+  <div style="display: flex; flex-wrap:wrap; justify-content: center; align-items:center; gap:8px; padding:8px 16px; background: #FFCC01; width:fit-content; margin:16px auto;">
+    <img src="src/assets/images/play.png" alt="Play icon" title="Play now" style="width:48px; height:48px;"/>
+    <p style="color:black; text-align:center; margin:0; font-weight:600;">Play now</p>
+  </div>
+  </a> 
 </div>
 </details>
 
 ---
 
 <details>
-<summary>&nbsp; &nbsp; <img src="src/assets/images/pokemon-go.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
+<summary>
+<div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem;">
+<img src="src/assets/images/pokemon-go.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
   pokemon search:
+  <div style="display: flex; justify-content: center; align-items:center; width:58.5%; margin-left:2.5rem;">
   <a href="https://www.gromarant.com/">
-    <img src="src/assets/images/play.png" alt="Search button" title="Search button" style="width:48px; height:48px; margin-left:19%;"/>
+    <img src="src/assets/images/play.png" alt="Play icon" title="Go to the search Page" style="width:48px; height:48px;"/>
   </a> 
+  </div>
+</div> 
 </summary>
-
+  
 <br>
 
 Search for your favorite Pokemon and select to see their details.
@@ -75,7 +90,7 @@ Search for your favorite Pokemon and select to see their details.
 
 ### Details:
 
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; padding:1rem; background-color:black">
+<div style="display:flex; flex-direction: column; gap:8px; justify-content: center; padding:1rem; background-color:black">
 
   <div>
 
@@ -92,36 +107,47 @@ Search for your favorite Pokemon and select to see their details.
 
   On this page you can see the pokemon lists when there is not a search in course.
   </div>
+
+  <a href="https://www.gromarant.com/">
+  <div style="display: flex; flex-wrap:wrap; justify-content: center; align-items:center; gap:8px; padding:8px 16px; background: #FFCC01; width:fit-content; margin:8px auto 16px;">
+    <img src="src/assets/images/play.png" alt="Play icon" title="Play now" style="width:48px; height:48px;"/>
+    <p style="color:black; text-align:center; margin:0; font-weight:600;">Go to search</p>
+  </div>
+  </a> 
 </div>
 </details>
 
 ---
 
 <details>
-  <summary>&nbsp; &nbsp; <img src="src/assets/images/snorlax.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
-  Pokemon details view:  
+<summary>
+<div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem;">
+  <img src="src/assets/images/snorlax.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/>
+  Pokemon details view: 
+  <div style="display: flex; justify-content: center; align-items:center; width:56.4%; margin-left:2.5rem;">
   <a href="https://www.gromarant.com/">
-    <img src="src/assets/images/play.png" alt="See button" title="See button" style="width:48px; height:48px; margin-left:16%;"/>
-  </a>   
-  </summary>
+    <img src="src/assets/images/play.png" alt="Play icon" title="See details of a pokemon" style="width:48px; height:48px;"/>
+  </a> 
+  </div>
+</div> 
+</summary>
 
 <br>
 
 Here you see the card with the details of the Pokemon selected in the search list.
 
-<div>
-  <img src="src/assets/images/searchedDetailsPage.png" title="Details of pokemon searched" alt="Details card of pokemon searched" style="width:200px;"/>
-  <img src="src/assets/images/createdDetailsPage.png" title="Details of pokemon searched" alt="Details card of pokemon created" style="width:200px;"/>
+<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; justify-content: center; padding:1rem;">
+  <img src="src/assets/images/searchedDetailsPage.png" title="Details of pokemon searched" alt="Details card of a pokemon searched" style="width:200px;"/>
+  <img src="src/assets/images/createdDetailsPage.png" title="Details of pokemon searched" alt="Details card of a pokemon created" style="width:200px;"/>
 </div>
 
-<br>
 <br>
 
 ### Details:
 
 <br>
 
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; padding:1rem; background-color:black">
+<div style="display:flex; flex-direction: column; gap:1rem; justify-content: center; padding:1rem; background-color:black">
 
   <div>
 
@@ -132,20 +158,31 @@ Here you see the card with the details of the Pokemon selected in the search lis
  - Pokemon Details Card.
  - Button to return to the search engine.
 
-<br>
   </div>
+
+  <a href="https://www.gromarant.com/">
+  <div style="display: flex; flex-wrap:wrap; justify-content: center; align-items:center; gap:8px; padding:8px 16px; background: #FFCC01; width:fit-content; margin:16px auto;">
+    <img src="src/assets/images/play.png" alt="Play icon" title="Play now" style="width:48px; height:48px;"/>
+    <p style="color:black; text-align:center; margin:0; font-weight:600;">See a Pokemon</p>
+  </div>
+  </a> 
 </div>
 </details>
 
 ---
 
 <details>
-  <summary>&nbsp; &nbsp; <img src="src/assets/images/egg.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp;
+<summary>
+<div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem;">
+  <img src="src/assets/images/egg.png" style="width:32px;"/>
   Pokemon creation: 
+  <div style="display: flex; justify-content: center; align-items:center; width:59%; margin-left:2.5rem;">
   <a href="https://www.gromarant.com/">
-    <img src="src/assets/images/play.png" alt="create button" title="create button" style="width:48px; height:48px; margin-left:18%;"/>
+    <img src="src/assets/images/play.png" alt="Play icon" title="Go to the create page" style="width:48px; height:48px;"/>
   </a> 
-  </summary>
+  </div>
+</div> 
+</summary>
 
 <br>
 
@@ -160,7 +197,7 @@ Create your own pokemons, customize their appearance, attributes.
 
 <br>
 
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; padding:1rem; background-color:black">
+<div style="display:flex; flex-direction: column; gap:1rem; justify-content: center; padding:1rem; background-color:black">
 
   <div>
 
@@ -169,8 +206,13 @@ Create your own pokemons, customize their appearance, attributes.
  - Creation form.
  - Error pop-up, with Details and examples for filling out the input.
 
-<br>
   </div>
+  <a href="https://www.gromarant.com/">
+  <div style="display: flex; flex-wrap:wrap; justify-content: center; align-items:center; gap:8px; padding:8px 16px; background: #FFCC01; width:fit-content; margin:16px auto;">
+    <img src="src/assets/images/play.png" alt="Play icon" title="Play now" style="width:48px; height:48px;"/>
+    <p style="color:black; text-align:center; margin:0; font-weight:600;">Go to the create</p>
+  </div>
+  </a> 
 </div>
 </details>
 
@@ -277,8 +319,8 @@ xxxxxxxxxx
 ## Tools:
 
 <br>
- <!-- style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; padding:1rem;" -->
-<div>
+
+<div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; padding:1rem;">
   <img src="src/assets/images/react_yellowLogo.png" title="React.js" alt="React.js Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
   <img src="src/assets/images/sass_yellowLogo.png" title="Sass | css" alt="Sass | css Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
   <img src="src/assets/images/nextui_yellowLogo.png" title="Nextui" alt="Nextui Logo" style="width:102px; border-radius:8px;"/>
@@ -344,7 +386,7 @@ xxxxxxxxxx
   <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; padding:1rem; background-image: url('src/assets/images/wallpaper-pokemondark-pokemon.jpg'); width:100%;">
 
   <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; padding:1rem;">
-  <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/" style="text-align:center;">
+  <a href="https://www.gromarant.com/" style="text-align:center;">
   <img src="src/assets/images/logoGromarant-2023.png" style="width:250px;" alt="Gromarant logo" title="Gromarant"/>
   <p style="color: #D9D9D9">© Mariangelica Rodriguez</p>
   </a>
