@@ -228,30 +228,59 @@ Create your own pokemons, customize their appearance, attributes.
 ## Design: 
 
 <details>
-  <summary>&nbsp; &nbsp; <img src="src/assets/images/wireframe.png" title="cybersecurity" alt="cybersecurity Logo" style="width:32px;"/> &nbsp; &nbsp; Wireframes:</summary>
+  <summary>&nbsp; &nbsp; <img src="src/assets/images/wireframe.png" style="width:32px;"/> &nbsp; &nbsp; Wireframes:</summary>
 
 <br>
 
-xxxxxxxxxx
+### Details: 
 
-<img src="assets/icon_dataScience_plus.png" title="Data Science" alt="Data Science Logo" style="height: 107px; width: 102px;"/>
-
-<br>
-<br>
-
-### Details:
-
-<br>
-
-<div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center; padding:1rem; background-color:black">
-
+<div style="display:flex; flex-direction: column; gap:2rem; padding:1rem;">
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:2rem; padding:1rem; background-color:black">
+  <img src="src/assets/images/wireframeMemoryGame.webp" title="Wireframe of the memory game" alt="Memory game wireframe" style="width: min-width: 150px; width: 15%"/>
+  <img src="src/assets/images/wireframeWinAlert.webp" title="Wireframe of the memory game alert" alt="Memory game alert wireframe" style="width: min-width: 150px; width: 15%"/>
   <div>
-
-### Components
-
- - xxxxxxxxxxxx
+    <h2>Memory game | Featured components:</h2>
+    <p><strong>Movements Counter:</strong> To know how many movements have been made.</p>
+    <p><strong>Reset button:</strong> Allows the user to restart the game with the current cards.</p>
+    <p><strong>Pop-up:</strong> Alert showing game data and option buttons.</p>
+    <a href="https://www.gromarant.com/">See more details</a>
   </div>
-</div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:2rem; padding:1rem; background-color:#4b5360">
+  <div>
+    <h2>Search Page:</h2>
+    <p><strong>Search engine:</strong> Allows users to search for matches on Pokémon names.</p>
+    <p><strong>Go up button:</strong>  To scroll up.</p>
+    <p><strong>Pokemon searched and created lists.</strong></p>
+    <a href="https://www.gromarant.com/">See more details</a>
+  </div>
+  <img src="src/assets/images/wireframeSearching.webp" title="Wireframe of search page" alt="Search page wireframe" style="width: min-width: 150px; width: 15%"/>
+  <img src="src/assets/images/wireframeSearch.webp" title="Wireframe of search page lists" alt="Search page lists wireframe" style="width: min-width: 150px; width: 15%"/>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:2rem; padding:1rem; background-color:black">
+  <img src="src/assets/images/wireframeCreate.webp" title="Wireframe of create page" alt="Create page wireframe" style="width: min-width: 150px; width: 15%"/>
+  <img src="src/assets/images/wireframeErrorAlert.webp" title="Wireframe of create page alert" alt="Create page error wireframe" style="width: min-width: 150px; width: 15%"/>
+  <div>
+    <h2>Create page:</h2>
+    <p><strong>Form:</strong> Made with react-hook-form.</p>
+    <p><strong>Error Pop-up:</strong> Allows the user to fill out form fields correctly.</p>
+    <a href="https://www.gromarant.com/">See more details</a>
+  </div>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:2rem; padding:1rem; background-color:#4b5360">
+  <div>
+    <h2>Pokemon details Page:</h2>
+    <p><strong>Pokémon details card:</strong> With more information about the selected Pokémon.</p>
+    <p><strong>Search button:</strong> To come back to the search page.</p>
+    <p><strong>Pokemon searched and created lists.</strong></p>
+    <a href="https://www.gromarant.com/">See more details</a>
+  </div>
+  <img src="src/assets/images/wireframeDetails.webp" title="Wireframe of Pokemon details page" alt="Pokemon details page wireframe" style="width: min-width: 150px; width: 15%"/>
+  </div>
+<div>
 </details>
 
 ---
@@ -373,7 +402,7 @@ xxxxxxxxxx
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; align-items:center; padding:1rem;">
   <a href="https://www.linkedin.com/in/judit-r-ab8734b0/">
-    <img src="assets/collaborator_card_mariangelica.png" style="width:135px; height:190px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="Full Stack Developer | Mariangelica Rodriguez"/>
+    <img src="src/assets/images/professionalCard.png" style="width:135px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="Full Stack Developer | Mariangelica Rodriguez"/>
   </a>
 </div>
 
