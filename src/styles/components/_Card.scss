@@ -85,6 +85,7 @@
 .card__created_detailed {
   height: max(360px, 40svh);
   width: clamp(14rem, 30%, 16rem);
+  margin-bottom: 1.5rem;
 }
 
 .card__name {

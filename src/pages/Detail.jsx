@@ -2,6 +2,7 @@ import {  useContext,useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import Card from '../components/baseComponents/Card';
+import { Link } from 'react-router-dom';
 import { pokemonContext } from '../context/pokemonContext';
 
 
@@ -53,6 +54,7 @@ const Details = () => {
           weight={pokemonDetails.weight} 
           height={pokemonDetails.height} 
           types={pokemonDetails.types}/>
+        <Link className='btn action__btn' to="/search">Go to Search</Link>
       </section>
     </>
   );
