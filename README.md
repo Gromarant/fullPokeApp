@@ -316,36 +316,36 @@ xxxxxxxxxx
 
 <br>
 
-<div class="footer__wrapper">
-  <div class="footer__background">
+<div><footer__wrapper>
+  <div><footer__background>
 
-  <div class="footer__brand">
+  <div class=""><footer__brand>
   <a href="https://www.gromarant.com/" style="text-align:center;">
   <img src="src/assets/images/logoGromarant-2023.png" style="min-width:170px; width:250px" alt="Gromarant logo" title="Visit Gromarant portfolio page"/>
   <p style="color: #D9D9D9">© Mariangelica Rodriguez</p>
   </a>
-  </div>
+  </footer__brand></div>
 
-  <div class="footer__rrss">
+  <div class="footer__rrss"><footer__rrss>
   <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/"  style="color: #D9D9D9">
     <img src="src/assets/images/linkedIn.png" style="width:34px; height:34px" alt="linkedIn logo" title="See her LinkedIn profile"/>
   </a>
   <a href="https://github.com/Gromarant"  style="color: #D9D9D9">
     <img src="src/assets/images/githubLogo.png" style="width:34px; height:34px; border-radius:50%" alt="Github logo" title="See her Github profile"/>
   </a>
-  </div>
-  </div>
-</div>
+  </footer__rrss></div>
+  </footer__background></div>
+</footer__wrapper></div>
 
 <style>
-.footer__wrapper {
+footer__wrapper {
   display:flex; 
   justify-content:center; 
   align-items:center; 
   padding:1rem; 
   background-color: #2359be
 }
-.footer__background {
+footer__background {
   display:flex; 
   flex-wrap:wrap; 
   justify-content:center; 
@@ -353,14 +353,14 @@ xxxxxxxxxx
   background-image: url('src/assets/images/wallpaper-pokemondark-pokemon.jpg'); 
   width:100%;
 }
-.footer__brand {
+footer__brand {
   display:flex; 
   flex-direction:column; 
   justify-content:center; 
   align-items:center; 
   padding:1rem;
 }
-.footer__rrss {
+footer__rrss {
   display:flex; 
   flex-direction:column;
   justify-content:center; 
