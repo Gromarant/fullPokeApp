@@ -1,4 +1,4 @@
-import MemoryGame from '../components/baseComponents/memoryGame';
+import MemoryGame from '../components/baseComponents/MemoryGame';
 
 const Memory = () => {
   
