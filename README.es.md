@@ -12,7 +12,7 @@ Cambiar a:&nbsp; &nbsp; [![es](https://img.shields.io/badge/idioma-Inglés-green
 ---
 <!-- title and description -->
 # FullPokeApp
-Aplicacion web de Pokémon desarrollada con React.js, Sass y Nextui. 
+Aplicación web de Pokémon desarrollada con React.js, Sass y Nextui. 
 <br>
 
 ## Características clave:
@@ -365,7 +365,7 @@ xxxxxxxxxx
 
   <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; padding:1rem;">
   <a href="https://www.gromarant.com/" style="text-align:center;">
-  <img src="src/assets/images/logoGromarant-2023.png" style="width:250px;" alt="logo Gromarant" title="Ir a página Gromarant (portafolio)"/>
+  <img src="src/assets/images/logoGromarant-2023.png" style="min-width:170px; width:250px" alt="logo Gromarant" title="Ir a página Gromarant (portafolio)"/>
   <p style="color: #D9D9D9">© Mariangelica Rodriguez</p>
   </a>
   </div>

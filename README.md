@@ -366,7 +366,7 @@ xxxxxxxxxx
 
   <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; padding:1rem;">
   <a href="https://www.gromarant.com/" style="text-align:center;">
-  <img src="src/assets/images/logoGromarant-2023.png" style="width:250px;" alt="Gromarant logo" title="Visit Gromarant portfolio page"/>
+  <img src="src/assets/images/logoGromarant-2023.png" style="min-width:170px; width:250px" alt="Gromarant logo" title="Visit Gromarant portfolio page"/>
   <p style="color: #D9D9D9">© Mariangelica Rodriguez</p>
   </a>
   </div>
