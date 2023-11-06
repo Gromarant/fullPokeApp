@@ -338,34 +338,34 @@ xxxxxxxxxx
 </div>
 
 <style>
-  .footer__wrapper {
-    display:flex; 
-    justify-content:center; 
-    align-items:center; 
-    padding:1rem; 
-    background-color: #2359be
-  }
-  .footer__background {
-    display:flex; 
-    flex-wrap:wrap; 
-    justify-content:center; 
-    align-items:center; padding:1rem; 
-    background-image: url('src/assets/images/wallpaper-pokemondark-pokemon.jpg'); 
-    width:100%;
-  }
-  .footer__brand {
-    display:flex; 
-    flex-direction:column; 
-    justify-content:center; 
-    align-items:center; 
-    padding:1rem;
-  }
-  .footer__rrss {
-    display:flex; 
-    flex-direction:column;
-    justify-content:center; 
-    align-items:center; 
-    gap:1rem; 
-    padding:1rem;
-  }
+.footer__wrapper {
+  display:flex; 
+  justify-content:center; 
+  align-items:center; 
+  padding:1rem; 
+  background-color: #2359be
+}
+.footer__background {
+  display:flex; 
+  flex-wrap:wrap; 
+  justify-content:center; 
+  align-items:center; padding:1rem; 
+  background-image: url('src/assets/images/wallpaper-pokemondark-pokemon.jpg'); 
+  width:100%;
+}
+.footer__brand {
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center; 
+  align-items:center; 
+  padding:1rem;
+}
+.footer__rrss {
+  display:flex; 
+  flex-direction:column;
+  justify-content:center; 
+  align-items:center; 
+  gap:1rem; 
+  padding:1rem;
+}
 </style>
