@@ -19,17 +19,10 @@ Aplicación web de Pokémon desarrollada con React.js, Sass y Nextui.
 
 <details>
 <summary>
-<div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem;">
   <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem; width:45%;">
   <img src="src/assets/images/memory-game.png" style="width:32px;"/> &nbsp; &nbsp;
     Juego de memoria:
   </div>
-  <div style="display: flex; justify-content: center; align-items:center; width:45%;">
-  <a href="https://www.gromarant.com/">
-    <img src="src/assets/images/play.png" alt="Botón de play" title="Jugar ahora" style="width:48px; height:48px;"/>
-  </a> 
-  </div>
-</div>  
 </summary>
 
 <br>
@@ -59,12 +52,6 @@ Desafía tu memoria y tus habilidades cognitivas con un juego de memoria protago
   - Pop-up con datos de la partida ganada y botones para jugar nueva partida, resetear la partida o cerrar el pop-up.
 
   </div>
-   <a href="https://www.gromarant.com/">
-  <div style="display: flex; flex-wrap:wrap; justify-content: center; align-items:center; gap:8px; padding:8px 16px; background: #FFCC01; width:fit-content; margin:16px auto;">
-    <img src="src/assets/images/play.png" alt="Botón de play" style="width:48px; height:48px;"/>
-    <p style="color:black; text-align:center; margin:0; font-weight:600;">Jugar ahora</p>
-  </div>
-  </a> 
 </div>
 </details>
 
@@ -72,17 +59,10 @@ Desafía tu memoria y tus habilidades cognitivas con un juego de memoria protago
 
 <details>
 <summary>
-<div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem;">
   <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem; width:45%;">
   <img src="src/assets/images/pokemon-go.png" style="width:32px;"/> &nbsp; &nbsp;
     Buscador de pokemones:
   </div>
-  <div style="display: flex; justify-content: center; align-items:center; width:45%;">
-  <a href="https://www.gromarant.com/">
-    <img src="src/assets/images/play.png" alt="Botón de play" title="Ir al buscador" style="width:48px; height:48px;"/>
-  </a> 
-  </div>
-</div> 
 </summary>
 
 <br>
@@ -113,12 +93,44 @@ Busca tus Pokémons favoritos y selecciona para ver sus detalles.
 
   En esta pantalla podrás ver las listas de los pokemones cuando no haya una búsqueda actual.
   </div>
-  <a href="https://www.gromarant.com/">
-  <div style="display: flex; flex-wrap:wrap; justify-content: center; align-items:center; gap:8px; padding:8px 16px; background: #FFCC01; width:fit-content; margin:8px auto 16px;">
-    <img src="src/assets/images/play.png" alt="Botón de play" style="width:48px; height:48px;"/>
-    <p style="color:black; text-align:center; margin:0; font-weight:600;">Ir al buscador</p>
+</div>
+</details>
+
+---
+
+<details>
+<summary>
+
+  <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem; width:45%;">
+  <img src="src/assets/images/egg.png" style="width:32px;"/>
+  Creación de Pokémon: 
   </div>
-  </a> 
+</summary>
+
+<br>
+
+Crea tus propios pokemones, personaliza su apariencia, atributos.
+
+<img src="src/assets/images/createFormPage.png" title="Página de creación de Pokémon" alt="Página de creación de Pokémon"/>
+
+<br>
+<br>
+
+### Detalles:
+
+<br>
+
+<div style="display:flex; flex-direction: column; gap:1rem; justify-content: center; padding:1rem; background-color:black">
+
+  <div>
+
+### Componentes
+
+ - Formulario de creación.
+ - Pop-up de error, con detalles y ejemplos para el rellenado de los input.
+
+<br>
+  </div>
 </div>
 </details>
 
@@ -130,11 +142,6 @@ Busca tus Pokémons favoritos y selecciona para ver sus detalles.
   <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem; width:45%;">
   <img src="src/assets/images/snorlax.png" style="width:32px;"/>
   Vista a detalle de Pokémon: 
-  </div>
-  <div style="display: flex; justify-content: center; align-items:center; width:45%;">
-  <a href="https://www.gromarant.com/">
-    <img src="src/assets/images/play.png" alt="Botón de play" title="Ver detalles de un Pokémon" style="width:48px; height:48px;"/>
-  </a> 
   </div>
 </div> 
 </summary>
@@ -169,66 +176,16 @@ Carta con los detalles del pokémon seleccionado en la lista de búsqueda.
 <br>
 
   </div>
-   <a href="https://www.gromarant.com/">
-  <div style="display: flex; flex-wrap:wrap; justify-content: center; align-items:center; gap:8px; padding:8px 16px; background: #FFCC01; width:fit-content; margin:16px auto;">
-    <img src="src/assets/images/play.png" alt="Botón de play" style="width:48px; height:48px;"/>
-    <p style="color:black; text-align:center; margin:0; font-weight:600;">Ver detalles de un Pokémon</p>
-  </div>
-  </a>
 </div>
 </details>
 
 ---
 
-<details>
-<summary>
-<div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem;">
-  <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding: 0 1rem; width:45%;">
-  <img src="src/assets/images/egg.png" style="width:32px;"/>
-  Creación de Pokémon: 
+<a href="https://fullpokeapp.netlify.app/">
+  <div style="display: flex; flex-wrap:wrap; justify-content: center; align-items:center; padding:16px; background: #FFCC01; width:fit-content; margin:16px auto; border-radius: 50%; position: fixed; bottom: 2rem; right: 1rem">
+    <img src="src/assets/images/linkIcon.png" alt="Botón de link" title="Visitar la app" style="width:36px;"/>
   </div>
-  <div style="display: flex; justify-content: center; align-items:center; width:45%;">
-  <a href="https://www.gromarant.com/">
-    <img src="src/assets/images/play.png" alt="Botón de play" title="Crear un Pokémon" style="width:48px; height:48px;"/>
-  </a> 
-  </div>
-</div> 
-</summary>
-
-<br>
-
-Crea tus propios pokemones, personaliza su apariencia, atributos.
-
-<img src="src/assets/images/createFormPage.png" title="Página de creación de Pokémon" alt="Página de creación de Pokémon"/>
-
-<br>
-<br>
-
-### Detalles:
-
-<br>
-
-<div style="display:flex; flex-direction: column; gap:1rem; justify-content: center; padding:1rem; background-color:black">
-
-  <div>
-
-### Componentes
-
- - Formulario de creación.
- - Pop-up de error, con detalles y ejemplos para el rellenado de los input.
-
-<br>
-  </div>
-    <a href="https://www.gromarant.com/">
-  <div style="display: flex; flex-wrap:wrap; justify-content: center; align-items:center; gap:8px; padding:8px 16px; background: #FFCC01; width:fit-content; margin:16px auto;">
-    <img src="src/assets/images/play.png" alt="Botón de play" style="width:48px; height:48px;"/>
-    <p style="color:black; text-align:center; margin:0; font-weight:600;">Crear un Pokémon</p>
-  </div>
-  </a> 
-</div>
-</details>
-
----
+</a> 
 
 ## Objetivos: 
 
