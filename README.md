@@ -316,17 +316,17 @@ xxxxxxxxxx
 
 <br>
 
-<div style="display:flex; justify-content:center; align-items:center; padding:1rem; background-color: #2359be">
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; align-items:center; padding:1rem; background-image: url('src/assets/images/wallpaper-pokemondark-pokemon.jpg'); width:100%;">
+<div class="footer__wrapper">
+  <div class="footer__background">
 
-  <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; padding:1rem;">
+  <div class="footer__brand">
   <a href="https://www.gromarant.com/" style="text-align:center;">
   <img src="src/assets/images/logoGromarant-2023.png" style="min-width:170px; width:250px" alt="Gromarant logo" title="Visit Gromarant portfolio page"/>
   <p style="color: #D9D9D9">© Mariangelica Rodriguez</p>
   </a>
   </div>
 
-  <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; gap:1rem; padding:1rem;">
+  <div class="footer__rrss">
   <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/"  style="color: #D9D9D9">
     <img src="src/assets/images/linkedIn.png" style="width:34px; height:34px" alt="linkedIn logo" title="See her LinkedIn profile"/>
   </a>
@@ -336,3 +336,36 @@ xxxxxxxxxx
   </div>
   </div>
 </div>
+
+<style>
+  .footer__wrapper {
+    display:flex; 
+    justify-content:center; 
+    align-items:center; 
+    padding:1rem; 
+    background-color: #2359be
+  }
+  .footer__background {
+    display:flex; 
+    flex-wrap:wrap; 
+    justify-content:center; 
+    align-items:center; padding:1rem; 
+    background-image: url('src/assets/images/wallpaper-pokemondark-pokemon.jpg'); 
+    width:100%;
+  }
+  .footer__brand {
+    display:flex; 
+    flex-direction:column; 
+    justify-content:center; 
+    align-items:center; 
+    padding:1rem;
+  }
+  .footer__rrss {
+    display:flex; 
+    flex-direction:column;
+    justify-content:center; 
+    align-items:center; 
+    gap:1rem; 
+    padding:1rem;
+  }
+</style>
