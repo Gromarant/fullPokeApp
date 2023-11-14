@@ -250,7 +250,58 @@ Create your own pokemons, customize their appearance, attributes.
 
 <br>
 
+<h2>Copy the repo:</h2>
 
+1. Navigate to the repository ( [Gromarant/fullPokeApp](https://github.com/Gromarant/fullPokeApp)).
+2. Click the Fork button in the top-right corner.
+
+<br>
+
+![Fork of github repo](src/assets/images/fork_repo.webp)
+
+<h2>Clone locally:</h2>
+
+3. Above the list of files, click <> code.
+  
+<br>
+ 
+![Fork of github repo](src/assets/images/clone_repo.webp)
+    
+<br>
+ 
+4. Copy the URL for the repo.
+5. Open Git Bash.
+6. Change to the location where you want the clone.
+
+> ``cd new_directory_path``
+  
+<br>
+ 
+7. Type `git clone`, and then paste the URL you copied earlier.
+
+> ``git clone https://github.com/YOUR-Username/fullPokeApp``
+  
+<br>
+ 
+8. Press **Enter** to create your local clone.&nbsp; &nbsp;
+[Visit github forking and cloning guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+
+<h2>Run your local repository:</h2>
+
+1. Open Git Bash and navigate to your local repository.
+> ``cd local_repo_path``
+
+<br>
+
+2. Install dependencies 
+> `npm install`
+
+This command creates a node_modules folder with all the dependencies that the project needs.
+
+<br>
+
+3. Run the app
+> `npm run dev`
 </details>
 
 ---
