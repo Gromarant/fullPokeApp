@@ -5,7 +5,7 @@
 Change to:&nbsp; &nbsp; [![es](https://img.shields.io/badge/Language-Spanish-blue.svg)](README.es.md)
 
 ---
-<!-- title and description -->
+
 # FullPokeApp
 A Pokémon web application made with React.js, Sass and Nextui. &nbsp; &nbsp; <a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.png" alt="Play icon" style="width:48px; height:48px;"/></a>
 
@@ -173,7 +173,7 @@ Create your own pokemons, customize their appearance, attributes.
 
 <br>
 
-<a href="https://www.gromarant.com/" align="center">See more details</a>
+<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
 
 ---
 
@@ -185,15 +185,12 @@ Create your own pokemons, customize their appearance, attributes.
 <br>
 
 <p align="center"><img src="src/assets/images/wireframeSearching.webp" title="Wireframe of search page" alt="Search page wireframe" style="width: min-width: 200px; width: 20%"/>
-<img src="src/assets/images/wireframeSearch.webp" title="Wireframe of search page lists" alt="Search page lists wireframe" style="width: min-width: 200px; width: 20%"/>
-
-<img src="src/assets/images/wireframeCreate.webp" title="Wireframe of create page" alt="Create page wireframe" style="width: min-width: 200px; width: 20%"/>
-<img src="src/assets/images/wireframeErrorAlert.webp" title="Wireframe of create page alert" alt="Create page error wireframe" style="width: min-width: 200px; width: 20%"/></p>
+<img src="src/assets/images/wireframeSearch.webp" title="Wireframe of search page lists" alt="Search page lists wireframe" style="width: min-width: 200px; width: 20%"/></p>
 
 <br>
 <br>
 
-<a href="https://www.gromarant.com/">See more details</a>
+<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
 
 ---
 
@@ -209,7 +206,7 @@ Create your own pokemons, customize their appearance, attributes.
 <br>
 <br>
 
-<a href="https://www.gromarant.com/">See more details</a>
+<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
 
 ---
 
@@ -225,7 +222,7 @@ Create your own pokemons, customize their appearance, attributes.
 <br>
 <br>
 
-<a href="https://www.gromarant.com/">See more details</a>
+<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
 </details>
 
 ---
@@ -270,7 +267,7 @@ Create your own pokemons, customize their appearance, attributes.
 <br>
  
 4. Copy the URL for the repo.
-5. Open Git Bash.
+5. Open terminal.
 6. Change to the location where you want the clone.
 
 > ``cd new_directory_path``
@@ -288,7 +285,7 @@ Create your own pokemons, customize their appearance, attributes.
 
 <h2>Run your local repository:</h2>
 
-1. Open Git Bash and navigate to your local repository.
+1. Open terminal and navigate to your local repository.
 > ``cd local_repo_path``
 
 <br>
@@ -296,7 +293,7 @@ Create your own pokemons, customize their appearance, attributes.
 2. Install dependencies 
 > `npm install`
 
-This command creates a node_modules folder with all the dependencies that the project needs.
+This command creates a "node_modules" folder with all the dependencies that the project needs.
 
 <br>
 
