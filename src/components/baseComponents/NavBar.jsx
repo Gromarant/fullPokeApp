@@ -32,7 +32,7 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar>
+      <Navbar color='#2359be'>
           <Navbar.Toggle 
             ref={navbarToggleRef}
             onChange={(isSelected) => setIsSideMenuOpen(isSelected)}
