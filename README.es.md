@@ -1,4 +1,4 @@
-<p align="center"><img src="src/assets/images/FullPOkeApp-title.png" style="width:45%;" alt="Banner de FullPokeApp"/></p>
+<p align="center"><img src="src/assets/images/FullPOkeApp-title.webp" style="width:45%;" alt="Banner de FullPokeApp"/></p>
 
 <br>
 
@@ -14,7 +14,7 @@ Aplicación web de Pokémon desarrollada con React.js, Sass y Nextui.
 
 <details>
 <summary>
-<img src="src/assets/images/memory-game.png" style="width:32px;"/> &nbsp; &nbsp;
+<img src="src/assets/images/memory-game.webp" style="width:32px;"/> &nbsp; &nbsp;
   Juego de memoria:
 </summary>
 
@@ -24,7 +24,7 @@ Desafía tu memoria y tus habilidades cognitivas con un juego de memoria protago
 
 <br>
 
-<img src="src/assets/images/memoryPage.png" title="Juego de memoria" alt="Juego de memoria"/>
+<img src="src/assets/images/memoryPage.webp" title="Juego de memoria" alt="Juego de memoria"/>
 
 <br>
 <br>
@@ -40,14 +40,14 @@ El juego comienza con todas las cartas boca abajo y el jugador voltea dos cartas
   - Contador de movimientos.
   - Pop-up con datos de la partida ganada y botones para jugar nueva partida, resetear la partida o cerrar el pop-up.
   
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.png" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
+<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.webp" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
 </details>
 
 ---
 
 <details>
 <summary>
-<img src="src/assets/images/pokemon-go.png" style="width:32px;"/> &nbsp; &nbsp;
+<img src="src/assets/images/pokemon-go.webp" style="width:32px;"/> &nbsp; &nbsp;
 Buscador de pokemones:
 </summary>
 
@@ -55,7 +55,7 @@ Buscador de pokemones:
 
 Busca tus Pokémons favoritos y selecciona para ver sus detalles.
 
-<img src="src/assets/images/searchPage.png" title="Página de búsqueda" alt="Página de búsqueda"/>
+<img src="src/assets/images/searchPage.webp" title="Página de búsqueda" alt="Página de búsqueda"/>
 
 <br>
 <br>
@@ -75,14 +75,14 @@ Busca por coincidencia con el nombre de los pokemons, una vez ingresado el nombr
 
 En esta pantalla podrás ver las listas de los pokemones cuando no haya una búsqueda actual.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.png" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
+<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.webp" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
 </details>
 
 ---
 
 <details>
 <summary>
-<img src="src/assets/images/snorlax.png" style="width:32px;"/> &nbsp; &nbsp;
+<img src="src/assets/images/snorlax.webp" style="width:32px;"/> &nbsp; &nbsp;
 Vista a detalle de Pokémon: 
 </summary>
 
@@ -91,8 +91,8 @@ Vista a detalle de Pokémon:
 Carta con los detalles del pokémon seleccionado en la lista de búsqueda.
 
 
-<p align="center"><img src="src/assets/images/searchedDetailsPage.png" title="Detalles de un Pokémon buscado" alt="Detalles de un Pokémon buscado" style="width:200px;"/>
-<img src="src/assets/images/createdDetailsPage.png" title="Detalles de un Pokémon creado" alt="Detalles de un Pokémon creado" style="width:200px;"/></p>
+<p align="center"><img src="src/assets/images/searchedDetailsPage.webp" title="Detalles de un Pokémon buscado" alt="Detalles de un Pokémon buscado" style="width:200px;"/>
+<img src="src/assets/images/createdDetailsPage.webp" title="Detalles de un Pokémon creado" alt="Detalles de un Pokémon creado" style="width:200px;"/></p>
 
 <br>
 
@@ -108,14 +108,14 @@ Carta con los detalles del pokémon seleccionado en la lista de búsqueda.
  - Carta de detalles del pokémon.
  - Botón para volver al buscador.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.png" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
+<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.webp" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
 </details>
 
 ---
 
 <details>
 <summary>
-<img src="src/assets/images/egg.png" style="width:32px;"/> &nbsp; &nbsp;
+<img src="src/assets/images/egg.webp" style="width:32px;"/> &nbsp; &nbsp;
 Creación de Pokémon:
 </summary>
 
@@ -123,7 +123,7 @@ Creación de Pokémon:
 
 Crea tus propios pokemones, personaliza su apariencia, atributos.
 
-<img src="src/assets/images/createFormPage.png" title="Página de creación de Pokémon" alt="Página de creación de Pokémon"/>
+<img src="src/assets/images/createFormPage.webp" title="Página de creación de Pokémon" alt="Página de creación de Pokémon"/>
 
 <br>
 <br>
@@ -137,7 +137,7 @@ Crea tus propios pokemones, personaliza su apariencia, atributos.
  - Formulario de creación.
  - Pop-up de error, con detalles y ejemplos para el rellenado de los input.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.png" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
+<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.webp" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
 </details>
 
 ## Objetivos: 
@@ -147,14 +147,14 @@ Crea tus propios pokemones, personaliza su apariencia, atributos.
 
 <br>
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.png" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
+<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.webp" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
 
 <br>
 
 ## Diseño: 
 
 <details>
-<summary>&nbsp; &nbsp; <img src="src/assets/images/wireframe.png" style="width:32px;"/> &nbsp; &nbsp; Wireframes:</summary>
+<summary>&nbsp; &nbsp; <img src="src/assets/images/wireframe.webp" style="width:32px;"/> &nbsp; &nbsp; Wireframes:</summary>
 
 <br>
 
@@ -230,16 +230,16 @@ Crea tus propios pokemones, personaliza su apariencia, atributos.
 
 <br>
 
-<p align="center"><img src="src/assets/images/react_yellowLogo.png" title="React.js" alt="React.js Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
-<img src="src/assets/images/sass_yellowLogo.png" title="Sass | css" alt="Sass | css Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
-<img src="src/assets/images/nextui_yellowLogo.png" title="Nextui" alt="Nextui Logo" style="width:102px; border-radius:8px;"/></p>
+<p align="center"><img src="src/assets/images/react_yellowLogo.webp" title="React.js" alt="React.js Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
+<img src="src/assets/images/sass_yellowLogo.webp" title="Sass | css" alt="Sass | css Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
+<img src="src/assets/images/nextui_yellowLogo.webp" title="Nextui" alt="Nextui Logo" style="width:102px; border-radius:8px;"/></p>
 
 <br>
 
 ## Copia e implementación de este proyecto:
 
 <details>
-<summary>&nbsp; &nbsp; <img src="src/assets/images/management.png" style="width:32px;"/> &nbsp; &nbsp; Instrucciones:</summary>
+<summary>&nbsp; &nbsp; <img src="src/assets/images/management.webp" style="width:32px;"/> &nbsp; &nbsp; Instrucciones:</summary>
 
 <br>
 
@@ -312,19 +312,19 @@ Este comando crea la carpeta "node_modules"  con todas las dependencias que nece
 ## Profesionales:
 
 <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/">
-<p align="center"><img src="src/assets/images/professionalCard.png" style="width:135px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="Ver perfil de LinkedIn"/></p>
+<p align="center"><img src="src/assets/images/professionalCard.webp" style="width:135px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="Ver perfil de LinkedIn"/></p>
 </a>
 
 ---
 
 <br>
 
-<p align="center"><a href="https://www.gromarant.com/"><img src="src/assets/images/logoGromarant-2023.png" style="width:250px;" alt="Gromarant logo" title="Visitar página de Gromarant"/></a></p>
+<p align="center"><a href="https://www.gromarant.com/"><img src="src/assets/images/logoGromarant-2023.webp" style="width:250px;" alt="Gromarant logo" title="Visitar página de Gromarant"/></a></p>
 <a href="https://www.gromarant.com/"><p align="center" style="color: #D9D9D9">© Mariangelica Rodriguez</p>
 </a>
 <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/">
-<p align="center"><img src="src/assets/images/linkedIn.png" style="width:34px; height:34px" alt="linkedIn logo" title="Ver perfil de LinkedIn"/></p>
+<p align="center"><img src="src/assets/images/linkedIn.webp" style="width:34px; height:34px" alt="linkedIn logo" title="Ver perfil de LinkedIn"/></p>
 </a>
 <a href="https://github.com/Gromarant"><p align="center">
-<img src="src/assets/images/githubLogo.png" style="width:34px; height:34px; border-radius:50%" alt="Github logo" title="Ver perfil de Github"/>
+<img src="src/assets/images/githubLogo.webp" style="width:34px; height:34px; border-radius:50%" alt="Github logo" title="Ver perfil de Github"/>
 </p></a>
