@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Navbar } from "@nextui-org/react";
+import { Navbar, css } from "@nextui-org/react";
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {  
@@ -32,7 +32,10 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar color='#2359be'>
+      <Navbar
+      css={{
+        background: '#2359be',
+      }}>
           <Navbar.Toggle 
             ref={navbarToggleRef}
             onChange={(isSelected) => setIsSideMenuOpen(isSelected)}
