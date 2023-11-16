@@ -1,4 +1,4 @@
-<p align="center"><img src="src/assets/images/FullPOkeApp-title.png" style="width:45%;" alt="FullPokeApp banner"/></p>
+<p align="center"><img src="src/assets/images/FullPOkeApp-title.webp" style="width:45%;" alt="FullPokeApp banner"/></p>
 
 <br>
 
@@ -7,7 +7,7 @@ Change to:&nbsp; &nbsp; [![es](https://img.shields.io/badge/Language-Spanish-blu
 ---
 
 # FullPokeApp
-A Pokémon web application made with React.js, Sass and Nextui. &nbsp; &nbsp; <a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.png" alt="Play icon" style="width:48px; height:48px;"/></a>
+A Pokémon web application made with React.js, Sass and Nextui. &nbsp; &nbsp; <a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a>
 
 <br>
 
@@ -15,7 +15,7 @@ A Pokémon web application made with React.js, Sass and Nextui. &nbsp; &nbsp; <a
 
 <details>
 <summary>
-<img src="src/assets/images/memory-game.png" target="_blank" style="width:32px;"/> &nbsp; &nbsp;
+<img src="src/assets/images/memory-game.webp" target="_blank" style="width:32px;"/> &nbsp; &nbsp;
   Memory game:
 </summary>
 
@@ -25,7 +25,7 @@ Challenge your memory and cognitive skills with a memory game featuring Pokémon
 
 <br>
 
-<img src="src/assets/images/memoryPage.png" title="memory game" alt="memory game"/>
+<img src="src/assets/images/memoryPage.webp" title="memory game" alt="memory game"/>
 
 <br>
 <br>
@@ -41,14 +41,14 @@ The game begins with all cards face down and the player turns over two cards for
   - Movement counter.
   - Pop-up with data about the game won and buttons to play a new game, reset the game or close the pop-up.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.png" alt="Play icon" style="width:48px; height:48px;"/></a></p>
+<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a></p>
 </details>
 
 ---
 
 <details>
 <summary>
-<img src="src/assets/images/pokemon-go.png" style="width:32px;"/> &nbsp; &nbsp;
+<img src="src/assets/images/pokemon-go.webp" style="width:32px;"/> &nbsp; &nbsp;
   pokemon search:
 </summary>
   
@@ -56,7 +56,7 @@ The game begins with all cards face down and the player turns over two cards for
 
 Search for your favorite Pokemon and select to see their details.
 
-<img src="src/assets/images/searchPage.png" title="Search Page" alt="Search Page"/>
+<img src="src/assets/images/searchPage.webp" title="Search Page" alt="Search Page"/>
 
 <br>
 <br>
@@ -76,14 +76,14 @@ Search by matching the name of the Pokemon. Once you enter the search name or ch
 
 On this page you can see the pokemon lists when there is not a search in course.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.png" alt="Play icon" style="width:48px; height:48px;"/></a></p>
+<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a></p>
 </details>
 
 ---
 
 <details>
 <summary>
-<img src="src/assets/images/snorlax.png" style="width:32px;"/>
+<img src="src/assets/images/snorlax.webp" style="width:32px;"/>
 Pokemon details view: 
 </summary>
 
@@ -91,8 +91,8 @@ Pokemon details view:
 
 Here you see the card with the details of the Pokemon selected in the search list.
 
-<p align="center"><img src="src/assets/images/searchedDetailsPage.png" title="Details of pokemon searched" alt="Details card of a pokemon searched" style="width:200px;"/>
-<img src="src/assets/images/createdDetailsPage.png" title="Details of pokemon created" alt="Details card of a pokemon created" style="width:200px;"/></p>
+<p align="center"><img src="src/assets/images/searchedDetailsPage.webp" title="Details of pokemon searched" alt="Details card of a pokemon searched" style="width:200px;"/>
+<img src="src/assets/images/createdDetailsPage.webp" title="Details of pokemon created" alt="Details card of a pokemon created" style="width:200px;"/></p>
 
 <br>
 
@@ -107,14 +107,14 @@ It contains a card with the Pokémon's details: name, image, weight, height, typ
  - Pokémon Details Card.
  - Button to return to the search engine.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.png" alt="Play icon" style="width:48px; height:48px;"/></a></p>
+<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a></p>
 </details>
 
 ---
 
 <details>
 <summary>
-<img src="src/assets/images/egg.png" style="width:32px;"/>
+<img src="src/assets/images/egg.webp" style="width:32px;"/>
 Pokemon creation: 
 </summary>
 
@@ -122,7 +122,7 @@ Pokemon creation:
 
 Create your own pokemons, customize their appearance, attributes.
 
-<img src="src/assets/images/createFormPage.png" title="Creation page" alt="Creation page"/>
+<img src="src/assets/images/createFormPage.webp" title="Creation page" alt="Creation page"/>
 
 <br>
 <br>
@@ -136,7 +136,7 @@ Create your own pokemons, customize their appearance, attributes.
  - Creation form.
  - Error pop-up, with Details and examples for filling out the input.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.png" alt="Play icon" style="width:48px; height:48px;"/></a></p>
+<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a></p>
 </details>
 
 ---
@@ -148,14 +148,14 @@ Create your own pokemons, customize their appearance, attributes.
 
 <br>
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.png" alt="Play icon" style="width:48px; height:48px;"/></a></p>
+<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a></p>
 
 <br>
 
 ## Design: 
 
 <details>
-<summary>&nbsp; &nbsp; <img src="src/assets/images/wireframe.png" style="width:32px;"/> &nbsp; &nbsp; Wireframes:</summary>
+<summary>&nbsp; &nbsp; <img src="src/assets/images/wireframe.webp" style="width:32px;"/> &nbsp; &nbsp; Wireframes:</summary>
 
 <br>
 
@@ -233,9 +233,9 @@ Create your own pokemons, customize their appearance, attributes.
 
 <br>
 
-<p align="center"><img src="src/assets/images/react_yellowLogo.png" title="React.js" alt="React.js Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
-<img src="src/assets/images/sass_yellowLogo.png" title="Sass | css" alt="Sass | css Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
-<img src="src/assets/images/nextui_yellowLogo.png" title="Nextui" alt="Nextui Logo" style="width:102px; border-radius:8px;"/></p>
+<p align="center"><img src="src/assets/images/react_yellowLogo.webp" title="React.js" alt="React.js Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
+<img src="src/assets/images/sass_yellowLogo.webp" title="Sass | css" alt="Sass | css Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
+<img src="src/assets/images/nextui_yellowLogo.webp" title="Nextui" alt="Nextui Logo" style="width:102px; border-radius:8px;"/></p>
   
 
 <br>
@@ -243,7 +243,7 @@ Create your own pokemons, customize their appearance, attributes.
 ## Copy and implementation of this project:
 
 <details>
-<summary>&nbsp; &nbsp; <img src="src/assets/images/management.png" style="width:32px;"/> &nbsp; &nbsp; Instructions:</summary>
+<summary>&nbsp; &nbsp; <img src="src/assets/images/management.webp" style="width:32px;"/> &nbsp; &nbsp; Instructions:</summary>
 
 <br>
 
@@ -316,19 +316,19 @@ This command creates a "node_modules" folder with all the dependencies that the 
 ## Professionals:
 
 <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/">
-<p align="center"><img src="src/assets/images/professionalCard.png" style="width:135px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="See her LinkedIn profile"/></p>
+<p align="center"><img src="src/assets/images/professionalCard.webp" style="width:135px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="See her LinkedIn profile"/></p>
 </a>
 
 ---
 
 <br>
 
-<p align="center"><a href="https://www.gromarant.com/"><img src="src/assets/images/logoGromarant-2023.png" style="width:250px;" alt="Gromarant logo" title="Visit Gromarant portfolio page"/></a></p>
+<p align="center"><a href="https://www.gromarant.com/"><img src="src/assets/images/logoGromarant-2023.webp" style="width:250px;" alt="Gromarant logo" title="Visit Gromarant portfolio page"/></a></p>
 <a href="https://www.gromarant.com/"><p align="center" style="color: #D9D9D9">© Mariangelica Rodriguez</p>
 </a>
 <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/">
-<p align="center"><img src="src/assets/images/linkedIn.png" style="width:34px; height:34px" alt="linkedIn logo" title="See her LinkedIn profile"/></p>
+<p align="center"><img src="src/assets/images/linkedIn.webp" style="width:34px; height:34px" alt="linkedIn logo" title="See her LinkedIn profile"/></p>
 </a>
 <a href="https://github.com/Gromarant"><p align="center">
-<img src="src/assets/images/githubLogo.png" style="width:34px; height:34px; border-radius:50%" alt="Github logo" title="See her Github profile"/>
+<img src="src/assets/images/githubLogo.webp" style="width:34px; height:34px; border-radius:50%" alt="Github logo" title="See her Github profile"/>
 </p></a>
