@@ -20,8 +20,8 @@ function Scroll_btn({action, visibility=false}) {
 
 
   return (
-    <div role='button' className='scroll__btn' action={action} onClick={scroll}>
-      <img className={visibility === false ? 'hidden' : ''} src='../../src/assets/images/scroll-up-default.webp' alt='Button to go-up'/>
+    <div role='button' className={visibility === false ? 'hidden' : 'scroll__btn'} action={action} onClick={scroll}>
+      <img src='../../src/assets/images/scroll-up-default.webp' alt='Button to go-up'/>
     </div>
   )
 }
