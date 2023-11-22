@@ -43,7 +43,8 @@ const NavBar = () => {
           />
         <Navbar.Content hideIn="xs" css={{ 
           jc: "flex-end",
-          w: '100%'
+          w: '100%',
+          background: '$primary',
         }}>
           {menuItems.map((item) => (
             <li className={`navBar__item ${activeMenu === item.link ? 'active' : ''}`} key={item.name} onClick={() => setActiveMenu(item.link)}>
