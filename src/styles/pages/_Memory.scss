@@ -16,8 +16,9 @@
 
 .board { 
   @include utils.listGrid;
-  gap: 1rem;
-  max-width: 1135px;
+  margin: auto; 
+  margin-top: 3rem; 
+  max-width: 1299px;
 } 
 
 .comments { 
