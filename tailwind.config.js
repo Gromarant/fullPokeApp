@@ -15,7 +15,7 @@ module.exports = {
         dark: {
           colors: {
             primary: {
-              DEFAULT: '#1565c0',
+              DEFAULT: '#0072f5',
               foreground: "#000000",
             },
             focus: "#BEF264",
