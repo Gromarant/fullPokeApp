@@ -4,11 +4,6 @@ a {
   color: white;
 }
 
-.nextui-navbar {
-  background: utils.$color-primary;
-  width: 100vw;
-}
-
 .nextui-navbar-container { 
   display: flex;
   justify-content: flex-end;
@@ -67,10 +62,12 @@ a {
   background: utils.$color-primary;
 }
 
+.navbar,
 .nextui-navbar,
 .nextui-c-hhqfap {
   background: utils.$color-primary;
   justify-content: end;
+  width: 100vw;
 }
 
 .nextui-c-iTPCAT-VujqA-disableBlur-false .nextui-c-jklhtj:where(.nextui-c-ewlcFW) {
