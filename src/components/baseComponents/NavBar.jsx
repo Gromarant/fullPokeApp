@@ -32,14 +32,20 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar className='navbar'>
-          <Navbar.Toggle className='toggle'
+      <Navbar css={{ 
+        background: '$primary',
+      }}>
+          <Navbar.Toggle css={{ jc: "flex-end" }}
             showIn="xs"
             aria-label="toggle navigation"
             ref={navbarToggleRef}
             onChange={(isSelected) => setIsSideMenuOpen(isSelected)}
           />
-        <Navbar.Content hideIn="xs">
+        <Navbar.Content hideIn="xs" css={{ 
+          jc: "flex-end",
+          w: '100%',
+          background: '$primary',
+        }}>
           {menuItems.map((item) => (
             <li className={`navBar__item ${activeMenu === item.link ? 'active' : ''}`} key={item.name} onClick={() => setActiveMenu(item.link)}>
               <Link className='navBar__link' to={item.link}>{item.name}</Link>
