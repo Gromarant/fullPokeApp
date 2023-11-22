@@ -1,10 +1,10 @@
 import { useState, useRef } from 'react';
-import { Navbar, css } from "@nextui-org/react";
+import { Navbar } from "@nextui-org/react";
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {  
   const navbarToggleRef = useRef()
-	const [isSideMenuOpen, setIsSideMenuOpen] = useState(false)
+	const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
 	const [activeMenu, setActiveMenu] = useState(
 		window.location.href.split(`${window.location.origin}`)[1],
 	)
@@ -32,15 +32,13 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar
-      css={{
-        background: '#2359be',
-      }}>
+      <Navbar css={{ background: '$primary' }}>
           <Navbar.Toggle 
+            aria-label="toggle navigation"
             ref={navbarToggleRef}
             onChange={(isSelected) => setIsSideMenuOpen(isSelected)}
           />
-        <Navbar.Content>
+        <Navbar.Content hideIn="xs">
           {menuItems.map((item) => (
             <li className={`navBar__item ${activeMenu === item.link ? 'active' : ''}`} key={item.name} onClick={() => setActiveMenu(item.link)}>
               <Link className='navBar__link' to={item.link}>{item.name}</Link>
