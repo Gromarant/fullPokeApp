@@ -32,10 +32,8 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar css={{ 
-        background: '$primary',
-      }}>
-          <Navbar.Toggle css={{ jc: "flex-end" }}
+      <Navbar className='navbar' css={{ background: '$primary' }}>
+          <Navbar.Toggle className='toggle'
             showIn="xs"
             aria-label="toggle navigation"
             ref={navbarToggleRef}
