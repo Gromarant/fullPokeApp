@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Navbar } from "@nextui-org/react";
+import { css, Navbar } from "@nextui-org/react";
 import { Link } from 'react-router-dom';
 
 const NavBar = () => {  
@@ -32,7 +32,7 @@ const NavBar = () => {
 
   return (
     <>
-      <Navbar className='navbar'>
+      <Navbar className='navbar' css={{ background: '$primary' }}>
           <Navbar.Toggle className='toggle'
             showIn="xs"
             aria-label="toggle navigation"

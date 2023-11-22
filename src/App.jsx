@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NextUIProvider } from "@nextui-org/react"
+import { createTheme, NextUIProvider } from "@nextui-org/react"
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/commonComponents/Header';
 import Main from './components/commonComponents/Main';
@@ -32,10 +32,18 @@ const App = () => {
     itContainsThisPokemon(pokemon, listOfPokemonsCreated) ? null : setListOfPokemonsCreated([...listOfPokemonsCreated, pokemon]);
   };
 
-
+  const theme = createTheme({
+    type: "dark",
+    theme: {
+      colors: {
+        primary: '#2359be',
+      }
+    }
+  })
+  
   return (
     <>
-      <NextUIProvider>
+      <NextUIProvider theme={theme}>
         <pokemonContext.Provider value={{
           listOfPokemons, setListOfPokemons, 
           listOfPokemonsCreated, setListOfPokemonsCreated, 
