@@ -1,5 +1,6 @@
 @use '../utils';
 
+.card__home_body,
 .nextui-c-BDLTQ { //card__home face
   background: #fffffff2;
 }
@@ -89,11 +90,11 @@
 }
 
 .card__name {
-  color: utils.$color-neutral;
   max-height: 53px;
   overflow: hidden;
 }
 
+.nextui-c-PJLV-ijnlmIz-css,
 .card__home_name {
   color: utils.$color-font-dark;
   font-size: utils.$font-regular;
