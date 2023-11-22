@@ -33,7 +33,7 @@ const NavBar = () => {
   return (
     <>
       <Navbar css={{ 
-        $navbarBackgroundColor: '$primary',
+        background: '$primary',
       }}>
           <Navbar.Toggle css={{ jc: "flex-end" }}
             showIn="xs"
