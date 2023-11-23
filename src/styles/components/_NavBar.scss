@@ -89,6 +89,11 @@ li.navBar__item:hover {
   border-bottom: solid 4px utils.$color-dark-blue;
 }
 
+.nextui-navbar-container,
+.nextui-c-egxOLa {
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   .nextui-navbar-toggle,
   .nextui-navbar-collapse-wrapper {
