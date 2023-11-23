@@ -8,12 +8,14 @@ a {
   justify-content: right;
   background: utils.$color-primary;
   width: 100vw;
+  padding: 0 24px;
 }
 
 .nextui-navbar-container { 
   display: flex;
   justify-content: flex-end;
   background: utils.$color-primary;
+  padding: 0;
 }
 
 .nextui-navbar-content {
