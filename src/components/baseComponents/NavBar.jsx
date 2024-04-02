@@ -6,13 +6,6 @@ function NavBar() {
   const [ open, setOpen ] = useState(false);
   const dropdownRef = useRef();
 
-  const handleMenu = (e) => {
-    if (e.target !== document.querySelector('.navbar__menu')) {
-      setOpen(false);
-    }
-  }
-  document.addEventListener('mousedown', handleMenu);
-
   return(
     <nav className='navbar'>
       <button className='navbar__menu' onClick={() => setOpen(!open)}>{open ? <FaX className='icon'/> : <FaBars className='icon'/>}</button>

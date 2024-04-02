@@ -24,28 +24,29 @@
     font-weight: 600;
     border-bottom: solid 4px utils.$color-secondary;
   }
-
-  .menu {
+  .navbar__links {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .menu {
     position: absolute;
     right: 0;
     top: 81px;
     background-color: #2e2776e6;
     width: 100%;
     gap: 16px;
-    padding: 24px 16px;
 
     ul.links {
       display: flex;
       flex-direction: column;
       gap: 24px;
       list-style: none;
+      width: 100%;
 
       li a {
         color: utils.$color-neutral-light;
-        font-size: 18px;
+        font-size: utils.$font-regular;
         text-decoration: none;
         padding: 8px;
       }
@@ -56,34 +57,36 @@
 
 @media (min-width: 600px) {
   .navbar {
+    justify-content: flex-end;
     background: utils.$color-primary;
-
+    padding: 0 16px;
+    
     .navbar__menu {
       display: none;
     }
-
     .navbar__links {
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      position: absolute;
-      top: 0;
-      right: 16px;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: unset;
       height: 100%;
       background: utils.$color-primary;
+      padding: 0;
       
       ul.links {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: center;
         gap: 24px;
+        width: fit-content;
 
         li a {
           color: #ffffff;
           padding-bottom: 8px;
+          font-size: 16px;
         }
         li a:hover {
-          font-size: 18px;
+          font-size: utils.$font-regular;
           border-bottom: solid 4px utils.$color-dark-blue;
         }
       }
