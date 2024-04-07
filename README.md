@@ -2,12 +2,16 @@
 
 <br>
 
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_playBtn.svg" alt="Play button"/></a></p>
+
+<br>
+
 Change to:&nbsp; &nbsp; [![es](https://img.shields.io/badge/Language-Spanish-blue.svg)](README.es.md)
 
 ---
 
 # FullPokeApp
-A Pokémon web application made with React.js, Sass and Nextui. &nbsp; &nbsp; <a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a>
+A Pokémon web application made with React.js, Sass and Nextui.
 
 <br>
 
@@ -41,7 +45,9 @@ The game begins with all cards face down and the player turns over two cards for
   - Movement counter.
   - Pop-up with data about the game won and buttons to play a new game, reset the game or close the pop-up.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a></p>
+<br>
+
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_playBtn.svg" alt="Play button"/></a></p>
 </details>
 
 ---
@@ -76,7 +82,9 @@ Search by matching the name of the Pokemon. Once you enter the search name or ch
 
 On this page you can see the pokemon lists when there is not a search in course.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a></p>
+<br>
+
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_playBtn.svg" alt="Play button"/></a></p>
 </details>
 
 ---
@@ -107,7 +115,9 @@ It contains a card with the Pokémon's details: name, image, weight, height, typ
  - Pokémon Details Card.
  - Button to return to the search engine.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a></p>
+<br>
+
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_playBtn.svg" alt="Play button"/></a></p>
 </details>
 
 ---
@@ -136,7 +146,9 @@ Create your own pokemons, customize their appearance, attributes.
  - Creation form.
  - Error pop-up, with Details and examples for filling out the input.
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a></p>
+<br>
+
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_playBtn.svg" alt="Play button"/></a></p>
 </details>
 
 ---
@@ -148,7 +160,7 @@ Create your own pokemons, customize their appearance, attributes.
 
 <br>
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Visit app<img src="src/assets/images/play.webp" alt="Play icon" style="width:48px; height:48px;"/></a></p>
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_playBtn.svg" alt="Play button"/></a></p>
 
 <br>
 
@@ -173,8 +185,6 @@ Create your own pokemons, customize their appearance, attributes.
 
 <br>
 
-<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
-
 ---
 
 <h2>Search Page:</h2>
@@ -190,8 +200,6 @@ Create your own pokemons, customize their appearance, attributes.
 <br>
 <br>
 
-<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
-
 ---
 
 <h2>Create page:</h2>
@@ -205,8 +213,6 @@ Create your own pokemons, customize their appearance, attributes.
 
 <br>
 <br>
-
-<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
 
 ---
 
@@ -222,7 +228,6 @@ Create your own pokemons, customize their appearance, attributes.
 <br>
 <br>
 
-<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
 </details>
 
 ---
@@ -316,7 +321,7 @@ This command creates a "node_modules" folder with all the dependencies that the 
 ## Professionals:
 
 <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/">
-<p align="center"><img src="src/assets/images/professionalCard.webp" style="width:135px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="See her LinkedIn profile"/></p>
+<p align="center"><img src="src/assets/images/professionalCard.webp" style="width:135px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="See my LinkedIn profile"/></p>
 </a>
 
 ---
@@ -326,9 +331,9 @@ This command creates a "node_modules" folder with all the dependencies that the 
 <p align="center"><a href="https://www.gromarant.com/"><img src="src/assets/images/logoGromarant-2023.webp" style="width:250px;" alt="Gromarant logo" title="Visit Gromarant portfolio page"/></a></p>
 <a href="https://www.gromarant.com/"><p align="center" style="color: #D9D9D9">© Mariangelica Rodriguez</p>
 </a>
+<p align="center">
 <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/">
-<p align="center"><img src="src/assets/images/linkedIn.webp" style="width:34px; height:34px" alt="linkedIn logo" title="See her LinkedIn profile"/></p>
-</a>
-<a href="https://github.com/Gromarant"><p align="center">
-<img src="src/assets/images/githubLogo.webp" style="width:34px; height:34px; border-radius:50%" alt="Github logo" title="See her Github profile"/>
-</p></a>
+<img src="src/assets/images/linkedIn.webp" style="width:34px; height:34px" alt="linkedIn logo" title="See my LinkedIn profile"/></a>&nbsp; &nbsp;
+<a href="https://github.com/Gromarant">
+<img src="src/assets/images/githubLogo.webp" style="width:34px; height:34px; border-radius:50%" alt="Github logo" title="See my Github profile"/></a>
+</p>
