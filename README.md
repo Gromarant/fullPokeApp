@@ -234,14 +234,24 @@ Create your own pokemons, customize their appearance, attributes.
 
 <br>
 
-## Tools:
+## Languages and tools:
+
+Use for the project development:
+
+<p align="center">
+<a href="https://react.dev/" target="_blank"><img src="src/assets/images/reactJs_readme_dark_aqua.svg" title="Know more about React.js" alt="React.js"/></a> &nbsp; &nbsp;
+<a href="https://sass-lang.com/" target="_blank"><img src="src/assets/images/sass_readme_dark_aqua.svg" title="Know more about Sass" alt="Sass"/></a> &nbsp; &nbsp;
+<a href="https://sass-lang.com/" target="_blank"><img src="src/assets/images/nextUi_readme_dark_aqua.svg" title="Know more about Nextui" alt="Nextui"/></a> &nbsp; &nbsp;
+<a href="https://github.com/about" target="_blank"><img src="src/assets/images/github_readme_dark_aqua.svg" title="know more about Github" alt="Github"/></a>
+</p>
 
 <br>
 
-<p align="center"><img src="src/assets/images/react_yellowLogo.webp" title="React.js" alt="React.js Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
-<img src="src/assets/images/sass_yellowLogo.webp" title="Sass | css" alt="Sass | css Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
-<img src="src/assets/images/nextui_yellowLogo.webp" title="Nextui" alt="Nextui Logo" style="width:102px; border-radius:8px;"/></p>
-  
+Employed in the project design:
+
+<p align="center">
+<a href="https://www.figma.com/" target="_blank"><img src="src/assets/images/figma_readme_dark_aqua.svg" title="know more about Figma" alt="Figma"/></a>
+</p>
 
 <br>
 
