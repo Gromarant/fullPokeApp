@@ -329,7 +329,7 @@ Este comando crea la carpeta "node_modules"  con todas las dependencias que nece
 ## Profesionales:
 
 <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/">
-<p align="center"><img src="src/assets/images/professionalCard.webp" style="width:135px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="Ver perfil de LinkedIn"/></p>
+<p align="center"><img src="src/assets/images/professionalCard.webp" style="width:190px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="Ver perfil de LinkedIn"/></p>
 </a>
 
 ---
