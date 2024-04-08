@@ -336,14 +336,15 @@ This command creates a "node_modules" folder with all the dependencies that the 
 
 ---
 
-<br>
+<br><br>
 
-<p align="center"><a href="https://www.gromarant.com/"><img src="src/assets/images/logoGromarant-2023.webp" style="width:250px;" alt="Gromarant logo" title="Visit Gromarant portfolio page"/></a></p>
-<a href="https://www.gromarant.com/"><p align="center" style="color: #D9D9D9">© Mariangelica Rodriguez</p>
-</a>
+<p align="center" style="color: #D9D9D9">© Mariangelica Rodriguez</p>
+
 <p align="center">
-<a href="https://www.linkedin.com/in/mariangelicarodriguezperez/">
-<img src="src/assets/images/linkedIn.webp" style="width:34px; height:34px" alt="linkedIn logo" title="See my LinkedIn profile"/></a>&nbsp; &nbsp;
-<a href="https://github.com/Gromarant">
-<img src="src/assets/images/githubLogo.webp" style="width:34px; height:34px; border-radius:50%" alt="Github logo" title="See my Github profile"/></a>
+<a style="text-decoration:none; cursor:pointer;" href="https://github.com/Gromarant"><img src="src/assets/images/github_readme.svg" alt="Github logo" title="Visit my Github profile"/></a> &nbsp; &nbsp;
+<a style="text-decoration:none; cursor:pointer;" href="https://www.linkedin.com/in/mariangelicarodriguezperez/"><img src="src/assets/images/linkedIn_readme.svg" alt="linkedIn logo" title="See my LinkedIn profile"/></a> &nbsp; &nbsp;
+<a style="text-decoration:none; cursor:pointer;" href="mailto:contacto@gromarant.com"><img src="src/assets/images/mail_readme.svg" alt="Email logo" title="Write me an email"/></a>
 </p>
+
+<br>
+<p align="center"><a href="https://www.gromarant.com/"><img src="src/assets/images/logoGromarant-2023.webp" style="width:250px;" alt="Gromarant logo" title="Go to Gromarant wep app"/></a></p>
