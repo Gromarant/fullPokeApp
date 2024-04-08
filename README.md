@@ -331,14 +331,14 @@ This command creates a "node_modules" folder with all the dependencies that the 
 ## Professionals:
 
 <a href="https://www.linkedin.com/in/mariangelicarodriguezperez/">
-<p align="center"><img src="src/assets/images/professionalCard.webp" style="width:135px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="See my LinkedIn profile"/></p>
+<p align="center"><img src="src/assets/images/professionalCard.webp" style="width:190px; border-radius: 10px;" alt="Full Stack Developer | Mariangelica Rodriguez" title="See my LinkedIn profile"/></p>
 </a>
 
 ---
 
 <br><br>
 
-<p align="center" style="color: #D9D9D9">© Mariangelica Rodriguez</p>
+<p align="center">© Mariangelica Rodriguez</p>
 
 <p align="center">
 <a style="text-decoration:none; cursor:pointer;" href="https://github.com/Gromarant"><img src="src/assets/images/github_readme.svg" alt="Github logo" title="Visit my Github profile"/></a> &nbsp; &nbsp;

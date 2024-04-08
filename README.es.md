@@ -2,6 +2,10 @@
 
 <br>
 
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_jugarBtn.svg" alt="Play button"/></a></p>
+
+<br>
+
 Cambiar a:&nbsp; &nbsp; [![es](https://img.shields.io/badge/idioma-Inglés-green.svg)](README.md)
 
 ---
@@ -40,7 +44,9 @@ El juego comienza con todas las cartas boca abajo y el jugador voltea dos cartas
   - Contador de movimientos.
   - Pop-up con datos de la partida ganada y botones para jugar nueva partida, resetear la partida o cerrar el pop-up.
   
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.webp" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
+<br>
+
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_jugarBtn.svg" alt="Play button"/></a></p>
 </details>
 
 ---
@@ -74,8 +80,10 @@ Busca por coincidencia con el nombre de los pokemons, una vez ingresado el nombr
 <br>
 
 En esta pantalla podrás ver las listas de los pokemones cuando no haya una búsqueda actual.
+  
+<br>
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.webp" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_jugarBtn.svg" alt="Play button"/></a></p>
 </details>
 
 ---
@@ -107,8 +115,10 @@ Carta con los detalles del pokémon seleccionado en la lista de búsqueda.
 
  - Carta de detalles del pokémon.
  - Botón para volver al buscador.
+  
+<br>
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.webp" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_jugarBtn.svg" alt="Play button"/></a></p>
 </details>
 
 ---
@@ -136,18 +146,20 @@ Crea tus propios pokemones, personaliza su apariencia, atributos.
 
  - Formulario de creación.
  - Pop-up de error, con detalles y ejemplos para el rellenado de los input.
+  
+<br>
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.webp" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_jugarBtn.svg" alt="Play button"/></a></p>
 </details>
 
 ## Objetivos: 
 
  - Desarrollo de aplicación web con React.js (Vite) y Sass.
  - Trabajar con consumo de Api, react form, hooks e integración de componentes de librerías externas.
-
+  
 <br>
 
-<p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank">Ir a la app<img src="src/assets/images/play.webp" alt="Icono de play" style="width:48px; height:48px;"/></a></p>
+ <p align="center"><a href="https://fullpokeapp.netlify.app" target="_blank"><img src="src/assets/images/fullpokeapp_jugarBtn.svg" alt="Play button"/></a></p>
 
 <br>
 
@@ -172,8 +184,6 @@ Crea tus propios pokemones, personaliza su apariencia, atributos.
 
 <br>
 
-<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
-
 ---
 
 <h2>Página de búsqueda:</h2>
@@ -188,8 +198,6 @@ Crea tus propios pokemones, personaliza su apariencia, atributos.
 
 <br>
 
-<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
-
 ---
 
 <h2>Página de creación:</h2>
@@ -202,8 +210,6 @@ Crea tus propios pokemones, personaliza su apariencia, atributos.
 <img src="src/assets/images/wireframeErrorAlert.webp" title="Wireframe de errores de formulario" alt="Wireframe  de errores de formulario" style="width: min-width: 200px; width: 20%"/></p>
 
 <br>
-
-<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
 
 ---
 
@@ -219,22 +225,33 @@ Crea tus propios pokemones, personaliza su apariencia, atributos.
 <br>
 <br>
 
-<!-- <a href="https://www.gromarant.com/">Ver más detalles</a> -->
 </details>
 
 ---
 
 <br>
 
-## Herramientas:
+## Lenguajes y herramientas:
+
+Usados en el desarrollo del proyecto:
+
+<p align="center">
+<a href="https://react.dev/" target="_blank"><img src="src/assets/images/reactJs_readme_dark_aqua.svg" title="Saber más sobre React.js" alt="React.js"/></a> &nbsp; &nbsp;
+<a href="https://sass-lang.com/" target="_blank"><img src="src/assets/images/sass_readme_dark_aqua.svg" title="Saber más sobre Sass" alt="Sass"/></a> &nbsp; &nbsp;
+<a href="https://sass-lang.com/" target="_blank"><img src="src/assets/images/nextUi_readme_dark_aqua.svg" title="Saber más sobre Nextui" alt="Nextui"/></a> &nbsp; &nbsp;
+<a href="https://github.com/about" target="_blank"><img src="src/assets/images/github_readme_dark_aqua.svg" title="Saber más sobre Github" alt="Github"/></a>
+</p>
 
 <br>
 
-<p align="center"><img src="src/assets/images/react_yellowLogo.webp" title="React.js" alt="React.js Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
-<img src="src/assets/images/sass_yellowLogo.webp" title="Sass | css" alt="Sass | css Logo" style="width:102px; border-radius:8px;"/>&nbsp; &nbsp;
-<img src="src/assets/images/nextui_yellowLogo.webp" title="Nextui" alt="Nextui Logo" style="width:102px; border-radius:8px;"/></p>
+Empleados en el diseño del proyecto:
+
+<p align="center">
+<a href="https://www.figma.com/" target="_blank"><img src="src/assets/images/figma_readme_dark_aqua.svg" title="Saber más sobre Figma" alt="Figma"/></a>
+</p>
 
 <br>
+
 
 ## Copia e implementación de este proyecto:
 
@@ -317,14 +334,15 @@ Este comando crea la carpeta "node_modules"  con todas las dependencias que nece
 
 ---
 
-<br>
+<br><br>
 
-<p align="center"><a href="https://www.gromarant.com/"><img src="src/assets/images/logoGromarant-2023.webp" style="width:250px;" alt="Gromarant logo" title="Visitar página de Gromarant"/></a></p>
-<a href="https://www.gromarant.com/"><p align="center" style="color: #D9D9D9">© Mariangelica Rodriguez</p>
-</a>
-<a href="https://www.linkedin.com/in/mariangelicarodriguezperez/">
-<p align="center"><img src="src/assets/images/linkedIn.webp" style="width:34px; height:34px" alt="linkedIn logo" title="Ver perfil de LinkedIn"/></p>
-</a>
-<a href="https://github.com/Gromarant"><p align="center">
-<img src="src/assets/images/githubLogo.webp" style="width:34px; height:34px; border-radius:50%" alt="Github logo" title="Ver perfil de Github"/>
-</p></a>
+<p align="center">© Mariangelica Rodriguez</p>
+
+<p align="center">
+<a style="text-decoration:none; cursor:pointer;" href="https://github.com/Gromarant"><img src="src/assets/images/github_readme.svg" alt="Github logo" title="Visitar mi perfil de Github"/></a> &nbsp; &nbsp;
+<a style="text-decoration:none; cursor:pointer;" href="https://www.linkedin.com/in/mariangelicarodriguezperez/"><img src="src/assets/images/linkedIn_readme.svg" alt="linkedIn logo" title="Ver mi perfil de LinkedIn"/></a> &nbsp; &nbsp;
+<a style="text-decoration:none; cursor:pointer;" href="mailto:contacto@gromarant.com"><img src="src/assets/images/mail_readme.svg" alt="Email logo" title="Contactarme por correo"/></a>
+</p>
+
+<br>
+<p align="center"><a href="https://www.gromarant.com/"><img src="src/assets/images/logoGromarant-2023.webp" style="width:250px;" alt="Gromarant logo" title="Visitar Portafolio"/></a></p>
